@@ -1,13 +1,13 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { styled } from '@storybook/theming';
-import { withKnobs, select } from '@storybook/addon-knobs/react';
+import { withKnobs, boolean, select } from '@storybook/addon-knobs/react';
 
 import { SPACINGS } from '../themes';
 
 import Container from '../_/Container';
 import Button from './Button';
-import { COLOR_PROP } from './ButtonStyled';
+import { COLOR_PROP, VARIANT_PROP } from './ButtonStyled';
 
 const CustomContainer = styled(Container)`
   button {
@@ -20,7 +20,13 @@ storiesOf('Button', module)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
   .add('Solid', () => (
     <Fragment>
-      <Button color={select('color', COLOR_PROP, 'default')}>DEFAULT</Button>
+      <Button
+        color={select('color', COLOR_PROP, 'default')}
+        variant={select('variant', VARIANT_PROP, 'solid')}
+        rounded={boolean('rounded', false)}
+      >
+        DEFAULT
+      </Button>
       <Button color="primary">PRIMARY</Button>
       <Button color="secondary">SECONDARY</Button>
       <br />
