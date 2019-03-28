@@ -62,7 +62,6 @@ function getColors({ color, variant }) {
 }
 
 function getRounded({ rounded }) {
-  console.log(rounded, ELEMENT.BORDER_RADIUS);
   return rounded ? `border-radius: ${ELEMENT.BORDER_RADIUS}` : '';
 }
 

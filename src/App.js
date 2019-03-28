@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import store from './lib/redux';
 
-import InboxScreen from './components/InboxScreen';
+import Button from './stories/Button';
 
 class App extends Component {
   render() {
     return (
       <Provider store={store}>
-        <InboxScreen />
+        <Button>I'm a default button!</Button>
+        <Button color="primary">I'm a primary button!</Button>
+        <Button color="secondary">I'm a secondary button!</Button>
       </Provider>
     );
   }

@@ -6,7 +6,7 @@ import { withKnobs, boolean, select } from '@storybook/addon-knobs/react';
 import { SPACINGS } from '../themes';
 
 import Container from '../_/Container';
-import Button from './Button';
+import Button from '.';
 import { COLOR_PROP, VARIANT_PROP } from './ButtonStyled';
 
 const CustomContainer = styled(Container)`
