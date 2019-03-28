@@ -4,13 +4,14 @@ import { configure } from '@storybook/react';
 import requireContext from 'require-context.macro';
 
 // Uses CSS file
-import '../src/index.css';
+import '../src/stories/base.css';
 
 // By default Storybook looks for stories in a `/stories` directory,
 // this configures to notice `.stories.js` files instead
 // const req = require.context('../src', true, /.stories.js$/);
 // Uses `requireContext` imported from the macro, required by the StoryShots addon for automated testing
-const req = requireContext('../src/components', true, /\.stories\.js$/);
+// const req = requireContext('../src/components', true, /\.stories\.js$/);
+const req = requireContext('../src/stories', true, /\.stories\.js$/);
 
 function loadStories() {
   // require('../src/stories');
