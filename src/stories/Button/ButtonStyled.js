@@ -12,8 +12,8 @@ export const COLOR_PROP = {
 };
 export const VARIANT_PROP = {
   solid: 'solid',
-  text: 'text',
-  outline: 'outline'
+  outline: 'outline',
+  text: 'text'
 };
 
 export const COLOR_MAP = {
@@ -31,7 +31,7 @@ export const COLOR_MAP = {
   }
 };
 
-function getColors({ color, variant }) {
+function getColorCSS({ color, variant }) {
   let css = `
   background-color: ${variant === VARIANT_PROP.solid ? COLOR_MAP[color].normal : 'transparent'};
     &:hover {
@@ -61,8 +61,22 @@ function getColors({ color, variant }) {
   }
 }
 
-function getRounded({ rounded }) {
+function getRoundedCSS({ rounded }) {
   return rounded ? `border-radius: ${ELEMENT.BORDER_RADIUS}` : '';
+}
+
+function getDisabledCSS({ variant }) {
+  let css = `
+  background: ${variant === VARIANT_PROP.solid ? rgba(COLORS.BASE, 0.2) : 0};
+  color: ${rgba(COLORS.BASE, 0.5)};
+  cursor: not-allowed;
+  `;
+
+  if (variant === VARIANT_PROP.outline) {
+    css += `border-color: ${rgba(COLORS.BASE, 0.2)}`;
+  }
+
+  return css;
 }
 
 const ButtonStyled = styled.button`
@@ -73,11 +87,15 @@ const ButtonStyled = styled.button`
   position: relative;
   transition: background-color 0.3s;
 
-  ${getColors};
-  ${getRounded};
+  ${getColorCSS};
+  ${getRoundedCSS};
 
   &:focus {
     outline: none;
+  }
+
+  &:disabled {
+    ${getDisabledCSS};
   }
 `;
 

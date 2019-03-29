@@ -5,39 +5,23 @@ exports[`Storyshots Button Outline 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-m4cwzq"
+    className="css-b2xe0w"
     color="default"
+    disabled={false}
   >
     DEFAULT
   </button>
   <button
-    className="css-wrrvp2"
+    className="css-1f6aabl"
     color="primary"
+    disabled={false}
   >
     PRIMARY
   </button>
   <button
-    className="css-a2sz82"
+    className="css-e8164u"
     color="secondary"
-  >
-    SECONDARY
-  </button>
-  <br />
-  <button
-    className="css-yfsx2h"
-    color="default"
-  >
-    DEFAULT
-  </button>
-  <button
-    className="css-1t6ihar"
-    color="primary"
-  >
-    PRIMARY
-  </button>
-  <button
-    className="css-1bu10e3"
-    color="secondary"
+    disabled={false}
   >
     SECONDARY
   </button>
@@ -49,39 +33,23 @@ exports[`Storyshots Button Solid 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-107z5ot"
+    className="css-1a6mu84"
     color="default"
+    disabled={false}
   >
     DEFAULT
   </button>
   <button
-    className="css-7yq31d"
+    className="css-7uqfvn"
     color="primary"
+    disabled={false}
   >
     PRIMARY
   </button>
   <button
-    className="css-syst5r"
+    className="css-1tgz823"
     color="secondary"
-  >
-    SECONDARY
-  </button>
-  <br />
-  <button
-    className="css-b8aw23"
-    color="default"
-  >
-    DEFAULT
-  </button>
-  <button
-    className="css-1t779wu"
-    color="primary"
-  >
-    PRIMARY
-  </button>
-  <button
-    className="css-cpi4y0"
-    color="secondary"
+    disabled={false}
   >
     SECONDARY
   </button>
@@ -93,39 +61,23 @@ exports[`Storyshots Button Text 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-ts9p9g"
+    className="css-4prdkn"
     color="default"
+    disabled={false}
   >
     DEFAULT
   </button>
   <button
-    className="css-1w0hlfy"
+    className="css-x7aeqm"
     color="primary"
+    disabled={false}
   >
     PRIMARY
   </button>
   <button
-    className="css-giy1pt"
+    className="css-1o4bz8g"
     color="secondary"
-  >
-    SECONDARY
-  </button>
-  <br />
-  <button
-    className="css-102euhn"
-    color="default"
-  >
-    DEFAULT
-  </button>
-  <button
-    className="css-ymmswl"
-    color="primary"
-  >
-    PRIMARY
-  </button>
-  <button
-    className="css-bl9uac"
-    color="secondary"
+    disabled={false}
   >
     SECONDARY
   </button>

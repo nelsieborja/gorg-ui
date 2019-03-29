@@ -7,12 +7,14 @@ const Button = ({ children, ...rest }) => <ButtonStyled {...rest}>{children}</Bu
 
 Button.propTypes = {
   color: string,
+  disabled: bool,
   rounded: bool,
   variant: string
 };
 
 Button.defaultProps = {
   color: COLOR_PROP.default, // default|primary|secondary
+  disabled: false,
   rounded: false,
   variant: VARIANT_PROP.solid // solid|text|outline
 };
