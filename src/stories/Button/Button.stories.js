@@ -76,4 +76,106 @@ storiesOf('Button', module)
         );
       })}
     </Fragment>
+  ))
+  .add('Loading State', () => (
+    <Fragment>
+      {colorPropsKeys.map(key => {
+        const color = COLOR_PROP[key];
+        return (
+          <Button
+            key={key}
+            color={color}
+            disabled={boolean('disabled', false)}
+            loading={boolean('loading', true)}
+            rounded={boolean('rounded', false)}
+            variant={VARIANT_PROP.solid}
+          >
+            {color.toUpperCase()}
+          </Button>
+        );
+      })}
+      <br />
+      {colorPropsKeys.map(key => {
+        const color = COLOR_PROP[key];
+        return (
+          <Button
+            key={key}
+            color={color}
+            disabled={boolean('disabled', false)}
+            loading={boolean('loading', true)}
+            rounded={boolean('rounded', false)}
+            variant={VARIANT_PROP.outline}
+          >
+            {color.toUpperCase()}
+          </Button>
+        );
+      })}
+      <br />
+      {colorPropsKeys.map(key => {
+        const color = COLOR_PROP[key];
+        return (
+          <Button
+            key={key}
+            color={color}
+            disabled={boolean('disabled', false)}
+            loading={boolean('loading', true)}
+            rounded={boolean('rounded', false)}
+            variant={VARIANT_PROP.text}
+          >
+            {color.toUpperCase()}
+          </Button>
+        );
+      })}
+    </Fragment>
+  ))
+  .add('Disabled State', () => (
+    <Fragment>
+      {colorPropsKeys.map(key => {
+        const color = COLOR_PROP[key];
+        return (
+          <Button
+            key={key}
+            color={color}
+            disabled={boolean('disabled', true)}
+            loading={boolean('loading', false)}
+            rounded={boolean('rounded', false)}
+            variant={VARIANT_PROP.solid}
+          >
+            {color.toUpperCase()}
+          </Button>
+        );
+      })}
+      <br />
+      {colorPropsKeys.map(key => {
+        const color = COLOR_PROP[key];
+        return (
+          <Button
+            key={key}
+            color={color}
+            disabled={boolean('disabled', true)}
+            loading={boolean('loading', false)}
+            rounded={boolean('rounded', false)}
+            variant={VARIANT_PROP.outline}
+          >
+            {color.toUpperCase()}
+          </Button>
+        );
+      })}
+      <br />
+      {colorPropsKeys.map(key => {
+        const color = COLOR_PROP[key];
+        return (
+          <Button
+            key={key}
+            color={color}
+            disabled={boolean('disabled', true)}
+            loading={boolean('loading', false)}
+            rounded={boolean('rounded', false)}
+            variant={VARIANT_PROP.text}
+          >
+            {color.toUpperCase()}
+          </Button>
+        );
+      })}
+    </Fragment>
   ));
