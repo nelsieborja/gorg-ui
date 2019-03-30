@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { bool, string } from 'prop-types';
 import uuidv4 from 'uuid/v4';
 
@@ -7,13 +7,14 @@ import { COLOR_VARIATION } from '../themes';
 import SwitchCheckboxStyled from './SwitchCheckboxStyled';
 import SwitchLabelStyled from './SwitchLabelStyled';
 
-const Switch = ({ color, ...rest }) => {
+const Switch = ({ children, color, ...rest }) => {
   const checkboxID = rest.id || uuidv4();
   return (
-    <span>
+    <Fragment>
       <SwitchCheckboxStyled id={checkboxID} type="checkbox" {...rest} />
-      <SwitchLabelStyled htmlFor={checkboxID} color={color} />
-    </span>
+      <SwitchLabelStyled htmlFor={checkboxID} color={color} gap={!!children} />
+      {children}
+    </Fragment>
   );
 };
 

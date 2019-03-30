@@ -12,7 +12,7 @@ export const COLORS = {
   ROSE_DARK: '#6d3554',
   FLAMENCO: '#f8dac3',
   ROMANCE: '#f8f4e9',
-  ROMANCE_DARK: '#ece2bb'
+  ROMANCE_DARK: '#ece5ca'
 };
 
 export const FONTS = {
@@ -76,6 +76,9 @@ export const COLOR_MAP = {
     color: COLORS.WHITE
   }
 };
+
+export const getGap = ({ gap }) => gap && `margin-right: ${SPACINGS.GUTTER}`;
+
 export const getShapeCSS = ({ shape }) => {
   if (shape === SHAPE_VARIATION.default) return;
 

@@ -1,7 +1,7 @@
 import { styled } from '@storybook/theming';
 import { rem, math } from 'polished';
 
-import { COLOR_VARIATION, ELEMENT, COLORS, TRANSITION } from '../themes';
+import { COLOR_VARIATION, COLORS, ELEMENT, TRANSITION, getGap } from '../themes';
 
 const tickGutter = rem(2);
 const tickSize = math(`${ELEMENT.HEIGHT} - (${tickGutter} * 2)`);
@@ -23,7 +23,7 @@ const COLOR_MAP = {
 
 const SwitchLabelStyled = styled.label`
   height: ${ELEMENT.HEIGHT};
-  width: ${rem(54)};
+  width: ${rem(58)};
 
   background-color: ${COLORS.LIGHT_GREY};
   border-radius: ${ELEMENT.HEIGHT};
@@ -31,6 +31,9 @@ const SwitchLabelStyled = styled.label`
   display: inline-block;
   position: relative;
   transition: background-color ${TRANSITION.DURATION};
+  vertical-align: middle;
+
+  ${getGap};
 
   &:after {
     position: absolute;
@@ -40,7 +43,7 @@ const SwitchLabelStyled = styled.label`
     height: ${tickSize};
     width: ${tickSize};
 
-    background-color: ${({ color }) => COLOR_MAP[color].handle};
+    background-color: ${({ color }) => COLOR_MAP[color].checked};
     border-radius: ${tickSize};
     content: '';
     transition: ${TRANSITION.DURATION} ease;
@@ -54,6 +57,7 @@ const SwitchLabelStyled = styled.label`
     background-color: ${({ color }) => COLOR_MAP[color].checked};
 
     &:after {
+      background-color: ${({ color }) => COLOR_MAP[color].handle};
       left: calc(100% - ${tickGutter});
       transform: translateX(-100%);
     }

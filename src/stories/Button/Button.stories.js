@@ -62,7 +62,7 @@ const buildColorStories = color => (
 storiesOf('Button', module)
   .addDecorator(withKnobs)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
-  .add('Default', () => (
+  .add('Live Props', () => (
     <Button
       color={select('color', COLOR_VARIATION, COLOR_VARIATION.default)}
       disabled={boolean('disabled', false)}

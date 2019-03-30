@@ -52,7 +52,7 @@ const buildShapeStories = shape => (
 storiesOf('Checkbox', module)
   .addDecorator(withKnobs)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
-  .add('Default', () => (
+  .add('Live Props', () => (
     <Checkbox
       color={select('color', COLOR_VARIATION, COLOR_VARIATION.default)}
       defaultChecked

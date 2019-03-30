@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
-import { withKnobs, boolean } from '@storybook/addon-knobs/react';
+import { withKnobs, boolean, select } from '@storybook/addon-knobs/react';
 import { styled } from '@storybook/theming';
 
 import { COLOR_VARIATION, SPACINGS } from '../themes';
@@ -9,7 +9,7 @@ import Container from '../_/Container';
 import Switch from '.';
 
 const CustomContainer = styled(Container)`
-  span {
+  label {
     margin: ${SPACINGS.GUTTER_XS};
   }
 `;
@@ -17,6 +17,15 @@ const CustomContainer = styled(Container)`
 const colorPropsKeys = Object.keys(COLOR_VARIATION);
 
 storiesOf('Switch', module)
+  .addDecorator(withKnobs)
+  .addDecorator(story => <Container>{story()}</Container>)
+  .add('Live Props', () => (
+    <Switch color={select('color', COLOR_VARIATION, COLOR_VARIATION.default)}>
+      Change my appearance from <strong>"Knobs"</strong> tab
+    </Switch>
+  ));
+
+storiesOf('Switch.State', module)
   .addDecorator(withKnobs)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
   .add('Uncontrolled', () => (

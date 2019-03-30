@@ -1,7 +1,7 @@
 import { styled, keyframes } from '@storybook/theming';
 import { rem } from 'polished';
 
-import { COLOR_MAP, FONTS, SPACINGS, TRANSITION, getShapeCSS } from '../themes';
+import { COLOR_MAP, FONTS, TRANSITION, getGap, getShapeCSS } from '../themes';
 
 const size = rem(22);
 
@@ -16,8 +16,6 @@ const tickZoomIn = keyframes`
       transform: scale3d(1, 1, 1) rotateZ(45deg);
   }
 `;
-
-const getGap = ({ gap }) => gap && `margin-right: ${SPACINGS.GUTTER}`;
 
 const CheckboxLabelStyled = styled.label`
   cursor: pointer;
