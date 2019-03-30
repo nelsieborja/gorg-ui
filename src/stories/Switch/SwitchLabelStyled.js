@@ -43,18 +43,18 @@ const SwitchLabelStyled = styled.label`
     background-color: ${({ color }) => COLOR_MAP[color].handle};
     border-radius: ${tickSize};
     content: '';
-    transition: 0.2s ease;
+    transition: ${TRANSITION.DURATION} ease;
   }
 
   &:active:after {
-    width: ${rem(40)};
+    width: ${rem(42)};
   }
 
   input:checked + & {
     background-color: ${({ color }) => COLOR_MAP[color].checked};
 
     &:after {
-      left: calc(100% - 2px);
+      left: calc(100% - ${tickGutter});
       transform: translateX(-100%);
     }
   }
