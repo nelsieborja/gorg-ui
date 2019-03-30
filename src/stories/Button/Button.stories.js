@@ -70,23 +70,9 @@ storiesOf('Button', module)
       shape={select('shape', SHAPE_VARIATION, SHAPE_VARIATION.default)}
       variant={select('variant', VARIANT_TYPE, VARIANT_TYPE.default)}
     >
-      CHANGE MY APPEARANCE FROM "Knobs" TAB
+      Change my appearance from <strong>"Knobs"</strong> tab
     </Button>
   ));
-
-storiesOf('Button.Variant', module)
-  .addDecorator(withKnobs)
-  .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
-  .add('Default', () => buildVariantStories(VARIANT_TYPE.default))
-  .add('Outline', () => buildVariantStories(VARIANT_TYPE.outline))
-  .add('Text', () => buildVariantStories(VARIANT_TYPE.text));
-
-storiesOf('Button.Shape', module)
-  .addDecorator(withKnobs)
-  .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
-  .add('Default', () => buildShapeStories(SHAPE_VARIATION.default))
-  .add('Rounded', () => buildShapeStories(SHAPE_VARIATION.rounded))
-  .add('Circle', () => buildShapeStories(SHAPE_VARIATION.circle));
 
 storiesOf('Button.Color', module)
   .addDecorator(withKnobs)
@@ -94,6 +80,13 @@ storiesOf('Button.Color', module)
   .add('Default', () => buildColorStories(COLOR_VARIATION.default))
   .add('Primary', () => buildColorStories(COLOR_VARIATION.primary))
   .add('Secondary', () => buildColorStories(COLOR_VARIATION.secondary));
+
+storiesOf('Button.Shape', module)
+  .addDecorator(withKnobs)
+  .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
+  .add('Default', () => buildShapeStories(SHAPE_VARIATION.default))
+  .add('Rounded', () => buildShapeStories(SHAPE_VARIATION.rounded))
+  .add('Circle', () => buildShapeStories(SHAPE_VARIATION.circle));
 
 storiesOf('Button.State', module)
   .addDecorator(withKnobs)
@@ -134,3 +127,10 @@ storiesOf('Button.State', module)
       })}
     </Fragment>
   ));
+
+storiesOf('Button.Variant', module)
+  .addDecorator(withKnobs)
+  .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
+  .add('Default', () => buildVariantStories(VARIANT_TYPE.default))
+  .add('Outline', () => buildVariantStories(VARIANT_TYPE.outline))
+  .add('Text', () => buildVariantStories(VARIANT_TYPE.text));

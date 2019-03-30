@@ -1,23 +1,5 @@
 import { rem } from 'polished';
 
-export const COLOR_VARIATION = {
-  default: 'default',
-  primary: 'primary',
-  secondary: 'secondary'
-};
-
-export const SHAPE_VARIATION = {
-  default: 'default',
-  rounded: 'rounded',
-  circle: 'circle'
-};
-
-export const VARIANT_TYPE = {
-  default: 'default',
-  outline: 'outline',
-  text: 'text'
-};
-
 export const COLORS = {
   BASE: '#37334e',
   WHITE: '#fff',
@@ -60,6 +42,40 @@ export const TRANSITION = {
 };
 
 // HELPERS
+export const COLOR_VARIATION = {
+  default: 'default',
+  primary: 'primary',
+  secondary: 'secondary'
+};
+
+export const SHAPE_VARIATION = {
+  default: 'default',
+  rounded: 'rounded',
+  circle: 'circle'
+};
+
+export const VARIANT_TYPE = {
+  default: 'default',
+  outline: 'outline',
+  text: 'text'
+};
+export const COLOR_MAP = {
+  [COLOR_VARIATION.default]: {
+    backgroundColor: COLORS.ROMANCE,
+    backgroundColorHover: COLORS.ROMANCE_DARK,
+    color: COLORS.BASE
+  },
+  [COLOR_VARIATION.primary]: {
+    backgroundColor: COLORS.MAGENTA,
+    backgroundColorHover: COLORS.MAGENTA_DARK,
+    color: COLORS.WHITE
+  },
+  [COLOR_VARIATION.secondary]: {
+    backgroundColor: COLORS.ROSE,
+    backgroundColorHover: COLORS.ROSE_DARK,
+    color: COLORS.WHITE
+  }
+};
 export const getShapeCSS = ({ shape }) => {
   if (shape === SHAPE_VARIATION.default) return;
 
