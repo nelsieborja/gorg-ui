@@ -2,7 +2,8 @@ import { rem } from 'polished';
 
 export const COLORS = {
   BASE: '#37334e',
-  WHITE: '#fcfbf9',
+  WHITE: '#fff',
+  DIRTY_WHITE: '#fcfbf9',
 
   MAGENTA: '#4e2e54',
   MAGENTA_DARK: '#3d2142',
