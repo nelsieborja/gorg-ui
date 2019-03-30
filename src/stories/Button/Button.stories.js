@@ -1,13 +1,12 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
-import { styled } from '@storybook/theming';
 import { withKnobs, boolean, select } from '@storybook/addon-knobs/react';
+import { styled } from '@storybook/theming';
 
-import { SPACINGS } from '../themes';
+import { COLOR_VARIATION, VARIANT_TYPE, SPACINGS } from '../themes';
 
 import Container from '../_/Container';
 import Button from '.';
-import { COLOR_PROP, VARIANT_PROP } from './ButtonStyled';
 
 const CustomContainer = styled(Container)`
   button {
@@ -15,7 +14,7 @@ const CustomContainer = styled(Container)`
   }
 `;
 
-const colorPropsKeys = Object.keys(COLOR_PROP);
+const colorPropsKeys = Object.keys(COLOR_VARIATION);
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
@@ -23,7 +22,7 @@ storiesOf('Button', module)
   .add('Solid', () => (
     <Fragment>
       {colorPropsKeys.map(key => {
-        const color = COLOR_PROP[key];
+        const color = COLOR_VARIATION[key];
         return (
           <Button
             key={key}
@@ -31,7 +30,7 @@ storiesOf('Button', module)
             disabled={boolean('disabled', false)}
             loading={boolean('loading', false)}
             rounded={boolean('rounded', false)}
-            variant={select('variant', VARIANT_PROP, VARIANT_PROP.solid)}
+            variant={select('variant', VARIANT_TYPE, VARIANT_TYPE.solid)}
           >
             {color.toUpperCase()}
           </Button>
@@ -42,7 +41,7 @@ storiesOf('Button', module)
   .add('Outline', () => (
     <Fragment>
       {colorPropsKeys.map(key => {
-        const color = COLOR_PROP[key];
+        const color = COLOR_VARIATION[key];
         return (
           <Button
             key={key}
@@ -50,7 +49,7 @@ storiesOf('Button', module)
             disabled={boolean('disabled', false)}
             loading={boolean('loading', false)}
             rounded={boolean('rounded', false)}
-            variant={select('variant', VARIANT_PROP, VARIANT_PROP.outline)}
+            variant={select('variant', VARIANT_TYPE, VARIANT_TYPE.outline)}
           >
             {color.toUpperCase()}
           </Button>
@@ -61,7 +60,7 @@ storiesOf('Button', module)
   .add('Text', () => (
     <Fragment>
       {colorPropsKeys.map(key => {
-        const color = COLOR_PROP[key];
+        const color = COLOR_VARIATION[key];
         return (
           <Button
             key={key}
@@ -69,7 +68,7 @@ storiesOf('Button', module)
             disabled={boolean('disabled', false)}
             loading={boolean('loading', false)}
             rounded={boolean('rounded', false)}
-            variant={select('variant', VARIANT_PROP, VARIANT_PROP.text)}
+            variant={select('variant', VARIANT_TYPE, VARIANT_TYPE.text)}
           >
             {color.toUpperCase()}
           </Button>
@@ -80,7 +79,7 @@ storiesOf('Button', module)
   .add('Loading State', () => (
     <Fragment>
       {colorPropsKeys.map(key => {
-        const color = COLOR_PROP[key];
+        const color = COLOR_VARIATION[key];
         return (
           <Button
             key={key}
@@ -88,7 +87,7 @@ storiesOf('Button', module)
             disabled={boolean('disabled', false)}
             loading={boolean('loading', true)}
             rounded={boolean('rounded', false)}
-            variant={VARIANT_PROP.solid}
+            variant={VARIANT_TYPE.solid}
           >
             {color.toUpperCase()}
           </Button>
@@ -96,7 +95,7 @@ storiesOf('Button', module)
       })}
       <br />
       {colorPropsKeys.map(key => {
-        const color = COLOR_PROP[key];
+        const color = COLOR_VARIATION[key];
         return (
           <Button
             key={key}
@@ -104,7 +103,7 @@ storiesOf('Button', module)
             disabled={boolean('disabled', false)}
             loading={boolean('loading', true)}
             rounded={boolean('rounded', false)}
-            variant={VARIANT_PROP.outline}
+            variant={VARIANT_TYPE.outline}
           >
             {color.toUpperCase()}
           </Button>
@@ -112,7 +111,7 @@ storiesOf('Button', module)
       })}
       <br />
       {colorPropsKeys.map(key => {
-        const color = COLOR_PROP[key];
+        const color = COLOR_VARIATION[key];
         return (
           <Button
             key={key}
@@ -120,7 +119,7 @@ storiesOf('Button', module)
             disabled={boolean('disabled', false)}
             loading={boolean('loading', true)}
             rounded={boolean('rounded', false)}
-            variant={VARIANT_PROP.text}
+            variant={VARIANT_TYPE.text}
           >
             {color.toUpperCase()}
           </Button>
@@ -131,7 +130,7 @@ storiesOf('Button', module)
   .add('Disabled State', () => (
     <Fragment>
       {colorPropsKeys.map(key => {
-        const color = COLOR_PROP[key];
+        const color = COLOR_VARIATION[key];
         return (
           <Button
             key={key}
@@ -139,7 +138,7 @@ storiesOf('Button', module)
             disabled={boolean('disabled', true)}
             loading={boolean('loading', false)}
             rounded={boolean('rounded', false)}
-            variant={VARIANT_PROP.solid}
+            variant={VARIANT_TYPE.solid}
           >
             {color.toUpperCase()}
           </Button>
@@ -147,7 +146,7 @@ storiesOf('Button', module)
       })}
       <br />
       {colorPropsKeys.map(key => {
-        const color = COLOR_PROP[key];
+        const color = COLOR_VARIATION[key];
         return (
           <Button
             key={key}
@@ -155,7 +154,7 @@ storiesOf('Button', module)
             disabled={boolean('disabled', true)}
             loading={boolean('loading', false)}
             rounded={boolean('rounded', false)}
-            variant={VARIANT_PROP.outline}
+            variant={VARIANT_TYPE.outline}
           >
             {color.toUpperCase()}
           </Button>
@@ -163,7 +162,7 @@ storiesOf('Button', module)
       })}
       <br />
       {colorPropsKeys.map(key => {
-        const color = COLOR_PROP[key];
+        const color = COLOR_VARIATION[key];
         return (
           <Button
             key={key}
@@ -171,7 +170,7 @@ storiesOf('Button', module)
             disabled={boolean('disabled', true)}
             loading={boolean('loading', false)}
             rounded={boolean('rounded', false)}
-            variant={VARIANT_PROP.text}
+            variant={VARIANT_TYPE.text}
           >
             {color.toUpperCase()}
           </Button>

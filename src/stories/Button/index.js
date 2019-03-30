@@ -3,7 +3,8 @@ import { bool, string } from 'prop-types';
 
 import { ReactComponent as Loader } from '../../svgs/loader.svg';
 
-import { COLOR_PROP, VARIANT_PROP } from './ButtonStyled';
+import { COLOR_VARIATION, VARIANT_TYPE } from '../themes';
+
 import ButtonSolidStyled from './ButtonSolidStyled';
 import ButtonOutlineStyled from './ButtonOutlineStyled';
 import ButtonTextStyled from './ButtonTextStyled';
@@ -11,9 +12,9 @@ import ButtonTextStyled from './ButtonTextStyled';
 const Button = ({ children, variant, ...rest }) => {
   let Button = ButtonSolidStyled;
 
-  if (variant === VARIANT_PROP.outline) {
+  if (variant === VARIANT_TYPE.outline) {
     Button = ButtonOutlineStyled;
-  } else if (variant === VARIANT_PROP.text) {
+  } else if (variant === VARIANT_TYPE.text) {
     Button = ButtonTextStyled;
   }
 
@@ -34,11 +35,11 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  color: COLOR_PROP.default, // default|primary|secondary
+  color: COLOR_VARIATION.default, // default|primary|secondary
   disabled: false,
   loading: false,
   rounded: false,
-  variant: VARIANT_PROP.solid // solid|text|outline
+  variant: VARIANT_TYPE.solid // solid|text|outline
 };
 
 export default Button;

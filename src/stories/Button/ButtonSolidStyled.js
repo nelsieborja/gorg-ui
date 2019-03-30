@@ -1,21 +1,21 @@
 import { styled } from '@storybook/theming';
 
-import { COLORS } from '../themes';
+import { COLOR_VARIATION, COLORS } from '../themes';
 
-import ButtonStyled, { COLOR_PROP } from './ButtonStyled';
+import ButtonStyled from './ButtonStyled';
 
 const COLOR_MAP = {
-  [COLOR_PROP.default]: {
+  [COLOR_VARIATION.default]: {
     backgroundColor: COLORS.ROMANCE,
     backgroundColorHover: COLORS.ROMANCE_DARK,
     color: COLORS.BASE
   },
-  [COLOR_PROP.primary]: {
+  [COLOR_VARIATION.primary]: {
     backgroundColor: COLORS.MAGENTA,
     backgroundColorHover: COLORS.MAGENTA_DARK,
     color: COLORS.WHITE
   },
-  [COLOR_PROP.secondary]: {
+  [COLOR_VARIATION.secondary]: {
     backgroundColor: COLORS.ROSE,
     backgroundColorHover: COLORS.ROSE_DARK,
     color: COLORS.WHITE

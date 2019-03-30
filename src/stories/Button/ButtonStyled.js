@@ -1,38 +1,27 @@
 import { styled } from '@storybook/theming';
 import { math } from 'polished';
 
-import { COLORS, FONTS, ELEMENT } from '../themes';
+import { COLOR_VARIATION, VARIANT_TYPE, COLORS, FONTS, ELEMENT, TRANSITION } from '../themes';
 import { rem } from 'polished';
 
 const { X, Y } = ELEMENT.PADDING;
 
-export const COLOR_PROP = {
-  default: 'default',
-  primary: 'primary',
-  secondary: 'secondary'
-};
-export const VARIANT_PROP = {
-  solid: 'solid',
-  outline: 'outline',
-  text: 'text'
-};
-
 const getRoundedCSS = ({ rounded }) => rounded && `border-radius: ${ELEMENT.BORDER_RADIUS}`;
 
 const getLoaderFixCSS = ({ color, variant }) => {
-  if (variant === VARIANT_PROP.solid) return;
+  if (variant === VARIANT_TYPE.solid) return;
 
-  if (color === COLOR_PROP.default) {
+  if (color === COLOR_VARIATION.default) {
     return `._loader circle:nth-of-type(5) {
       fill: ${COLORS.WHITE};
     }`;
   }
-  if (color === COLOR_PROP.primary) {
+  if (color === COLOR_VARIATION.primary) {
     return `._loader circle:nth-of-type(4) {
       fill: ${COLORS.MAGENTA_DARK};
     }`;
   }
-  if (color === COLOR_PROP.secondary) {
+  if (color === COLOR_VARIATION.secondary) {
     return `._loader circle:nth-of-type(3) {
       fill: ${COLORS.ROSE_DARK};
     }`;
@@ -56,7 +45,7 @@ const ButtonStyled = styled.button`
   font-size: ${FONTS.BASE};
   padding: ${X} ${Y};
   position: relative;
-  transition: background-color 0.3s, padding 0.3s;
+  transition: background-color ${TRANSITION.DURATION}, padding ${TRANSITION.DURATION};
 
   ${getRoundedCSS};
   ${getLoaderFixCSS};
