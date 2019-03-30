@@ -3,7 +3,7 @@ import { bool, string } from 'prop-types';
 
 import { ReactComponent as Loader } from '../../svgs/loader.svg';
 
-import { COLOR_VARIATION, VARIANT_TYPE } from '../themes';
+import { COLOR_VARIATION, SHAPE_VARIATION, VARIANT_TYPE } from '../themes';
 
 import ButtonSolidStyled from './ButtonSolidStyled';
 import ButtonOutlineStyled from './ButtonOutlineStyled';
@@ -30,7 +30,7 @@ Button.propTypes = {
   color: string,
   disabled: bool,
   loading: bool,
-  rounded: bool,
+  shape: string,
   variant: string
 };
 
@@ -38,8 +38,8 @@ Button.defaultProps = {
   color: COLOR_VARIATION.default, // default|primary|secondary
   disabled: false,
   loading: false,
-  rounded: false,
-  variant: VARIANT_TYPE.solid // solid|text|outline
+  shape: SHAPE_VARIATION.default, // default|rounded|circle
+  variant: VARIANT_TYPE.default // default|text|outline
 };
 
 export default Button;

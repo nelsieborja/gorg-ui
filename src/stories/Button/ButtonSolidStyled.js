@@ -4,7 +4,7 @@ import { COLOR_VARIATION, COLORS } from '../themes';
 
 import ButtonStyled from './ButtonStyled';
 
-const COLOR_MAP = {
+export const COLOR_MAP = {
   [COLOR_VARIATION.default]: {
     backgroundColor: COLORS.ROMANCE,
     backgroundColorHover: COLORS.ROMANCE_DARK,

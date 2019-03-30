@@ -1,15 +1,21 @@
 import { styled } from '@storybook/theming';
 import { math } from 'polished';
 
-import { COLOR_VARIATION, VARIANT_TYPE, COLORS, FONTS, ELEMENT, TRANSITION } from '../themes';
+import {
+  COLOR_VARIATION,
+  VARIANT_TYPE,
+  COLORS,
+  FONTS,
+  ELEMENT,
+  TRANSITION,
+  getShapeCSS
+} from '../themes';
 import { rem } from 'polished';
 
 const { X, Y } = ELEMENT.PADDING;
 
-const getRoundedCSS = ({ rounded }) => rounded && `border-radius: ${ELEMENT.BORDER_RADIUS}`;
-
 const getLoaderFixCSS = ({ color, variant }) => {
-  if (variant === VARIANT_TYPE.solid) return;
+  if (variant === VARIANT_TYPE.default) return;
 
   if (color === COLOR_VARIATION.default) {
     return `._loader circle:nth-of-type(5) {
@@ -47,7 +53,7 @@ const ButtonStyled = styled.button`
   position: relative;
   transition: background-color ${TRANSITION.DURATION}, padding ${TRANSITION.DURATION};
 
-  ${getRoundedCSS};
+  ${getShapeCSS};
   ${getLoaderFixCSS};
 
   &:focus {

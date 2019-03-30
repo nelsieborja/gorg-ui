@@ -6,8 +6,14 @@ export const COLOR_VARIATION = {
   secondary: 'secondary'
 };
 
+export const SHAPE_VARIATION = {
+  default: 'default',
+  rounded: 'rounded',
+  circle: 'circle'
+};
+
 export const VARIANT_TYPE = {
-  solid: 'solid',
+  default: 'default',
   outline: 'outline',
   text: 'text'
 };
@@ -32,7 +38,10 @@ export const FONTS = {
 };
 
 export const ELEMENT = {
-  BORDER_RADIUS: '3px',
+  BORDER_RADIUS: {
+    ROUNDED: '3px',
+    CIRCLE: '30px'
+  },
   HEIGHT: rem(38),
   PADDING: {
     X: rem(10),
@@ -48,4 +57,11 @@ export const SPACINGS = {
 
 export const TRANSITION = {
   DURATION: '0.3s'
+};
+
+// HELPERS
+export const getShapeCSS = ({ shape }) => {
+  if (shape === SHAPE_VARIATION.default) return;
+
+  return `border-radius: ${ELEMENT.BORDER_RADIUS[shape.toUpperCase()]}`;
 };
