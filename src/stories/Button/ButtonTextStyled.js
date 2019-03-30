@@ -21,7 +21,6 @@ const COLOR_MAP = {
 };
 
 const ButtonTextStyled = styled(ButtonStyled)`
-  background-color: transparent;
   border-color: transparent;
   color: ${({ color }) => COLOR_MAP[color].color};
 

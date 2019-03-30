@@ -24,7 +24,6 @@ const COLOR_MAP = {
 };
 
 const ButtonOutlineStyled = styled(ButtonStyled)`
-  background-color: ${COLORS.WHITE};
   border-color: ${({ color }) => COLOR_MAP[color].borderColor};
   color: ${({ color }) => COLOR_MAP[color].color};
 

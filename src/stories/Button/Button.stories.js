@@ -28,9 +28,10 @@ storiesOf('Button', module)
           <Button
             key={key}
             color={color}
-            variant={select('variant', VARIANT_PROP, VARIANT_PROP.solid)}
-            rounded={boolean('rounded', false)}
             disabled={boolean('disabled', false)}
+            loading={boolean('loading', false)}
+            rounded={boolean('rounded', false)}
+            variant={select('variant', VARIANT_PROP, VARIANT_PROP.solid)}
           >
             {color.toUpperCase()}
           </Button>
@@ -46,9 +47,10 @@ storiesOf('Button', module)
           <Button
             key={key}
             color={color}
-            variant={select('variant', VARIANT_PROP, VARIANT_PROP.outline)}
-            rounded={boolean('rounded', false)}
             disabled={boolean('disabled', false)}
+            loading={boolean('loading', false)}
+            rounded={boolean('rounded', false)}
+            variant={select('variant', VARIANT_PROP, VARIANT_PROP.outline)}
           >
             {color.toUpperCase()}
           </Button>
@@ -64,9 +66,10 @@ storiesOf('Button', module)
           <Button
             key={key}
             color={color}
-            variant={select('variant', VARIANT_PROP, VARIANT_PROP.text)}
-            rounded={boolean('rounded', false)}
             disabled={boolean('disabled', false)}
+            loading={boolean('loading', false)}
+            rounded={boolean('rounded', false)}
+            variant={select('variant', VARIANT_PROP, VARIANT_PROP.text)}
           >
             {color.toUpperCase()}
           </Button>
