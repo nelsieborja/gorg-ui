@@ -15,7 +15,11 @@ const req = requireContext('../src/stories', true, /\.stories\.js$/);
 
 function loadStories() {
   // require('../src/stories');
-  req.keys().forEach(filename => req(filename));
+  // Alphabetical sort: https://github.com/storybooks/storybook/issues/548
+  req
+    .keys()
+    .sort()
+    .forEach(filename => req(filename));
 }
 
 configure(loadStories, module);
