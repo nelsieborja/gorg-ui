@@ -8,7 +8,7 @@ import SwitchCheckbox from './styled/SwitchCheckbox';
 import SwitchLabel from './styled/SwitchLabel';
 
 const Switch = ({ children, color, ...rest }) => {
-  const checkboxID = rest.id || uuidv4();
+  const checkboxID = rest.id || uuidv4(); // Must be avoided as it will result in unnecessary re-render
   return (
     <Fragment>
       <SwitchCheckbox id={checkboxID} type="checkbox" {...rest} />
@@ -25,7 +25,7 @@ Switch.propTypes = {
 };
 
 Switch.defaultProps = {
-  color: COLOR_VARIATION.default,
+  color: COLOR_VARIATION.default, // default|primary|secondary
   defaultChecked: false
 };
 

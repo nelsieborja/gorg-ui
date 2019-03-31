@@ -1,5 +1,5 @@
 import { styled } from '@storybook/theming';
-import { math } from 'polished';
+import { math, rem } from 'polished';
 
 import {
   COLOR_VARIATION,
@@ -10,7 +10,6 @@ import {
   TRANSITION,
   getShapeCSS
 } from '../../themes';
-import { rem } from 'polished';
 
 const { X, Y } = ELEMENT.PADDING;
 

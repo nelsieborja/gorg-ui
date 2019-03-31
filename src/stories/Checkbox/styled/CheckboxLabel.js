@@ -61,8 +61,8 @@ const CheckboxLabel = styled.label`
       top: ${rem(4)};
       left: ${rem(8)};
 
-      height: 10px;
-      width: 5px;
+      height: ${rem(10)};
+      width: ${rem(5)};
 
       animation: ${tickZoomIn} ${TRANSITION.DURATION};
       border: solid ${({ color }) => COLOR_MAP[color].tickColor};

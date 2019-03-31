@@ -34,12 +34,12 @@ const buildVariantStories = (variant, rest) => (
     })}
   </Fragment>
 );
-const buildShapeStories = shape => (
+const buildShapeStories = (shape, rest) => (
   <Fragment>
     {colorVariationKeys.map(key => {
       const color = COLOR_VARIATION[key];
       return (
-        <Button key={key} color={color} shape={select('shape', SHAPE_VARIATION, shape)}>
+        <Button key={key} color={color} shape={select('shape', SHAPE_VARIATION, shape)} {...rest}>
           {color.toUpperCase()}
         </Button>
       );
@@ -91,42 +91,30 @@ storiesOf('Button.Shape', module)
 storiesOf('Button.State', module)
   .addDecorator(withKnobs)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
-  .add('Loading', () => (
-    <Fragment>
-      {buildVariantStories(VARIANT_TYPE.default, {
-        disabled: boolean('disabled', false),
-        loading: boolean('loading', true)
-      })}
-      <br />
-      {buildVariantStories(VARIANT_TYPE.outline, {
-        disabled: boolean('disabled', false),
-        loading: boolean('loading', true)
-      })}
-      <br />
-      {buildVariantStories(VARIANT_TYPE.text, {
-        disabled: boolean('disabled', false),
-        loading: boolean('loading', true)
-      })}
-    </Fragment>
-  ))
-  .add('Disabled', () => (
-    <Fragment>
-      {buildVariantStories(VARIANT_TYPE.default, {
-        disabled: boolean('disabled', true),
-        loading: boolean('loading', false)
-      })}
-      <br />
-      {buildVariantStories(VARIANT_TYPE.outline, {
-        disabled: boolean('disabled', true),
-        loading: boolean('loading', false)
-      })}
-      <br />
-      {buildVariantStories(VARIANT_TYPE.text, {
-        disabled: boolean('disabled', true),
-        loading: boolean('loading', false)
-      })}
-    </Fragment>
-  ));
+  .add('Loading', () =>
+    variantTypeKeys.map(key => (
+      <Fragment>
+        {buildShapeStories(SHAPE_VARIATION.default, {
+          variant: VARIANT_TYPE[key],
+          disabled: boolean('disabled', false),
+          loading: boolean('loading', true)
+        })}
+        <br />
+      </Fragment>
+    ))
+  )
+  .add('Disabled', () =>
+    variantTypeKeys.map(key => (
+      <Fragment>
+        {buildShapeStories(SHAPE_VARIATION.default, {
+          variant: VARIANT_TYPE[key],
+          disabled: boolean('disabled', true),
+          loading: boolean('loading', false)
+        })}
+        <br />
+      </Fragment>
+    ))
+  );
 
 storiesOf('Button.Variant', module)
   .addDecorator(withKnobs)

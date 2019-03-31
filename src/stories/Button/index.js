@@ -1,8 +1,7 @@
 import React from 'react';
 import { bool, string } from 'prop-types';
 
-import { ReactComponent as Loader } from '../svgs/loader.svg';
-
+import { ReactComponent as Loader } from '../../svgs/loader.svg';
 import { COLOR_VARIATION, SHAPE_VARIATION, VARIANT_TYPE } from '../themes';
 
 import ButtonSolid from './styled/ButtonSolid';
@@ -20,7 +19,7 @@ const Button = ({ children, variant, ...rest }) => {
 
   return (
     <Button {...rest}>
-      <Loader className="_loader" />
+      {rest.loading && <Loader className="_loader" />}
       {children}
     </Button>
   );
