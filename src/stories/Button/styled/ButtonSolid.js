@@ -1,10 +1,10 @@
 import { styled } from '@storybook/theming';
 
-import { COLOR_MAP } from '../themes';
+import { COLOR_MAP } from '../../themes';
 
-import ButtonStyled from './ButtonStyled';
+import Button from './Button';
 
-const ButtonSolidStyled = styled(ButtonStyled)`
+const ButtonSolid = styled(Button)`
   background-color: ${({ color }) => COLOR_MAP[color].backgroundColor};
   border-color: transparent;
   color: ${({ color }) => COLOR_MAP[color].color};
@@ -14,4 +14,4 @@ const ButtonSolidStyled = styled(ButtonStyled)`
   }
 `;
 
-export default ButtonSolidStyled;
+export default ButtonSolid;

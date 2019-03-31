@@ -1,7 +1,7 @@
 import { styled } from '@storybook/theming';
 import { rem, math } from 'polished';
 
-import { COLOR_VARIATION, COLORS, ELEMENT, TRANSITION, getGap } from '../themes';
+import { COLOR_VARIATION, COLORS, ELEMENT, TRANSITION, getGap } from '../../themes';
 
 const tickGutter = rem(2);
 const tickSize = math(`${ELEMENT.HEIGHT} - (${tickGutter} * 2)`);
@@ -21,11 +21,11 @@ const COLOR_MAP = {
   }
 };
 
-const SwitchLabelStyled = styled.label`
+const SwitchLabel = styled.label`
   height: ${ELEMENT.HEIGHT};
   width: ${rem(58)};
 
-  background-color: ${COLORS.LIGHT_GREY};
+  border: 1px solid ${({ color }) => COLOR_MAP[color].checked};
   border-radius: ${ELEMENT.HEIGHT};
   cursor: pointer;
   display: inline-block;
@@ -64,4 +64,4 @@ const SwitchLabelStyled = styled.label`
   }
 `;
 
-export default SwitchLabelStyled;
+export default SwitchLabel;

@@ -4,15 +4,15 @@ import uuidv4 from 'uuid/v4';
 
 import { COLOR_VARIATION } from '../themes';
 
-import SwitchCheckboxStyled from './SwitchCheckboxStyled';
-import SwitchLabelStyled from './SwitchLabelStyled';
+import SwitchCheckbox from './styled/SwitchCheckbox';
+import SwitchLabel from './styled/SwitchLabel';
 
 const Switch = ({ children, color, ...rest }) => {
   const checkboxID = rest.id || uuidv4();
   return (
     <Fragment>
-      <SwitchCheckboxStyled id={checkboxID} type="checkbox" {...rest} />
-      <SwitchLabelStyled htmlFor={checkboxID} color={color} gap={!!children} />
+      <SwitchCheckbox id={checkboxID} type="checkbox" {...rest} />
+      <SwitchLabel htmlFor={checkboxID} color={color} gap={!!children} />
       {children}
     </Fragment>
   );

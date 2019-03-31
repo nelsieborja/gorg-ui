@@ -1,9 +1,9 @@
 import { styled } from '@storybook/theming';
 import { rgba } from 'polished';
 
-import { COLOR_VARIATION, COLORS } from '../themes';
+import { COLOR_VARIATION, COLORS } from '../../themes';
 
-import ButtonStyled from './ButtonStyled';
+import Button from './Button';
 
 const COLOR_MAP = {
   [COLOR_VARIATION.default]: {
@@ -20,7 +20,7 @@ const COLOR_MAP = {
   }
 };
 
-const ButtonTextStyled = styled(ButtonStyled)`
+const ButtonText = styled(Button)`
   border-color: transparent;
   color: ${({ color }) => COLOR_MAP[color].color};
 
@@ -29,4 +29,4 @@ const ButtonTextStyled = styled(ButtonStyled)`
   }
 `;
 
-export default ButtonTextStyled;
+export default ButtonText;

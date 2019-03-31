@@ -1,21 +1,21 @@
 import React from 'react';
 import { bool, string } from 'prop-types';
 
-import { ReactComponent as Loader } from '../../svgs/loader.svg';
+import { ReactComponent as Loader } from '../svgs/loader.svg';
 
 import { COLOR_VARIATION, SHAPE_VARIATION, VARIANT_TYPE } from '../themes';
 
-import ButtonSolidStyled from './ButtonSolidStyled';
-import ButtonOutlineStyled from './ButtonOutlineStyled';
-import ButtonTextStyled from './ButtonTextStyled';
+import ButtonSolid from './styled/ButtonSolid';
+import ButtonOutline from './styled/ButtonOutline';
+import ButtonText from './styled/ButtonText';
 
 const Button = ({ children, variant, ...rest }) => {
-  let Button = ButtonSolidStyled;
+  let Button = ButtonSolid;
 
   if (variant === VARIANT_TYPE.outline) {
-    Button = ButtonOutlineStyled;
+    Button = ButtonOutline;
   } else if (variant === VARIANT_TYPE.text) {
-    Button = ButtonTextStyled;
+    Button = ButtonText;
   }
 
   return (

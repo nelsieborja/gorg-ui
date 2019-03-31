@@ -4,17 +4,17 @@ import uuidv4 from 'uuid/v4';
 
 import { COLOR_VARIATION, SHAPE_VARIATION } from '../themes';
 
-import SwitchCheckboxStyled from '../Switch/SwitchCheckboxStyled';
-import CheckboxLabelStyled from './CheckboxLabelStyled';
+import SwitchCheckbox from '../Switch/styled/SwitchCheckbox';
+import CheckboxLabel from './styled/CheckboxLabel';
 
 const Switch = ({ children, color, shape, ...rest }) => {
   const checkboxID = rest.id || uuidv4();
   return (
     <Fragment>
-      <SwitchCheckboxStyled id={checkboxID} type="checkbox" {...rest} />
-      <CheckboxLabelStyled htmlFor={checkboxID} color={color} shape={shape} gap={!!children}>
+      <SwitchCheckbox id={checkboxID} type="checkbox" {...rest} />
+      <CheckboxLabel htmlFor={checkboxID} color={color} shape={shape} gap={!!children}>
         {children}
-      </CheckboxLabelStyled>
+      </CheckboxLabel>
     </Fragment>
   );
 };

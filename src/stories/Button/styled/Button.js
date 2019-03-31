@@ -9,7 +9,7 @@ import {
   ELEMENT,
   TRANSITION,
   getShapeCSS
-} from '../themes';
+} from '../../themes';
 import { rem } from 'polished';
 
 const { X, Y } = ELEMENT.PADDING;
@@ -44,7 +44,7 @@ const getLoadingCSS = ({ disabled, loading }) =>
   }
   `;
 
-const ButtonStyled = styled.button`
+const Button = styled.button`
   background-color: transparent;
   border: 1px solid;
   cursor: pointer;
@@ -79,4 +79,4 @@ const ButtonStyled = styled.button`
   ${getLoadingCSS};
 `;
 
-export default ButtonStyled;
+export default Button;

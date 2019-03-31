@@ -4,7 +4,6 @@ export const COLORS = {
   BASE: '#37334e',
   WHITE: '#fff',
   DIRTY_WHITE: '#fcfbf9',
-  LIGHT_GREY: '#efefef',
 
   MAGENTA: '#4e2e54',
   MAGENTA_DARK: '#2e0438',
@@ -21,8 +20,8 @@ export const FONTS = {
 
 export const ELEMENT = {
   BORDER_RADIUS: {
-    ROUNDED: '3px',
-    CIRCLE: '30px'
+    ROUNDED: rem(3),
+    CIRCLE: rem(30)
   },
   HEIGHT: rem(38),
   PADDING: {
