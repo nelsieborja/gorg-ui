@@ -1,7 +1,9 @@
 import { styled, keyframes } from '@storybook/theming';
 import { rem } from 'polished';
 
-import { COLOR_VARIATION, COLORS, FONTS, TRANSITION, getGap, getShapeCSS } from '../../themes';
+import getGapCSS from '../helpers/getGapCSS';
+import getShapeCSS from '../../Button/helpers/getShapeCSS';
+import { COLOR_VARIATION, COLORS, FONTS, TRANSITION } from '../../themes';
 
 const size = rem(22);
 
@@ -47,7 +49,7 @@ const CheckboxLabel = styled.label`
     transition: background-color ${TRANSITION.DURATION};
     vertical-align: text-top;
 
-    ${getGap};
+    ${getGapCSS};
     ${getShapeCSS};
   }
 

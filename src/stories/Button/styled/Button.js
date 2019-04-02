@@ -1,47 +1,13 @@
 import { styled } from '@storybook/theming';
-import { math, rem } from 'polished';
+import { rem } from 'polished';
 
-import {
-  COLOR_VARIATION,
-  VARIANT_TYPE,
-  COLORS,
-  FONTS,
-  ELEMENT,
-  TRANSITION,
-  getShapeCSS
-} from '../../themes';
+import getShapeCSS from '../helpers/getShapeCSS';
+import getLoaderFixCSS from '../helpers/getLoaderFixCSS';
+import getLoadingCSS from '../helpers/getLoadingCSS';
+
+import { FONTS, ELEMENT, TRANSITION } from '../../themes';
 
 const { X, Y } = ELEMENT.PADDING;
-
-const getLoaderFixCSS = ({ color, variant }) => {
-  if (variant === VARIANT_TYPE.default) return;
-
-  if (color === COLOR_VARIATION.default) {
-    return `._loader circle:nth-of-type(5) {
-      fill: ${COLORS.WHITE};
-    }`;
-  }
-  if (color === COLOR_VARIATION.primary) {
-    return `._loader circle:nth-of-type(4) {
-      fill: ${COLORS.MAGENTA_DARK};
-    }`;
-  }
-  if (color === COLOR_VARIATION.secondary) {
-    return `._loader circle:nth-of-type(3) {
-      fill: ${COLORS.ROSE_DARK};
-    }`;
-  }
-};
-
-const getLoadingCSS = ({ disabled, loading }) =>
-  !disabled &&
-  loading &&
-  `
-  padding-left: ${math(`(${Y} * 2) + ${X}`)};
-  ._loader {
-    display: block;
-  }
-  `;
 
 const Button = styled.button`
   background-color: transparent;

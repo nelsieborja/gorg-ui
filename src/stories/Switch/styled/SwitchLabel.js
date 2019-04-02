@@ -1,7 +1,8 @@
 import { styled } from '@storybook/theming';
 import { rem, math } from 'polished';
 
-import { COLOR_VARIATION, COLORS, ELEMENT, TRANSITION, getGap } from '../../themes';
+import getGapCSS from '../../Checkbox/helpers/getGapCSS';
+import { COLOR_VARIATION, COLORS, ELEMENT, TRANSITION } from '../../themes';
 
 const tickGutter = rem(2);
 const tickSize = math(`${ELEMENT.HEIGHT} - (${tickGutter} * 2)`);
@@ -33,7 +34,7 @@ const SwitchLabel = styled.label`
   transition: background-color ${TRANSITION.DURATION};
   vertical-align: middle;
 
-  ${getGap};
+  ${getGapCSS};
 
   &:after {
     position: absolute;
