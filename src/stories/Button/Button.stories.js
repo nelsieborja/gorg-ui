@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { withKnobs, boolean, select } from '@storybook/addon-knobs/react';
 import { styled } from '@storybook/theming';
 
@@ -7,6 +8,8 @@ import { COLOR_VARIATION, SHAPE_VARIATION, VARIANT_TYPE, SPACINGS } from '../the
 
 import Container from '../_/Container';
 import Button from '.';
+
+const onClick = action('clicked');
 
 const CustomContainer = styled(Container)`
   button {
@@ -17,47 +20,50 @@ const CustomContainer = styled(Container)`
 const colorVariationKeys = Object.keys(COLOR_VARIATION);
 const variantTypeKeys = Object.keys(VARIANT_TYPE);
 
-const buildVariantStories = (variant, rest) => (
-  <Fragment>
-    {colorVariationKeys.map(key => {
-      const color = COLOR_VARIATION[key];
-      return (
-        <Button
-          key={key}
-          color={color}
-          variant={select('variant', VARIANT_TYPE, variant)}
-          {...rest}
-        >
-          {color.toUpperCase()}
-        </Button>
-      );
-    })}
-  </Fragment>
-);
-const buildShapeStories = (shape, rest) => (
-  <Fragment>
-    {colorVariationKeys.map(key => {
-      const color = COLOR_VARIATION[key];
-      return (
-        <Button key={key} color={color} shape={select('shape', SHAPE_VARIATION, shape)} {...rest}>
-          {color.toUpperCase()}
-        </Button>
-      );
-    })}
-  </Fragment>
-);
-const buildColorStories = color => (
-  <Fragment>
-    {variantTypeKeys.map(key => {
-      const variant = VARIANT_TYPE[key];
-      return (
-        <Button key={key} variant={variant} color={select('color', COLOR_VARIATION, color)}>
-          {variant.toUpperCase()}
-        </Button>
-      );
-    })}
-  </Fragment>
-);
+const buildVariantStories = (variant, rest) =>
+  colorVariationKeys.map(key => {
+    const color = COLOR_VARIATION[key];
+    return (
+      <Button
+        key={key}
+        color={color}
+        onClick={onClick}
+        variant={select('variant', VARIANT_TYPE, variant)}
+        {...rest}
+      >
+        {color.toUpperCase()}
+      </Button>
+    );
+  });
+const buildShapeStories = (shape, rest) =>
+  colorVariationKeys.map(key => {
+    const color = COLOR_VARIATION[key];
+    return (
+      <Button
+        key={key}
+        color={color}
+        onClick={onClick}
+        shape={select('shape', SHAPE_VARIATION, shape)}
+        {...rest}
+      >
+        {color.toUpperCase()}
+      </Button>
+    );
+  });
+const buildColorStories = color =>
+  variantTypeKeys.map(key => {
+    const variant = VARIANT_TYPE[key];
+    return (
+      <Button
+        key={key}
+        color={select('color', COLOR_VARIATION, color)}
+        onClick={onClick}
+        variant={variant}
+      >
+        {variant.toUpperCase()}
+      </Button>
+    );
+  });
 
 storiesOf('Button', module)
   .addDecorator(withKnobs)
@@ -67,6 +73,7 @@ storiesOf('Button', module)
       color={select('color', COLOR_VARIATION, COLOR_VARIATION.default)}
       disabled={boolean('disabled', false)}
       loading={boolean('loading', false)}
+      onClick={onClick}
       shape={select('shape', SHAPE_VARIATION, SHAPE_VARIATION.default)}
       variant={select('variant', VARIANT_TYPE, VARIANT_TYPE.default)}
     >

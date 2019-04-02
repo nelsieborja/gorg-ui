@@ -4,21 +4,14 @@ import { bool, string } from 'prop-types';
 import { ReactComponent as Loader } from '../../svgs/loader.svg';
 import { COLOR_VARIATION, SHAPE_VARIATION, VARIANT_TYPE } from '../themes';
 
-import ButtonSolid from './styled/ButtonSolid';
-import ButtonOutline from './styled/ButtonOutline';
-import ButtonText from './styled/ButtonText';
+import getButtonStyled from './helpers/getButtonStyled';
+import getClickHandler from './helpers/getClickHandler';
 
-const Button = ({ children, variant, ...rest }) => {
-  let Button = ButtonSolid;
-
-  if (variant === VARIANT_TYPE.outline) {
-    Button = ButtonOutline;
-  } else if (variant === VARIANT_TYPE.text) {
-    Button = ButtonText;
-  }
+const Button = ({ children, onClick, variant, ...rest }) => {
+  let Button = getButtonStyled(variant);
 
   return (
-    <Button {...rest}>
+    <Button {...rest} {...getClickHandler(onClick, rest.loading)}>
       {rest.loading && <Loader className="_loader" />}
       {children}
     </Button>
