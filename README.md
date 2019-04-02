@@ -12,7 +12,7 @@ UI library using React, Storybook and Emotion.
 - [x] Checkbox
 - [ ] Drawer
 - [ ] Expansion Panel
-- [ ] Radio Button
+- [x] Radio
 - [x] Switch
 - [ ] Textfield
 - [ ] ...
