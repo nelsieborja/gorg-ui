@@ -60,7 +60,6 @@ storiesOf('Checkbox', module)
   .add('Live Props', () => (
     <Checkbox
       color={select('color', COLOR_VARIATION, COLOR_VARIATION.default)}
-      defaultChecked
       onChange={onChange}
       shape={select('shape', SHAPE_VARIATION, SHAPE_VARIATION.default)}
     >

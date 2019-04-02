@@ -31,8 +31,8 @@ export const COLORS = {
   ROSE: '#954f75',
   ROSE_DARK: '#6d3554',
   FLAMENCO: '#f8dac3',
-  ROMANCE: '#f8f4e9',
-  ROMANCE_DARK: '#ece5ca'
+  ROMANCE: '#ece5ca',
+  ROMANCE_DARK: '#e3d5b2'
 };
 
 // FONTS
@@ -50,7 +50,8 @@ export const ELEMENT = {
   PADDING: {
     X: rem(12),
     Y: rem(20)
-  }
+  },
+  TICK_SIZE: rem(20)
 };
 
 // MARGINS/PADDINGS
@@ -66,20 +67,23 @@ export const TRANSITION = {
 };
 
 // VALUE MAPPING
-export const COLOR_MAP = {
+export const VARIANT_COLOR_MAP = {
   [COLOR_VARIATION.default]: {
-    backgroundColor: COLORS.ROMANCE,
-    backgroundColorHover: COLORS.ROMANCE_DARK,
-    color: COLORS.BASE_LIGHT
+    normal: COLORS.ROMANCE,
+    dark: COLORS.ROMANCE_DARK,
+    color: COLORS.BASE_LIGHT,
+    colorActive: COLORS.BASE
   },
   [COLOR_VARIATION.primary]: {
-    backgroundColor: COLORS.MAGENTA,
-    backgroundColorHover: COLORS.MAGENTA_DARK,
-    color: COLORS.DIRTY_WHITE
+    normal: COLORS.MAGENTA,
+    dark: COLORS.MAGENTA_DARK,
+    color: COLORS.DIRTY_WHITE,
+    colorActive: COLORS.MAGENTA_DARK
   },
   [COLOR_VARIATION.secondary]: {
-    backgroundColor: COLORS.ROSE,
-    backgroundColorHover: COLORS.ROSE_DARK,
-    color: COLORS.DIRTY_WHITE
+    normal: COLORS.ROSE,
+    dark: COLORS.ROSE_DARK,
+    color: COLORS.DIRTY_WHITE,
+    colorActive: COLORS.ROSE_DARK
   }
 };

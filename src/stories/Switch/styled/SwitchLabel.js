@@ -1,32 +1,19 @@
 import { styled } from '@storybook/theming';
 import { rem, math } from 'polished';
 
-import getGapCSS from '../../Checkbox/helpers/getGapCSS';
-import { COLOR_VARIATION, COLORS, ELEMENT, TRANSITION } from '../../themes';
+import { VARIANT_COLOR_MAP, ELEMENT, SPACINGS, TRANSITION } from '../../themes';
 
 const tickGutter = rem(2);
 const tickSize = math(`${ELEMENT.HEIGHT} - (${tickGutter} * 2)`);
 
-const COLOR_MAP = {
-  [COLOR_VARIATION.default]: {
-    handle: COLORS.ROMANCE_DARK,
-    checked: COLORS.ROMANCE
-  },
-  [COLOR_VARIATION.primary]: {
-    handle: COLORS.MAGENTA_DARK,
-    checked: COLORS.MAGENTA
-  },
-  [COLOR_VARIATION.secondary]: {
-    handle: COLORS.ROSE_DARK,
-    checked: COLORS.ROSE
-  }
-};
-
+function getGapCSS({ gap, direction = 'right' }) {
+  return gap ? `margin-${direction}: ${SPACINGS.GUTTER};` : '';
+}
 const SwitchLabel = styled.label`
   height: ${ELEMENT.HEIGHT};
   width: ${rem(58)};
 
-  border: 1px solid ${({ color }) => COLOR_MAP[color].checked};
+  border: 1px solid ${({ color }) => VARIANT_COLOR_MAP[color].normal};
   border-radius: ${ELEMENT.HEIGHT};
   cursor: pointer;
   display: inline-block;
@@ -34,7 +21,7 @@ const SwitchLabel = styled.label`
   transition: background-color ${TRANSITION.DURATION};
   vertical-align: middle;
 
-  ${getGapCSS};
+  ${getGapCSS}
 
   &:after {
     position: absolute;
@@ -44,7 +31,7 @@ const SwitchLabel = styled.label`
     height: ${tickSize};
     width: ${tickSize};
 
-    background-color: ${({ color }) => COLOR_MAP[color].checked};
+    background-color: ${({ color }) => VARIANT_COLOR_MAP[color].normal};
     border-radius: ${tickSize};
     content: '';
     transition: ${TRANSITION.DURATION} ease;
@@ -55,10 +42,10 @@ const SwitchLabel = styled.label`
   }
 
   input:checked + & {
-    background-color: ${({ color }) => COLOR_MAP[color].checked};
+    background-color: ${({ color }) => VARIANT_COLOR_MAP[color].normal};
 
     &:after {
-      background-color: ${({ color }) => COLOR_MAP[color].handle};
+      background-color: ${({ color }) => VARIANT_COLOR_MAP[color].dark};
       left: calc(100% - ${tickGutter});
       transform: translateX(-100%);
     }

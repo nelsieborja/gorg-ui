@@ -3,7 +3,7 @@ import { bool, string } from 'prop-types';
 
 import { COLOR_VARIATION } from '../themes';
 
-import getCheckboxID from '../Checkbox/helpers/getCheckboxID';
+import getCheckboxID from './helpers/getCheckboxID';
 
 import CheckboxInput from '../Checkbox/styled/CheckboxInput';
 import SwitchLabel from './styled/SwitchLabel';

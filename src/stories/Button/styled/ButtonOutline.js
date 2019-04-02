@@ -1,40 +1,25 @@
 import { styled } from '@storybook/theming';
-import { rgba, rem } from 'polished';
+import { rgba } from 'polished';
 
-import { COLOR_VARIATION, COLORS } from '../../themes';
+import { COLOR_VARIATION, VARIANT_COLOR_MAP } from '../../themes';
 
 import Button from './Button';
 
-const COLOR_MAP = {
-  [COLOR_VARIATION.default]: {
-    borderColor: COLORS.ROMANCE_DARK,
-    color: COLORS.BASE_LIGHT,
-    colorActive: COLORS.BASE
-  },
-  [COLOR_VARIATION.primary]: {
-    borderColor: COLORS.MAGENTA,
-    color: COLORS.MAGENTA,
-    colorActive: COLORS.MAGENTA_DARK
-  },
-  [COLOR_VARIATION.secondary]: {
-    borderColor: COLORS.ROSE,
-    color: COLORS.ROSE,
-    colorActive: COLORS.ROSE_DARK
-  }
-};
-
 const ButtonOutline = styled(Button)`
-  border-color: ${({ color }) => COLOR_MAP[color].borderColor};
-  color: ${({ color }) => COLOR_MAP[color].color};
+  border-color: ${({ color }) => VARIANT_COLOR_MAP[color].normal};
+  color: ${({ color }) =>
+    color === COLOR_VARIATION.default
+      ? VARIANT_COLOR_MAP[color].color
+      : VARIANT_COLOR_MAP[color].normal};
 
   &:not(:disabled):hover {
-    box-shadow: 0 0 0 1px inset ${({ color }) => rgba(COLOR_MAP[color].borderColor, 0.8)};
+    box-shadow: 0 0 0 1px inset ${({ color }) => rgba(VARIANT_COLOR_MAP[color].normal, 0.8)};
   }
 
   &:not(:disabled):active {
-    color: ${({ color }) => COLOR_MAP[color].colorActive};
-    background: ${({ color }) => rgba(COLOR_MAP[color].borderColor, 0.2)};
-    box-shadow: 0 0 0 2px inset ${({ color }) => rgba(COLOR_MAP[color].borderColor, 0.8)};
+    color: ${({ color }) => VARIANT_COLOR_MAP[color].colorActive};
+    background: ${({ color }) => rgba(VARIANT_COLOR_MAP[color].normal, 0.2)};
+    box-shadow: 0 0 0 2px inset ${({ color }) => rgba(VARIANT_COLOR_MAP[color].normal, 0.8)};
   }
 `;
 
