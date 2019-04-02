@@ -1,6 +1,6 @@
 import { styled } from '@storybook/theming';
 
-const SwitchCheckbox = styled.input`
+const CheckboxInput = styled.input`
   height: 0;
   width: 0;
 
@@ -8,4 +8,8 @@ const SwitchCheckbox = styled.input`
   visibility: hidden;
 `;
 
-export default SwitchCheckbox;
+CheckboxInput.defaultProps = {
+  type: 'checkbox'
+};
+
+export default CheckboxInput;

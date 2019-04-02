@@ -1,17 +1,19 @@
 import React, { Fragment } from 'react';
 import { bool, string } from 'prop-types';
-import uuidv4 from 'uuid/v4';
 
 import { COLOR_VARIATION } from '../themes';
 
-import SwitchCheckbox from './styled/SwitchCheckbox';
+import getCheckboxID from '../Checkbox/helpers/getCheckboxID';
+
+import CheckboxInput from '../Checkbox/styled/CheckboxInput';
 import SwitchLabel from './styled/SwitchLabel';
 
 const Switch = ({ children, color, ...rest }) => {
-  const checkboxID = rest.id || uuidv4(); // Must be avoided as it will result in unnecessary re-render
+  const checkboxID = getCheckboxID(rest.id);
+
   return (
     <Fragment>
-      <SwitchCheckbox id={checkboxID} type="checkbox" {...rest} />
+      <CheckboxInput id={checkboxID} type="checkbox" {...rest} />
       <SwitchLabel htmlFor={checkboxID} color={color} gap={!!children} />
       {children}
     </Fragment>
@@ -21,12 +23,14 @@ const Switch = ({ children, color, ...rest }) => {
 Switch.propTypes = {
   checked: bool,
   color: string,
-  defaultChecked: bool
+  defaultChecked: bool,
+  disabled: bool
 };
 
 Switch.defaultProps = {
   color: COLOR_VARIATION.default, // default|primary|secondary
-  defaultChecked: false
+  defaultChecked: false,
+  disabled: false
 };
 
 export default Switch;

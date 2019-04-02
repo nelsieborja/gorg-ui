@@ -62,6 +62,11 @@ const SwitchLabel = styled.label`
       transform: translateX(-100%);
     }
   }
+
+  input:disabled + & {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 `;
 
 export default SwitchLabel;
