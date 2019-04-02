@@ -1,5 +1,6 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { storiesOf } from '@storybook/react';
+import { action } from '@storybook/addon-actions';
 import { withKnobs, boolean, select } from '@storybook/addon-knobs/react';
 import { styled } from '@storybook/theming';
 
@@ -7,6 +8,8 @@ import { COLOR_VARIATION, SHAPE_VARIATION, SPACINGS } from '../themes';
 
 import Container from '../_/Container';
 import Checkbox from '.';
+
+const onChange = action('changed');
 
 const CustomContainer = styled(Container)`
   label {
@@ -17,37 +20,39 @@ const CustomContainer = styled(Container)`
 const colorPropsKeys = Object.keys(COLOR_VARIATION);
 const shapePropsKeys = Object.keys(SHAPE_VARIATION);
 
-const buildColorStories = color => (
-  <Fragment>
-    {shapePropsKeys.map(key => {
-      const shape = SHAPE_VARIATION[key];
-      return (
-        <Checkbox
-          key={key}
-          color={select('color', COLOR_VARIATION, color)}
-          defaultChecked
-          shape={shape}
-        />
-      );
-    })}
-  </Fragment>
-);
+const buildColorStories = color =>
+  shapePropsKeys.map(key => {
+    const shape = SHAPE_VARIATION[key];
+    return (
+      <Checkbox
+        key={key}
+        color={select('color', COLOR_VARIATION, color)}
+        defaultChecked
+        onChange={onChange}
+        shape={shape}
+      />
+    );
+  });
 
-const buildShapeStories = shape => (
-  <Fragment>
-    {colorPropsKeys.map(key => {
-      const color = COLOR_VARIATION[key];
-      return (
-        <Checkbox
-          key={key}
-          color={color}
-          defaultChecked
-          shape={select('shape', SHAPE_VARIATION, shape)}
-        />
-      );
-    })}
-  </Fragment>
-);
+const buildShapeStories = shape =>
+  colorPropsKeys.map(key => {
+    const color = COLOR_VARIATION[key];
+    return (
+      <Checkbox
+        key={key}
+        color={color}
+        defaultChecked
+        disabled={boolean('disabled', false)}
+        onChange={onChange}
+        shape={select('shape', SHAPE_VARIATION, shape)}
+      />
+    );
+  });
+
+const buildDynamicPropStories = props =>
+  colorPropsKeys.map(key => (
+    <Checkbox key={key} color={COLOR_VARIATION[key]} onChange={onChange} {...props} />
+  ));
 
 storiesOf('Checkbox', module)
   .addDecorator(withKnobs)
@@ -56,6 +61,7 @@ storiesOf('Checkbox', module)
     <Checkbox
       color={select('color', COLOR_VARIATION, COLOR_VARIATION.default)}
       defaultChecked
+      onChange={onChange}
       shape={select('shape', SHAPE_VARIATION, SHAPE_VARIATION.default)}
     >
       Change my appearance from <strong>"Knobs"</strong> tab
@@ -79,21 +85,8 @@ storiesOf('Checkbox.Shape', module)
 storiesOf('Checkbox.State', module)
   .addDecorator(withKnobs)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
-  .add('Uncontrolled', () => (
-    <Fragment>
-      {colorPropsKeys.map(key => {
-        const color = COLOR_VARIATION[key];
-        return (
-          <Checkbox key={key} color={color} defaultChecked={boolean('defaultChecked', true)} />
-        );
-      })}
-    </Fragment>
-  ))
-  .add('Controlled', () => (
-    <Fragment>
-      {colorPropsKeys.map(key => {
-        const color = COLOR_VARIATION[key];
-        return <Checkbox key={key} color={color} checked={boolean('checked', false)} />;
-      })}
-    </Fragment>
-  ));
+  .add('Controlled', () => buildDynamicPropStories({ checked: boolean('checked', false) }))
+  .add('Uncontrolled', () =>
+    buildDynamicPropStories({ defaultChecked: boolean('defaultChecked', true) })
+  )
+  .add('Disabled', () => buildDynamicPropStories({ disabled: boolean('disabled', true) }));

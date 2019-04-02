@@ -71,6 +71,11 @@ const CheckboxLabel = styled.label`
       transform: rotateZ(45deg);
     }
   }
+
+  input:disabled + & {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
 `;
 
 export default CheckboxLabel;
