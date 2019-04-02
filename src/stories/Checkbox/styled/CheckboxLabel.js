@@ -1,5 +1,5 @@
 import { styled, keyframes } from '@storybook/theming';
-import { rem } from 'polished';
+import { rem, rgba } from 'polished';
 
 import getGapCSS from '../helpers/getGapCSS';
 import getShapeCSS from '../../Button/helpers/getShapeCSS';
@@ -46,7 +46,7 @@ const CheckboxLabel = styled.label`
     border: 1px solid ${({ color }) => COLOR_MAP[color].borderColor};
     content: '';
     display: inline-block;
-    transition: background-color ${TRANSITION.DURATION};
+    transition: ${TRANSITION.DURATION};
     vertical-align: text-top;
 
     ${getGapCSS};
@@ -77,6 +77,10 @@ const CheckboxLabel = styled.label`
   input:disabled + & {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+
+  input:not(:disabled) + &:hover:before {
+    box-shadow: 0 0 3px 1px inset ${({ color }) => rgba(COLOR_MAP[color].borderColor, 0.5)};
   }
 `;
 

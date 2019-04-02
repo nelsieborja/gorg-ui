@@ -14,16 +14,13 @@ const Button = styled.button`
   border: 1px solid;
   cursor: pointer;
   font-size: ${FONTS.BASE};
+  outline: none;
   padding: ${X} ${Y};
   position: relative;
-  transition: background-color ${TRANSITION.DURATION}, padding ${TRANSITION.DURATION};
+  transition: ${TRANSITION.DURATION};
 
   ${getShapeCSS};
   ${getLoaderFixCSS};
-
-  &:focus {
-    outline: none;
-  }
 
   &:disabled {
     cursor: not-allowed;

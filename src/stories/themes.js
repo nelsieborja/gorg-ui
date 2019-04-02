@@ -22,6 +22,7 @@ export const VARIANT_TYPE = {
 // COLORS
 export const COLORS = {
   BASE: '#37334e',
+  BASE_LIGHT: '#554f67',
   WHITE: '#fff',
   DIRTY_WHITE: '#fcfbf9',
 
@@ -45,9 +46,9 @@ export const ELEMENT = {
     [SHAPE_VARIATION.rounded]: rem(3),
     [SHAPE_VARIATION.circle]: rem(30)
   },
-  HEIGHT: rem(38),
+  HEIGHT: rem(40),
   PADDING: {
-    X: rem(10),
+    X: rem(12),
     Y: rem(20)
   }
 };
@@ -69,16 +70,16 @@ export const COLOR_MAP = {
   [COLOR_VARIATION.default]: {
     backgroundColor: COLORS.ROMANCE,
     backgroundColorHover: COLORS.ROMANCE_DARK,
-    color: COLORS.BASE
+    color: COLORS.BASE_LIGHT
   },
   [COLOR_VARIATION.primary]: {
     backgroundColor: COLORS.MAGENTA,
     backgroundColorHover: COLORS.MAGENTA_DARK,
-    color: COLORS.WHITE
+    color: COLORS.DIRTY_WHITE
   },
   [COLOR_VARIATION.secondary]: {
     backgroundColor: COLORS.ROSE,
     backgroundColorHover: COLORS.ROSE_DARK,
-    color: COLORS.WHITE
+    color: COLORS.DIRTY_WHITE
   }
 };
