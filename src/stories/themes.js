@@ -51,7 +51,13 @@ export const ELEMENT = {
     X: rem(12),
     Y: rem(20)
   },
-  TICK_SIZE: rem(20)
+  TICK_SIZE: rem(20),
+  ICON: {
+    DIMENSION: {
+      HEIGHT: rem(16),
+      WIDTH: rem(16)
+    }
+  }
 };
 
 // MARGINS/PADDINGS
