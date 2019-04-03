@@ -1,5 +1,8 @@
 import { keyframes } from '@storybook/theming';
 
+/**
+ * Returns enter animation for the Checkbox tick
+ */
 function getTickAnimation() {
   return keyframes`
     0% {

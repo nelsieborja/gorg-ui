@@ -1,6 +1,10 @@
 import { rgba } from 'polished';
 import { ELEMENT, SHAPE_VARIATION, SPACINGS, VARIANT_COLOR_MAP } from '../../themes';
 
+/**
+ * Sets CSS for the Checkbox tick (generic)
+ * @param {JSON} { color: Enum(default|primary|secondary), shape: Enum(default|rounded|circle), gap: Boolean, direction}
+ */
 function getTickBoxCSS({ color, shape, gap, direction = 'right' }) {
   const { normal } = VARIANT_COLOR_MAP[color];
 
