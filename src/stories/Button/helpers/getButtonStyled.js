@@ -12,8 +12,10 @@ function getButtonStyled(variantType) {
   switch (variantType) {
     case VARIANT_TYPE.outline:
       return ButtonOutline;
+
     case VARIANT_TYPE.text:
       return ButtonText;
+
     default:
       return ButtonSolid;
   }

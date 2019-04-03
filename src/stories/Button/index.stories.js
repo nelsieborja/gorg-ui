@@ -100,7 +100,7 @@ storiesOf('Button.State', module)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
   .add('Loading', () =>
     variantTypeKeys.map(key => (
-      <Fragment>
+      <Fragment key={`loading-${key}`}>
         {buildShapeStories(SHAPE_VARIATION.default, {
           variant: VARIANT_TYPE[key],
           disabled: boolean('disabled', false),
@@ -112,7 +112,7 @@ storiesOf('Button.State', module)
   )
   .add('Disabled', () =>
     variantTypeKeys.map(key => (
-      <Fragment>
+      <Fragment key={`disabled-${key}`}>
         {buildShapeStories(SHAPE_VARIATION.default, {
           variant: VARIANT_TYPE[key],
           disabled: boolean('disabled', true),

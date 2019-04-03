@@ -5,7 +5,7 @@ exports[`Storyshots Button Live Props 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-8soqr8"
+    className="css-1iui0yr"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -25,7 +25,7 @@ exports[`Storyshots Button.Color Default 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-8soqr8"
+    className="css-1iui0yr"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -34,7 +34,7 @@ exports[`Storyshots Button.Color Default 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-19smwyn"
+    className="css-7z7a5n"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -43,7 +43,7 @@ exports[`Storyshots Button.Color Default 1`] = `
     OUTLINE
   </button>
   <button
-    className="css-1qop9pa"
+    className="css-g292r5"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -59,7 +59,7 @@ exports[`Storyshots Button.Color Primary 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-2la9h0"
+    className="css-1bz4i4n"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -68,7 +68,7 @@ exports[`Storyshots Button.Color Primary 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-1vknfxw"
+    className="css-1d3pd55"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -77,7 +77,7 @@ exports[`Storyshots Button.Color Primary 1`] = `
     OUTLINE
   </button>
   <button
-    className="css-asq8cw"
+    className="css-6d8xa9"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -93,7 +93,7 @@ exports[`Storyshots Button.Color Secondary 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-127752e"
+    className="css-18mk5p8"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -102,7 +102,7 @@ exports[`Storyshots Button.Color Secondary 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-1mnt4ye"
+    className="css-5ilodz"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -111,7 +111,7 @@ exports[`Storyshots Button.Color Secondary 1`] = `
     OUTLINE
   </button>
   <button
-    className="css-12injzb"
+    className="css-lr62rp"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -127,7 +127,7 @@ exports[`Storyshots Button.Shape Circle 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-1q3mqh5"
+    className="css-fjsbt8"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -136,7 +136,7 @@ exports[`Storyshots Button.Shape Circle 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-3amftk"
+    className="css-182y61d"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -145,7 +145,7 @@ exports[`Storyshots Button.Shape Circle 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-aii26u"
+    className="css-j08ou9"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -161,7 +161,7 @@ exports[`Storyshots Button.Shape Default 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-8soqr8"
+    className="css-1iui0yr"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -170,7 +170,7 @@ exports[`Storyshots Button.Shape Default 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-2la9h0"
+    className="css-1bz4i4n"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -179,7 +179,7 @@ exports[`Storyshots Button.Shape Default 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-127752e"
+    className="css-18mk5p8"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -195,7 +195,7 @@ exports[`Storyshots Button.Shape Rounded 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-16vb05m"
+    className="css-19ri1qw"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -204,7 +204,7 @@ exports[`Storyshots Button.Shape Rounded 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-18fklny"
+    className="css-1rn1mlq"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -213,7 +213,7 @@ exports[`Storyshots Button.Shape Rounded 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-ih8tov"
+    className="css-n3axsg"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -229,7 +229,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-8soqr8"
+    className="css-1iui0yr"
     color="default"
     disabled={true}
     onClick={[Function]}
@@ -238,7 +238,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-2la9h0"
+    className="css-1bz4i4n"
     color="primary"
     disabled={true}
     onClick={[Function]}
@@ -247,7 +247,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-127752e"
+    className="css-18mk5p8"
     color="secondary"
     disabled={true}
     onClick={[Function]}
@@ -257,7 +257,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
   </button>
   <br />
   <button
-    className="css-19smwyn"
+    className="css-7z7a5n"
     color="default"
     disabled={true}
     onClick={[Function]}
@@ -266,7 +266,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-1vknfxw"
+    className="css-1d3pd55"
     color="primary"
     disabled={true}
     onClick={[Function]}
@@ -275,7 +275,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-1mnt4ye"
+    className="css-5ilodz"
     color="secondary"
     disabled={true}
     onClick={[Function]}
@@ -285,7 +285,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
   </button>
   <br />
   <button
-    className="css-1qop9pa"
+    className="css-g292r5"
     color="default"
     disabled={true}
     onClick={[Function]}
@@ -294,7 +294,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-asq8cw"
+    className="css-6d8xa9"
     color="primary"
     disabled={true}
     onClick={[Function]}
@@ -303,7 +303,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-12injzb"
+    className="css-lr62rp"
     color="secondary"
     disabled={true}
     onClick={[Function]}
@@ -320,7 +320,7 @@ exports[`Storyshots Button.State Loading 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-nj61vj"
+    className="css-2ejxgz"
     color="default"
     disabled={false}
     shape="default"
@@ -333,7 +333,7 @@ exports[`Storyshots Button.State Loading 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-1rdrfoz"
+    className="css-zkj8nq"
     color="primary"
     disabled={false}
     shape="default"
@@ -346,7 +346,7 @@ exports[`Storyshots Button.State Loading 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-1np80yu"
+    className="css-8ru81c"
     color="secondary"
     disabled={false}
     shape="default"
@@ -360,7 +360,7 @@ exports[`Storyshots Button.State Loading 1`] = `
   </button>
   <br />
   <button
-    className="css-iymz6n"
+    className="css-cf2hzo"
     color="default"
     disabled={false}
     shape="default"
@@ -373,7 +373,7 @@ exports[`Storyshots Button.State Loading 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-3p6gx8"
+    className="css-1jw2y6l"
     color="primary"
     disabled={false}
     shape="default"
@@ -386,7 +386,7 @@ exports[`Storyshots Button.State Loading 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-17dm8oa"
+    className="css-jr3rx"
     color="secondary"
     disabled={false}
     shape="default"
@@ -400,7 +400,7 @@ exports[`Storyshots Button.State Loading 1`] = `
   </button>
   <br />
   <button
-    className="css-1sd18g7"
+    className="css-1j9pmef"
     color="default"
     disabled={false}
     shape="default"
@@ -413,7 +413,7 @@ exports[`Storyshots Button.State Loading 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-vgfmaa"
+    className="css-1o32oxy"
     color="primary"
     disabled={false}
     shape="default"
@@ -426,7 +426,7 @@ exports[`Storyshots Button.State Loading 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-uo8e8b"
+    className="css-19y65w8"
     color="secondary"
     disabled={false}
     shape="default"
@@ -447,7 +447,7 @@ exports[`Storyshots Button.Variant Default 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-8soqr8"
+    className="css-1iui0yr"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -456,7 +456,7 @@ exports[`Storyshots Button.Variant Default 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-2la9h0"
+    className="css-1bz4i4n"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -465,7 +465,7 @@ exports[`Storyshots Button.Variant Default 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-127752e"
+    className="css-18mk5p8"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -481,7 +481,7 @@ exports[`Storyshots Button.Variant Outline 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-19smwyn"
+    className="css-7z7a5n"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -490,7 +490,7 @@ exports[`Storyshots Button.Variant Outline 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-1vknfxw"
+    className="css-1d3pd55"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -499,7 +499,7 @@ exports[`Storyshots Button.Variant Outline 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-1mnt4ye"
+    className="css-5ilodz"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -515,7 +515,7 @@ exports[`Storyshots Button.Variant Text 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-1qop9pa"
+    className="css-g292r5"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -524,7 +524,7 @@ exports[`Storyshots Button.Variant Text 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-asq8cw"
+    className="css-6d8xa9"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -533,7 +533,7 @@ exports[`Storyshots Button.Variant Text 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-12injzb"
+    className="css-lr62rp"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -548,20 +548,21 @@ exports[`Storyshots Checkbox Live Props 1`] = `
 <div
   className="css-jyjmas"
 >
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="0d4bb3bf-95f9-4f4e-973d-74fd374efd77"
-    onChange={[Function]}
-    type="checkbox"
-  />
   <label
-    className="css-1ssew8x"
-    color="default"
-    htmlFor="0d4bb3bf-95f9-4f4e-973d-74fd374efd77"
-    shape="default"
+    className="css-12v1e3v"
   >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={false}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-gjhifb"
+      color="default"
+      shape="default"
+    />
     Change my appearance from 
     <strong>
       "Knobs"
@@ -575,48 +576,54 @@ exports[`Storyshots Checkbox.Color Default 1`] = `
 <div
   className="css-jyjmas"
 >
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="18e18650-c5fc-4bbc-8d64-64312220b03c"
-    onChange={[Function]}
-    type="checkbox"
-  />
   <label
-    className="css-g2wchb"
-    color="default"
-    htmlFor="18e18650-c5fc-4bbc-8d64-64312220b03c"
-    shape="default"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="dc58779d-dc5e-4bbd-a814-31dd5ca8547d"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-rr698"
+      color="default"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-1mzhkwp"
-    color="default"
-    htmlFor="dc58779d-dc5e-4bbd-a814-31dd5ca8547d"
-    shape="rounded"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="99eb03d1-78ec-4009-bd94-5256341e2286"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-1ybqmd5"
+      color="default"
+      shape="rounded"
+    />
+  </label>
   <label
-    className="css-1sqhdfx"
-    color="default"
-    htmlFor="99eb03d1-78ec-4009-bd94-5256341e2286"
-    shape="circle"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-1iiqnrr"
+      color="default"
+      shape="circle"
+    />
+  </label>
 </div>
 `;
 
@@ -624,48 +631,54 @@ exports[`Storyshots Checkbox.Color Primary 1`] = `
 <div
   className="css-jyjmas"
 >
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="d486e6bb-2fea-49d4-b48b-4e11b9219eb9"
-    onChange={[Function]}
-    type="checkbox"
-  />
   <label
-    className="css-12l6bok"
-    color="primary"
-    htmlFor="d486e6bb-2fea-49d4-b48b-4e11b9219eb9"
-    shape="default"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="e2b61c43-996b-4272-b8eb-42f6a020f03e"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-p2t2p4"
+      color="primary"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-1scoibj"
-    color="primary"
-    htmlFor="e2b61c43-996b-4272-b8eb-42f6a020f03e"
-    shape="rounded"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="92e3e27b-58b0-42dd-9c90-e706049247c0"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-ndznmz"
+      color="primary"
+      shape="rounded"
+    />
+  </label>
   <label
-    className="css-7lo405"
-    color="primary"
-    htmlFor="92e3e27b-58b0-42dd-9c90-e706049247c0"
-    shape="circle"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-eg0i81"
+      color="primary"
+      shape="circle"
+    />
+  </label>
 </div>
 `;
 
@@ -673,48 +686,54 @@ exports[`Storyshots Checkbox.Color Secondary 1`] = `
 <div
   className="css-jyjmas"
 >
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="8b5583c9-80e1-4338-9666-c019e9053ede"
-    onChange={[Function]}
-    type="checkbox"
-  />
   <label
-    className="css-1b1c491"
-    color="secondary"
-    htmlFor="8b5583c9-80e1-4338-9666-c019e9053ede"
-    shape="default"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="8b6fd9fc-e509-44b2-814c-4908cc2fff19"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-jnubft"
+      color="secondary"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-1a62135"
-    color="secondary"
-    htmlFor="8b6fd9fc-e509-44b2-814c-4908cc2fff19"
-    shape="rounded"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="c9f43da0-0041-4580-905d-b63f51a64a99"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-13y257h"
+      color="secondary"
+      shape="rounded"
+    />
+  </label>
   <label
-    className="css-1h0qpiu"
-    color="secondary"
-    htmlFor="c9f43da0-0041-4580-905d-b63f51a64a99"
-    shape="circle"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-x1j67p"
+      color="secondary"
+      shape="circle"
+    />
+  </label>
 </div>
 `;
 
@@ -722,48 +741,54 @@ exports[`Storyshots Checkbox.Shape Circle 1`] = `
 <div
   className="css-jyjmas"
 >
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="632cdbc4-2c8d-4fe5-b941-220d10539471"
-    onChange={[Function]}
-    type="checkbox"
-  />
   <label
-    className="css-1sqhdfx"
-    color="default"
-    htmlFor="632cdbc4-2c8d-4fe5-b941-220d10539471"
-    shape="circle"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="95ae6980-54eb-4657-9f4c-b983dd6b4d1b"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-1iiqnrr"
+      color="default"
+      shape="circle"
+    />
+  </label>
   <label
-    className="css-7lo405"
-    color="primary"
-    htmlFor="95ae6980-54eb-4657-9f4c-b983dd6b4d1b"
-    shape="circle"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="f1244a5f-b9fd-46ab-9ecf-292e239a61aa"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-eg0i81"
+      color="primary"
+      shape="circle"
+    />
+  </label>
   <label
-    className="css-1h0qpiu"
-    color="secondary"
-    htmlFor="f1244a5f-b9fd-46ab-9ecf-292e239a61aa"
-    shape="circle"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-x1j67p"
+      color="secondary"
+      shape="circle"
+    />
+  </label>
 </div>
 `;
 
@@ -771,48 +796,54 @@ exports[`Storyshots Checkbox.Shape Default 1`] = `
 <div
   className="css-jyjmas"
 >
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="1e998925-916c-4167-bbf1-dbdc7b4c25a6"
-    onChange={[Function]}
-    type="checkbox"
-  />
   <label
-    className="css-g2wchb"
-    color="default"
-    htmlFor="1e998925-916c-4167-bbf1-dbdc7b4c25a6"
-    shape="default"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="423b3a92-1a56-446d-a7c9-630b1c55d89e"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-rr698"
+      color="default"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-12l6bok"
-    color="primary"
-    htmlFor="423b3a92-1a56-446d-a7c9-630b1c55d89e"
-    shape="default"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="aa37c2e6-8de2-4866-9cb8-01dcd5dfdfb6"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-p2t2p4"
+      color="primary"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-1b1c491"
-    color="secondary"
-    htmlFor="aa37c2e6-8de2-4866-9cb8-01dcd5dfdfb6"
-    shape="default"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-jnubft"
+      color="secondary"
+      shape="default"
+    />
+  </label>
 </div>
 `;
 
@@ -820,48 +851,54 @@ exports[`Storyshots Checkbox.Shape Rounded 1`] = `
 <div
   className="css-jyjmas"
 >
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="89f4ef3e-5c12-4073-939f-10d3e5a52c8e"
-    onChange={[Function]}
-    type="checkbox"
-  />
   <label
-    className="css-1mzhkwp"
-    color="default"
-    htmlFor="89f4ef3e-5c12-4073-939f-10d3e5a52c8e"
-    shape="rounded"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="b4dc62af-4e18-4033-acd0-9335d8f11bad"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-1ybqmd5"
+      color="default"
+      shape="rounded"
+    />
+  </label>
   <label
-    className="css-1scoibj"
-    color="primary"
-    htmlFor="b4dc62af-4e18-4033-acd0-9335d8f11bad"
-    shape="rounded"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="ef155d72-c9ac-452f-8046-3e3d310e3e3c"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-ndznmz"
+      color="primary"
+      shape="rounded"
+    />
+  </label>
   <label
-    className="css-1a62135"
-    color="secondary"
-    htmlFor="ef155d72-c9ac-452f-8046-3e3d310e3e3c"
-    shape="rounded"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-13y257h"
+      color="secondary"
+      shape="rounded"
+    />
+  </label>
 </div>
 `;
 
@@ -869,51 +906,57 @@ exports[`Storyshots Checkbox.State Controlled 1`] = `
 <div
   className="css-jyjmas"
 >
-  <input
-    checked={false}
-    className="css-1rnm75w"
-    defaultChecked={false}
-    disabled={false}
-    id="e930611f-167c-4aae-a5a7-4097713529b2"
-    onChange={[Function]}
-    type="checkbox"
-  />
   <label
-    className="css-g2wchb"
-    color="default"
-    htmlFor="e930611f-167c-4aae-a5a7-4097713529b2"
-    shape="default"
-  />
-  <input
-    checked={false}
-    className="css-1rnm75w"
-    defaultChecked={false}
-    disabled={false}
-    id="0214569d-4364-4db8-9954-96079fd720f6"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      checked={false}
+      className="css-1rnm75w"
+      defaultChecked={false}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-rr698"
+      color="default"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-12l6bok"
-    color="primary"
-    htmlFor="0214569d-4364-4db8-9954-96079fd720f6"
-    shape="default"
-  />
-  <input
-    checked={false}
-    className="css-1rnm75w"
-    defaultChecked={false}
-    disabled={false}
-    id="193bf7bd-454f-4c83-800e-8b0206932e48"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      checked={false}
+      className="css-1rnm75w"
+      defaultChecked={false}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-p2t2p4"
+      color="primary"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-1b1c491"
-    color="secondary"
-    htmlFor="193bf7bd-454f-4c83-800e-8b0206932e48"
-    shape="default"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      checked={false}
+      className="css-1rnm75w"
+      defaultChecked={false}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-jnubft"
+      color="secondary"
+      shape="default"
+    />
+  </label>
 </div>
 `;
 
@@ -921,48 +964,54 @@ exports[`Storyshots Checkbox.State Disabled 1`] = `
 <div
   className="css-jyjmas"
 >
-  <input
-    className="css-1rnm75w"
-    defaultChecked={false}
-    disabled={true}
-    id="3bf1c92d-3639-467c-adaf-0fa21d0024a8"
-    onChange={[Function]}
-    type="checkbox"
-  />
   <label
-    className="css-g2wchb"
-    color="default"
-    htmlFor="3bf1c92d-3639-467c-adaf-0fa21d0024a8"
-    shape="default"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={false}
-    disabled={true}
-    id="4aff2ee7-0022-4f23-b69d-10eba85b49c1"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={false}
+      disabled={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-rr698"
+      color="default"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-12l6bok"
-    color="primary"
-    htmlFor="4aff2ee7-0022-4f23-b69d-10eba85b49c1"
-    shape="default"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={false}
-    disabled={true}
-    id="74b73a2a-9ae1-451e-a317-a0ab4d0f666d"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={false}
+      disabled={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-p2t2p4"
+      color="primary"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-1b1c491"
-    color="secondary"
-    htmlFor="74b73a2a-9ae1-451e-a317-a0ab4d0f666d"
-    shape="default"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={false}
+      disabled={true}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-jnubft"
+      color="secondary"
+      shape="default"
+    />
+  </label>
 </div>
 `;
 
@@ -970,48 +1019,161 @@ exports[`Storyshots Checkbox.State Uncontrolled 1`] = `
 <div
   className="css-jyjmas"
 >
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="b535d6db-373a-4f55-a96a-e71378e0c92e"
-    onChange={[Function]}
-    type="checkbox"
-  />
   <label
-    className="css-g2wchb"
-    color="default"
-    htmlFor="b535d6db-373a-4f55-a96a-e71378e0c92e"
-    shape="default"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="59a29b59-2cc4-4d81-a9c7-4b1fe0627da7"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-rr698"
+      color="default"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-12l6bok"
-    color="primary"
-    htmlFor="59a29b59-2cc4-4d81-a9c7-4b1fe0627da7"
-    shape="default"
-  />
-  <input
-    className="css-1rnm75w"
-    defaultChecked={true}
-    disabled={false}
-    id="9bc6bf95-80a3-4e3a-ad62-e2df13224f67"
-    onChange={[Function]}
-    type="checkbox"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-p2t2p4"
+      color="primary"
+      shape="default"
+    />
+  </label>
   <label
-    className="css-1b1c491"
-    color="secondary"
-    htmlFor="9bc6bf95-80a3-4e3a-ad62-e2df13224f67"
-    shape="default"
-  />
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      defaultChecked={true}
+      disabled={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <i
+      className="css-jnubft"
+      color="secondary"
+      shape="default"
+    />
+  </label>
+</div>
+`;
+
+exports[`Storyshots Expansion Panel Live Props 1`] = `
+<div
+  className="css-14973vb"
+>
+  <header
+    className="css-etwn3d"
+  >
+    <h2>
+      Title
+    </h2>
+    <button
+      className="css-k2mrk6"
+      color="primary"
+      disabled={false}
+      onClick={[Function]}
+      shape="circle"
+    >
+      <svg>
+        plus.svg
+      </svg>
+    </button>
+  </header>
+</div>
+`;
+
+exports[`Storyshots Radio Live Props 1`] = `
+<div
+  className="css-jyjmas"
+>
+  <label
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      disabled={false}
+      onChange={[Function]}
+      type="radio"
+    />
+    <i
+      className="css-6licz0"
+      color="default"
+      shape="circle"
+    />
+    Change my appearance from 
+    <strong>
+      "Knobs"
+    </strong>
+     tab
+  </label>
+</div>
+`;
+
+exports[`Storyshots Radio.Color Default 1`] = `
+<div
+  className="css-jyjmas"
+>
+  <label
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      disabled={false}
+      name="radio"
+      onChange={[Function]}
+      type="radio"
+    />
+    <i
+      className="css-1x7ytu0"
+      color="default"
+      shape="circle"
+    />
+  </label>
+  <label
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      disabled={false}
+      name="radio"
+      onChange={[Function]}
+      type="radio"
+    />
+    <i
+      className="css-1c0yn5h"
+      color="primary"
+      shape="circle"
+    />
+  </label>
+  <label
+    className="css-12v1e3v"
+  >
+    <input
+      className="css-1rnm75w"
+      disabled={false}
+      name="radio"
+      onChange={[Function]}
+      type="radio"
+    />
+    <i
+      className="css-1lscehh"
+      color="secondary"
+      shape="circle"
+    />
+  </label>
 </div>
 `;
 
@@ -1023,14 +1185,14 @@ exports[`Storyshots Switch Live Props 1`] = `
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="4ab82b0e-bf35-4e5a-899a-4ff189068554"
+    id="55ecf315-c0fd-4344-98df-9b8dda4cc193"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="css-9qy23a"
+    className="css-uuzt70"
     color="default"
-    htmlFor="4ab82b0e-bf35-4e5a-899a-4ff189068554"
+    htmlFor="55ecf315-c0fd-4344-98df-9b8dda4cc193"
   />
   Change my appearance from 
   <strong>
@@ -1049,42 +1211,42 @@ exports[`Storyshots Switch.State Controlled 1`] = `
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="8054679a-e4d0-4b11-9211-a0417d7d7e22"
+    id="daa48f0d-d8e6-43cc-8a3f-8cfd0dd3b43e"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="css-qbzvg0"
+    className="css-arccat"
     color="default"
-    htmlFor="8054679a-e4d0-4b11-9211-a0417d7d7e22"
+    htmlFor="daa48f0d-d8e6-43cc-8a3f-8cfd0dd3b43e"
   />
   <input
     checked={false}
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="d01a9f38-1aaf-414f-929b-efd799e911c8"
+    id="c8fcae56-4d63-4008-9de9-e716985f2dcf"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="css-10qy041"
+    className="css-15g7b4q"
     color="primary"
-    htmlFor="d01a9f38-1aaf-414f-929b-efd799e911c8"
+    htmlFor="c8fcae56-4d63-4008-9de9-e716985f2dcf"
   />
   <input
     checked={false}
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="e4e11af4-dcec-462e-b02c-37581cbf4119"
+    id="3eaa9d0d-8d3e-48ad-a6f7-891fba07bd9f"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="css-w163mg"
+    className="css-19k4clw"
     color="secondary"
-    htmlFor="e4e11af4-dcec-462e-b02c-37581cbf4119"
+    htmlFor="3eaa9d0d-8d3e-48ad-a6f7-891fba07bd9f"
   />
 </div>
 `;
@@ -1097,40 +1259,40 @@ exports[`Storyshots Switch.State Disabled 1`] = `
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={true}
-    id="1f8d0cf1-1c4c-4c16-8e35-70e5745d1508"
+    id="518fc033-9b7a-40c5-b6e2-541d26f9d2d5"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="css-qbzvg0"
+    className="css-arccat"
     color="default"
-    htmlFor="1f8d0cf1-1c4c-4c16-8e35-70e5745d1508"
+    htmlFor="518fc033-9b7a-40c5-b6e2-541d26f9d2d5"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={true}
-    id="a35ad28e-f839-4bbe-9942-c53391b2948a"
+    id="f755ff6d-3923-4d95-8851-83cdbaa0fb5e"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="css-10qy041"
+    className="css-15g7b4q"
     color="primary"
-    htmlFor="a35ad28e-f839-4bbe-9942-c53391b2948a"
+    htmlFor="f755ff6d-3923-4d95-8851-83cdbaa0fb5e"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={true}
-    id="7285f521-61bb-4deb-a498-b6922464b0b9"
+    id="ca73e3eb-6513-41a2-b4b3-30440fa85f5c"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="css-w163mg"
+    className="css-19k4clw"
     color="secondary"
-    htmlFor="7285f521-61bb-4deb-a498-b6922464b0b9"
+    htmlFor="ca73e3eb-6513-41a2-b4b3-30440fa85f5c"
   />
 </div>
 `;
@@ -1143,40 +1305,40 @@ exports[`Storyshots Switch.State Uncontrolled 1`] = `
     className="css-1rnm75w"
     defaultChecked={true}
     disabled={false}
-    id="bc272905-d73e-487e-9c1e-d352220be41a"
+    id="a726870c-bafe-4c64-b5de-17e6e8188b08"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="css-qbzvg0"
+    className="css-arccat"
     color="default"
-    htmlFor="bc272905-d73e-487e-9c1e-d352220be41a"
+    htmlFor="a726870c-bafe-4c64-b5de-17e6e8188b08"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={true}
     disabled={false}
-    id="8b85f0a2-6b4a-40f5-aa2a-95bb4cb28daf"
+    id="201ca983-234c-45fd-af65-d316b524a6e2"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="css-10qy041"
+    className="css-15g7b4q"
     color="primary"
-    htmlFor="8b85f0a2-6b4a-40f5-aa2a-95bb4cb28daf"
+    htmlFor="201ca983-234c-45fd-af65-d316b524a6e2"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={true}
     disabled={false}
-    id="09271ca0-7352-4df3-b5cf-d1c9266838f2"
+    id="37424d99-0db2-44eb-ab08-8856233b0e39"
     onChange={[Function]}
     type="checkbox"
   />
   <label
-    className="css-w163mg"
+    className="css-19k4clw"
     color="secondary"
-    htmlFor="09271ca0-7352-4df3-b5cf-d1c9266838f2"
+    htmlFor="37424d99-0db2-44eb-ab08-8856233b0e39"
   />
 </div>
 `;
