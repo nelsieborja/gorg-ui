@@ -3,7 +3,7 @@ import { rem } from 'polished';
 
 import getTickAnimation from '../helpers/getTickAnimation';
 import getTickBoxCSS from '../helpers/getTickBoxCSS';
-import { FONTS, TRANSITION, VARIANT_COLOR_MAP } from '../../themes';
+import { FONTS, TRANSITION, COLOR_VARIANTS_MAP } from '../../themes';
 
 const CheckboxLabel = styled.label`
   cursor: pointer;
@@ -15,7 +15,7 @@ CheckboxLabel.Tick = styled.i`
   transition: background ${TRANSITION.DURATION};
 
   input:checked + & {
-    background: ${({ color }) => VARIANT_COLOR_MAP[color].normal};
+    background: ${({ color }) => COLOR_VARIANTS_MAP[color].normal};
 
     &:before {
       top: ${rem(2)};
@@ -25,7 +25,7 @@ CheckboxLabel.Tick = styled.i`
       width: ${rem(5)};
 
       animation: ${getTickAnimation} 0.2s;
-      border: solid ${({ color }) => VARIANT_COLOR_MAP[color].color};
+      border: solid ${({ color }) => COLOR_VARIANTS_MAP[color].color};
       border-width: 0 2px 2px 0px;
       content: '';
       transform: rotateZ(45deg);

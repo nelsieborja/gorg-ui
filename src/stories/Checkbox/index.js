@@ -1,7 +1,7 @@
 import React from 'react';
 import { bool, string } from 'prop-types';
 
-import { COLOR_VARIATION, SHAPE_VARIATION } from '../themes';
+import { COLOR_VARIANTS, SHAPE_VARIANTS } from '../themes';
 
 import CheckboxInput from './styled/CheckboxInput';
 import CheckboxLabel from './styled/CheckboxLabel';
@@ -24,10 +24,10 @@ Switch.propTypes = {
 };
 
 Switch.defaultProps = {
-  color: COLOR_VARIATION.default, // default|primary|secondary
+  color: COLOR_VARIANTS.default, // default|primary|secondary
   defaultChecked: false,
   disabled: false,
-  shape: SHAPE_VARIATION.default // default|rounded|circle
+  shape: SHAPE_VARIANTS.default // default|rounded|circle
 };
 
 export default Switch;

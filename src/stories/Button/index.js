@@ -2,7 +2,7 @@ import React from 'react';
 import { bool, string } from 'prop-types';
 
 import { ReactComponent as Loader } from '../../svgs/loader.svg';
-import { COLOR_VARIATION, SHAPE_VARIATION, VARIANT_TYPE } from '../themes';
+import { COLOR_VARIANTS, SHAPE_VARIANTS, VARIANT_TYPES } from '../themes';
 
 import getButtonStyled from './helpers/getButtonStyled';
 import getClickHandler from './helpers/getClickHandler';
@@ -27,11 +27,11 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  color: COLOR_VARIATION.default, // default|primary|secondary
+  color: COLOR_VARIANTS.default, // default|primary|secondary
   disabled: false,
   loading: false,
-  shape: SHAPE_VARIATION.default, // default|rounded|circle
-  variant: VARIANT_TYPE.default // default|text|outline
+  shape: SHAPE_VARIANTS.default, // default|rounded|circle
+  variant: VARIANT_TYPES.default // default|text|outline
 };
 
 export default Button;

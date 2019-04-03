@@ -1,7 +1,7 @@
 import React from 'react';
 import { bool, string } from 'prop-types';
 
-import { COLOR_VARIATION } from '../themes';
+import { COLOR_VARIANTS } from '../themes';
 
 import CheckboxInput from '../Checkbox/styled/CheckboxInput';
 import RadioLabel from './styled/RadioLabel';
@@ -22,7 +22,7 @@ Radio.propTypes = {
 };
 
 Radio.defaultProps = {
-  color: COLOR_VARIATION.default, // default|primary|secondary
+  color: COLOR_VARIANTS.default, // default|primary|secondary
   disabled: false
 };
 

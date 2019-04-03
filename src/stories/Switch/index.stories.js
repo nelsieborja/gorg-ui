@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, boolean, select } from '@storybook/addon-knobs/react';
 import { styled } from '@storybook/theming';
 
-import { COLOR_VARIATION, SPACINGS } from '../themes';
+import { COLOR_VARIANTS, SPACINGS } from '../themes';
 
 import Container from '../_/Container';
 import Switch from '.';
@@ -17,11 +17,11 @@ const CustomContainer = styled(Container)`
   }
 `;
 
-const colorPropsKeys = Object.keys(COLOR_VARIATION);
+const colorPropsKeys = Object.keys(COLOR_VARIANTS);
 
 const buildDynamicPropStories = props =>
   colorPropsKeys.map(key => (
-    <Switch key={key} color={COLOR_VARIATION[key]} onChange={onChange} {...props} />
+    <Switch key={key} color={COLOR_VARIANTS[key]} onChange={onChange} {...props} />
   ));
 
 storiesOf('Switch', module)
@@ -29,7 +29,7 @@ storiesOf('Switch', module)
   .addDecorator(story => <Container>{story()}</Container>)
   .add('Live Props', () => (
     <Switch
-      color={select('color', COLOR_VARIATION, COLOR_VARIATION.default)}
+      color={select('color', COLOR_VARIANTS, COLOR_VARIANTS.default)}
       disabled={boolean('disabled', false)}
       onChange={onChange}
     >

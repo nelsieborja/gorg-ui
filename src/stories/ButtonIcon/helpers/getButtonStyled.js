@@ -1,4 +1,4 @@
-import { VARIANT_TYPE } from '../../themes';
+import { VARIANT_TYPES } from '../../themes';
 
 import ButtonIconSolid from '../styled/ButtonIconSolid';
 import ButtonIconOutline from '../styled/ButtonIconOutline';
@@ -10,10 +10,10 @@ import ButtonIconText from '../styled/ButtonIconText';
  */
 function getButtonStyled(variantType) {
   switch (variantType) {
-    case VARIANT_TYPE.outline:
+    case VARIANT_TYPES.outline:
       return ButtonIconOutline;
 
-    case VARIANT_TYPE.text:
+    case VARIANT_TYPES.text:
       return ButtonIconText;
 
     default:

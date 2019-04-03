@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, boolean, select } from '@storybook/addon-knobs/react';
 import { styled } from '@storybook/theming';
 
-import { COLOR_VARIATION, SHAPE_VARIATION, VARIANT_TYPE, SPACINGS } from '../themes';
+import { COLOR_VARIANTS, SHAPE_VARIANTS, VARIANT_TYPES, SPACINGS } from '../themes';
 
 import Container from '../_/Container';
 import Button from '.';
@@ -17,18 +17,18 @@ const CustomContainer = styled(Container)`
   }
 `;
 
-const colorVariationKeys = Object.keys(COLOR_VARIATION);
-const variantTypeKeys = Object.keys(VARIANT_TYPE);
+const colorVariationKeys = Object.keys(COLOR_VARIANTS);
+const variantTypeKeys = Object.keys(VARIANT_TYPES);
 
 const buildVariantStories = (variant, rest) =>
   colorVariationKeys.map(key => {
-    const color = COLOR_VARIATION[key];
+    const color = COLOR_VARIANTS[key];
     return (
       <Button
         key={key}
         color={color}
         onClick={onClick}
-        variant={select('variant', VARIANT_TYPE, variant)}
+        variant={select('variant', VARIANT_TYPES, variant)}
         {...rest}
       >
         {color.toUpperCase()}
@@ -37,13 +37,13 @@ const buildVariantStories = (variant, rest) =>
   });
 const buildShapeStories = (shape, rest) =>
   colorVariationKeys.map(key => {
-    const color = COLOR_VARIATION[key];
+    const color = COLOR_VARIANTS[key];
     return (
       <Button
         key={key}
         color={color}
         onClick={onClick}
-        shape={select('shape', SHAPE_VARIATION, shape)}
+        shape={select('shape', SHAPE_VARIANTS, shape)}
         {...rest}
       >
         {color.toUpperCase()}
@@ -52,11 +52,11 @@ const buildShapeStories = (shape, rest) =>
   });
 const buildColorStories = color =>
   variantTypeKeys.map(key => {
-    const variant = VARIANT_TYPE[key];
+    const variant = VARIANT_TYPES[key];
     return (
       <Button
         key={key}
-        color={select('color', COLOR_VARIATION, color)}
+        color={select('color', COLOR_VARIANTS, color)}
         onClick={onClick}
         variant={variant}
       >
@@ -70,12 +70,12 @@ storiesOf('Button', module)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
   .add('Live Props', () => (
     <Button
-      color={select('color', COLOR_VARIATION, COLOR_VARIATION.default)}
+      color={select('color', COLOR_VARIANTS, COLOR_VARIANTS.default)}
       disabled={boolean('disabled', false)}
       loading={boolean('loading', false)}
       onClick={onClick}
-      shape={select('shape', SHAPE_VARIATION, SHAPE_VARIATION.default)}
-      variant={select('variant', VARIANT_TYPE, VARIANT_TYPE.default)}
+      shape={select('shape', SHAPE_VARIANTS, SHAPE_VARIANTS.default)}
+      variant={select('variant', VARIANT_TYPES, VARIANT_TYPES.default)}
     >
       Change my appearance from <strong>"Knobs"</strong> tab
     </Button>
@@ -84,16 +84,16 @@ storiesOf('Button', module)
 storiesOf('Button.Color', module)
   .addDecorator(withKnobs)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
-  .add('Default', () => buildColorStories(COLOR_VARIATION.default))
-  .add('Primary', () => buildColorStories(COLOR_VARIATION.primary))
-  .add('Secondary', () => buildColorStories(COLOR_VARIATION.secondary));
+  .add('Default', () => buildColorStories(COLOR_VARIANTS.default))
+  .add('Primary', () => buildColorStories(COLOR_VARIANTS.primary))
+  .add('Secondary', () => buildColorStories(COLOR_VARIANTS.secondary));
 
 storiesOf('Button.Shape', module)
   .addDecorator(withKnobs)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
-  .add('Default', () => buildShapeStories(SHAPE_VARIATION.default))
-  .add('Rounded', () => buildShapeStories(SHAPE_VARIATION.rounded))
-  .add('Circle', () => buildShapeStories(SHAPE_VARIATION.circle));
+  .add('Default', () => buildShapeStories(SHAPE_VARIANTS.default))
+  .add('Rounded', () => buildShapeStories(SHAPE_VARIANTS.rounded))
+  .add('Circle', () => buildShapeStories(SHAPE_VARIANTS.circle));
 
 storiesOf('Button.State', module)
   .addDecorator(withKnobs)
@@ -101,8 +101,8 @@ storiesOf('Button.State', module)
   .add('Loading', () =>
     variantTypeKeys.map(key => (
       <Fragment key={`loading-${key}`}>
-        {buildShapeStories(SHAPE_VARIATION.default, {
-          variant: VARIANT_TYPE[key],
+        {buildShapeStories(SHAPE_VARIANTS.default, {
+          variant: VARIANT_TYPES[key],
           disabled: boolean('disabled', false),
           loading: boolean('loading', true)
         })}
@@ -113,8 +113,8 @@ storiesOf('Button.State', module)
   .add('Disabled', () =>
     variantTypeKeys.map(key => (
       <Fragment key={`disabled-${key}`}>
-        {buildShapeStories(SHAPE_VARIATION.default, {
-          variant: VARIANT_TYPE[key],
+        {buildShapeStories(SHAPE_VARIANTS.default, {
+          variant: VARIANT_TYPES[key],
           disabled: boolean('disabled', true),
           loading: boolean('loading', false)
         })}
@@ -126,6 +126,6 @@ storiesOf('Button.State', module)
 storiesOf('Button.Variant', module)
   .addDecorator(withKnobs)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
-  .add('Default', () => buildVariantStories(VARIANT_TYPE.default))
-  .add('Outline', () => buildVariantStories(VARIANT_TYPE.outline))
-  .add('Text', () => buildVariantStories(VARIANT_TYPE.text));
+  .add('Default', () => buildVariantStories(VARIANT_TYPES.default))
+  .add('Outline', () => buildVariantStories(VARIANT_TYPES.outline))
+  .add('Text', () => buildVariantStories(VARIANT_TYPES.text));

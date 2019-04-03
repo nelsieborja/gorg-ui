@@ -1,19 +1,19 @@
 import { rgba } from 'polished';
-import { ELEMENT, SHAPE_VARIATION, SPACINGS, VARIANT_COLOR_MAP } from '../../themes';
+import { ELEMENT, SHAPE_VARIANTS, SPACINGS, COLOR_VARIANTS_MAP } from '../../themes';
 
 /**
  * Sets CSS for the Checkbox tick (generic)
  * @param {JSON} { color: Enum(default|primary|secondary), shape: Enum(default|rounded|circle), gap: Boolean, direction}
  */
 function getTickBoxCSS({ color, shape, gap, direction = 'right' }) {
-  const { normal } = VARIANT_COLOR_MAP[color];
+  const { normal } = COLOR_VARIANTS_MAP[color];
 
   return `
     height: ${ELEMENT.TICK_SIZE};
     width: ${ELEMENT.TICK_SIZE};
 
     border: 2px solid ${normal};
-    ${shape !== SHAPE_VARIATION.default ? `border-radius: ${ELEMENT.BORDER_RADIUS[shape]}` : ''};
+    ${shape !== SHAPE_VARIANTS.default ? `border-radius: ${ELEMENT.BORDER_RADIUS[shape]}` : ''};
     display: inline-block;
     ${gap ? `margin-${direction}: ${SPACINGS.GUTTER}` : ''};
     position: relative;

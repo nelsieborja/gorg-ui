@@ -1,7 +1,7 @@
 import { styled } from '@storybook/theming';
 import { rem } from 'polished';
 
-import { VARIANT_COLOR_MAP, FONTS, SHAPE_VARIATION } from '../../themes';
+import { COLOR_VARIANTS_MAP, FONTS, SHAPE_VARIANTS } from '../../themes';
 import getTickBoxCSS from '../../Checkbox/helpers/getTickBoxCSS';
 import getTickAnimation from '../../Checkbox/helpers/getTickAnimation';
 
@@ -19,7 +19,7 @@ RadioLabel.Tick = styled.i`
       left: ${rem(3)};
 
       animation: ${getTickAnimation} 0.2s;
-      background: ${({ color }) => VARIANT_COLOR_MAP[color].normal};
+      background: ${({ color }) => COLOR_VARIANTS_MAP[color].normal};
       border-radius: 50%;
       padding: ${rem(7)};
     }
@@ -27,7 +27,7 @@ RadioLabel.Tick = styled.i`
 `;
 
 RadioLabel.Tick.defaultProps = {
-  shape: SHAPE_VARIATION.circle
+  shape: SHAPE_VARIANTS.circle
 };
 
 export default RadioLabel;

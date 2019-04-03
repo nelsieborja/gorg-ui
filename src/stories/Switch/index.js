@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { bool, string } from 'prop-types';
 
-import { COLOR_VARIATION } from '../themes';
+import { COLOR_VARIANTS } from '../themes';
 
 import getCheckboxID from './helpers/getCheckboxID';
 
@@ -28,7 +28,7 @@ Switch.propTypes = {
 };
 
 Switch.defaultProps = {
-  color: COLOR_VARIATION.default, // default|primary|secondary
+  color: COLOR_VARIANTS.default, // default|primary|secondary
   defaultChecked: false,
   disabled: false
 };

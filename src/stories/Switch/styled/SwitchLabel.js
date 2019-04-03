@@ -1,7 +1,7 @@
 import { styled } from '@storybook/theming';
 import { rem, math } from 'polished';
 
-import { VARIANT_COLOR_MAP, ELEMENT, SPACINGS, TRANSITION } from '../../themes';
+import { COLOR_VARIANTS_MAP, ELEMENT, SPACINGS, TRANSITION } from '../../themes';
 
 const tickGutter = rem(2);
 const tickSize = math(`${ELEMENT.HEIGHT} - (${tickGutter} * 2)`);
@@ -13,7 +13,7 @@ const SwitchLabel = styled.label`
   height: ${ELEMENT.HEIGHT};
   width: ${rem(58)};
 
-  border: 1px solid ${({ color }) => VARIANT_COLOR_MAP[color].normal};
+  border: 1px solid ${({ color }) => COLOR_VARIANTS_MAP[color].normal};
   border-radius: ${ELEMENT.HEIGHT};
   cursor: pointer;
   display: inline-block;
@@ -31,7 +31,7 @@ const SwitchLabel = styled.label`
     height: ${tickSize};
     width: ${tickSize};
 
-    background-color: ${({ color }) => VARIANT_COLOR_MAP[color].normal};
+    background-color: ${({ color }) => COLOR_VARIANTS_MAP[color].normal};
     border-radius: ${tickSize};
     content: '';
     transition: ${TRANSITION.DURATION} ease;
@@ -42,10 +42,10 @@ const SwitchLabel = styled.label`
   }
 
   input:checked + & {
-    background-color: ${({ color }) => VARIANT_COLOR_MAP[color].normal};
+    background-color: ${({ color }) => COLOR_VARIANTS_MAP[color].normal};
 
     &:after {
-      background-color: ${({ color }) => VARIANT_COLOR_MAP[color].dark};
+      background-color: ${({ color }) => COLOR_VARIANTS_MAP[color].dark};
       left: calc(100% - ${tickGutter});
       transform: translateX(-100%);
     }

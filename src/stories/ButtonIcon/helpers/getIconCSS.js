@@ -1,4 +1,4 @@
-import { COLOR_VARIATION, ELEMENT, VARIANT_COLOR_MAP, VARIANT_TYPE } from '../../themes';
+import { COLOR_VARIANTS, ELEMENT, COLOR_VARIANTS_MAP, VARIANT_TYPES } from '../../themes';
 
 /**
  * Sets height/width of the SVGs within a Button component
@@ -22,18 +22,18 @@ export default getIconCSS;
  */
 function getIconFill(color, variant) {
   switch (variant) {
-    case VARIANT_TYPE.outline:
-      return color === COLOR_VARIATION.default
-        ? VARIANT_COLOR_MAP[color].color
-        : VARIANT_COLOR_MAP[color].normal;
+    case VARIANT_TYPES.outline:
+      return color === COLOR_VARIANTS.default
+        ? COLOR_VARIANTS_MAP[color].color
+        : COLOR_VARIANTS_MAP[color].normal;
 
-    case VARIANT_TYPE.text:
-      return color === COLOR_VARIATION.default
-        ? VARIANT_COLOR_MAP[color].color
-        : VARIANT_COLOR_MAP[color].normal;
+    case VARIANT_TYPES.text:
+      return color === COLOR_VARIANTS.default
+        ? COLOR_VARIANTS_MAP[color].color
+        : COLOR_VARIANTS_MAP[color].normal;
 
     default:
-      return VARIANT_COLOR_MAP[color].color;
+      return COLOR_VARIANTS_MAP[color].color;
   }
 }
 
@@ -45,11 +45,11 @@ function getIconFill(color, variant) {
  */
 function getIconFillActive(color, variant) {
   switch (variant) {
-    case VARIANT_TYPE.outline:
-      return VARIANT_COLOR_MAP[color].colorActive;
+    case VARIANT_TYPES.outline:
+      return COLOR_VARIANTS_MAP[color].colorActive;
 
-    case VARIANT_TYPE.text:
-      return VARIANT_COLOR_MAP[color].colorActive;
+    case VARIANT_TYPES.text:
+      return COLOR_VARIANTS_MAP[color].colorActive;
 
     default:
       return '';

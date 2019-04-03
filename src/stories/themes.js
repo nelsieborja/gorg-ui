@@ -1,19 +1,19 @@
 import { rem } from 'polished';
 
 // CONSTANTS
-export const COLOR_VARIATION = {
+export const COLOR_VARIANTS = {
   default: 'default',
   primary: 'primary',
   secondary: 'secondary'
 };
 
-export const SHAPE_VARIATION = {
+export const SHAPE_VARIANTS = {
   default: 'default',
   rounded: 'rounded',
   circle: 'circle'
 };
 
-export const VARIANT_TYPE = {
+export const VARIANT_TYPES = {
   default: 'default',
   outline: 'outline',
   text: 'text'
@@ -43,8 +43,8 @@ export const FONTS = {
 // ELEMENT PROPERTIES
 export const ELEMENT = {
   BORDER_RADIUS: {
-    [SHAPE_VARIATION.rounded]: rem(3),
-    [SHAPE_VARIATION.circle]: rem(30)
+    [SHAPE_VARIANTS.rounded]: rem(3),
+    [SHAPE_VARIANTS.circle]: rem(30)
   },
   HEIGHT: rem(40),
   PADDING: {
@@ -73,20 +73,20 @@ export const TRANSITION = {
 };
 
 // VALUE MAPPING
-export const VARIANT_COLOR_MAP = {
-  [COLOR_VARIATION.default]: {
+export const COLOR_VARIANTS_MAP = {
+  [COLOR_VARIANTS.default]: {
     normal: COLORS.ROMANCE,
     dark: COLORS.ROMANCE_DARK,
     color: COLORS.BASE_LIGHT,
     colorActive: COLORS.BASE
   },
-  [COLOR_VARIATION.primary]: {
+  [COLOR_VARIANTS.primary]: {
     normal: COLORS.MAGENTA,
     dark: COLORS.MAGENTA_DARK,
     color: COLORS.DIRTY_WHITE,
     colorActive: COLORS.MAGENTA_DARK
   },
-  [COLOR_VARIATION.secondary]: {
+  [COLOR_VARIANTS.secondary]: {
     normal: COLORS.ROSE,
     dark: COLORS.ROSE_DARK,
     color: COLORS.DIRTY_WHITE,
