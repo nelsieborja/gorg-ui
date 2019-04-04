@@ -6,7 +6,7 @@ const { X, Y } = ELEMENT.PADDING;
 
 /**
  * Adds Loader CSS if button is not `disabled` and when it's in `loading` state
- * @param {JSON} { disabled: Boolean, loading: Boolean }
+ * @param {Object} { disabled: Boolean, loading: Boolean }
  */
 function getLoadingCSS({ disabled, loading }) {
   return (

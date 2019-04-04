@@ -58,7 +58,7 @@ function getIconFillActive(color, variant) {
 
 /**
  * Sets the SVG CSS fill attr value
- * @param {JSON} { color: Enum(default|primary|secondary), variant: Enum(default|outline|text) }
+ * @param {Object} { color: Enum(default|primary|secondary), variant: Enum(default|outline|text) }
  */
 export function getIconColorCSS({ color, variant }) {
   return `
@@ -70,7 +70,7 @@ export function getIconColorCSS({ color, variant }) {
 
 /**
  * Sets the SVG CSS fill attr value when button is on `active` state
- * @param {JSON} { color: Enum(default|primary|secondary), variant: Enum(default|outline|text) }
+ * @param {Object} { color: Enum(default|primary|secondary), variant: Enum(default|outline|text) }
  */
 export function getIconColorActiveCSS({ color, variant }) {
   return `

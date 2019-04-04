@@ -3,7 +3,7 @@ import { ELEMENT, SHAPE_VARIANTS, SPACINGS, COLOR_VARIANTS_MAP } from '../../the
 
 /**
  * Sets CSS for the Checkbox tick (generic)
- * @param {JSON} { color: Enum(default|primary|secondary), shape: Enum(default|rounded|circle), gap: Boolean, direction}
+ * @param {Object} { color: Enum(default|primary|secondary), shape: Enum(default|rounded|circle), gap: Boolean, direction}
  */
 function getTickBoxCSS({ color, shape, gap, direction = 'right' }) {
   const { normal } = COLOR_VARIANTS_MAP[color];

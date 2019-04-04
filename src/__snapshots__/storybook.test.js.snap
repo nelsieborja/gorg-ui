@@ -1092,6 +1092,17 @@ exports[`Storyshots Expansion Panel Live Props 1`] = `
       </svg>
     </button>
   </header>
+  <section
+    className="css-7jhpnj"
+    onTransitionEnd={[Function]}
+    style={
+      Object {
+        "height": undefined,
+      }
+    }
+  >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </section>
 </div>
 `;
 
@@ -1185,14 +1196,14 @@ exports[`Storyshots Switch Live Props 1`] = `
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="c5076a0c-9f7c-4f52-8f5d-4a4142190333"
+    id="069d0c43-aecc-4212-aa4e-38cf7b813fe0"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-uuzt70"
     color="default"
-    htmlFor="c5076a0c-9f7c-4f52-8f5d-4a4142190333"
+    htmlFor="069d0c43-aecc-4212-aa4e-38cf7b813fe0"
   />
   Change my appearance from 
   <strong>
@@ -1211,42 +1222,42 @@ exports[`Storyshots Switch.State Controlled 1`] = `
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="021266bf-42ac-441e-81cc-35101192a768"
+    id="90e4c9be-56e8-4987-ac66-b0a68e612d81"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-arccat"
     color="default"
-    htmlFor="021266bf-42ac-441e-81cc-35101192a768"
+    htmlFor="90e4c9be-56e8-4987-ac66-b0a68e612d81"
   />
   <input
     checked={false}
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="d6c5b493-705a-48c3-8990-2b606008549b"
+    id="d73a7432-3cee-46fb-b134-a622f5216cf1"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-15g7b4q"
     color="primary"
-    htmlFor="d6c5b493-705a-48c3-8990-2b606008549b"
+    htmlFor="d73a7432-3cee-46fb-b134-a622f5216cf1"
   />
   <input
     checked={false}
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="ef05411f-8cae-4a06-b225-fce34295a04f"
+    id="5c2025cd-af9a-428a-b0d4-710fbb3b40b9"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-19k4clw"
     color="secondary"
-    htmlFor="ef05411f-8cae-4a06-b225-fce34295a04f"
+    htmlFor="5c2025cd-af9a-428a-b0d4-710fbb3b40b9"
   />
 </div>
 `;
@@ -1259,40 +1270,40 @@ exports[`Storyshots Switch.State Disabled 1`] = `
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={true}
-    id="72b89842-bd91-4a3a-bee6-7c964732eb11"
+    id="15467f67-59fb-44e8-b590-5fec954dfba3"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-arccat"
     color="default"
-    htmlFor="72b89842-bd91-4a3a-bee6-7c964732eb11"
+    htmlFor="15467f67-59fb-44e8-b590-5fec954dfba3"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={true}
-    id="84fc1cb6-377f-4905-94b1-3793ab2ecff6"
+    id="2e3f8b0c-bb3b-4d89-b198-6b554edff728"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-15g7b4q"
     color="primary"
-    htmlFor="84fc1cb6-377f-4905-94b1-3793ab2ecff6"
+    htmlFor="2e3f8b0c-bb3b-4d89-b198-6b554edff728"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={true}
-    id="c51c638d-82f5-4090-a69b-54fd46423751"
+    id="36762fc7-1ff2-4d02-8dd6-aef78412eb87"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-19k4clw"
     color="secondary"
-    htmlFor="c51c638d-82f5-4090-a69b-54fd46423751"
+    htmlFor="36762fc7-1ff2-4d02-8dd6-aef78412eb87"
   />
 </div>
 `;
@@ -1305,40 +1316,40 @@ exports[`Storyshots Switch.State Uncontrolled 1`] = `
     className="css-1rnm75w"
     defaultChecked={true}
     disabled={false}
-    id="44196c03-f1db-4a70-b1cf-c18643a68e31"
+    id="241fda69-1acf-49c3-b86a-b5a4ebc00470"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-arccat"
     color="default"
-    htmlFor="44196c03-f1db-4a70-b1cf-c18643a68e31"
+    htmlFor="241fda69-1acf-49c3-b86a-b5a4ebc00470"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={true}
     disabled={false}
-    id="3b6392c0-3b04-4eac-96fd-6e954d4b2248"
+    id="0f8f4a14-9c24-4d89-94cf-4fb1bb495869"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-15g7b4q"
     color="primary"
-    htmlFor="3b6392c0-3b04-4eac-96fd-6e954d4b2248"
+    htmlFor="0f8f4a14-9c24-4d89-94cf-4fb1bb495869"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={true}
     disabled={false}
-    id="3b7001ae-c8e3-4596-bf0f-4a2f83a5c379"
+    id="56d4de56-06de-4fa7-956a-7af1e5f7c019"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-19k4clw"
     color="secondary"
-    htmlFor="3b7001ae-c8e3-4596-bf0f-4a2f83a5c379"
+    htmlFor="56d4de56-06de-4fa7-956a-7af1e5f7c019"
   />
 </div>
 `;

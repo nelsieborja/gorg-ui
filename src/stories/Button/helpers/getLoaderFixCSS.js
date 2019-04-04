@@ -2,7 +2,7 @@ import { COLOR_VARIANTS, VARIANT_TYPES, COLORS } from '../../themes';
 
 /**
  * Generates corresponding Loader CSS fix for a given `color` and `variant`
- * @param {JSON} { color: Enum(COLOR_VARIANTS), variant: Enum(VARIANT_TYPES) }
+ * @param {Object} { color: Enum(COLOR_VARIANTS), variant: Enum(VARIANT_TYPES) }
  */
 function getLoaderFixCSS({ color, variant }) {
   if (variant === VARIANT_TYPES.default) return;

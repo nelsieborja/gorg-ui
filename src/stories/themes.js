@@ -69,6 +69,7 @@ export const SPACINGS = {
 
 // TRANSITIONS
 export const TRANSITION = {
+  EASE: 'cubic-bezier(0.4, 0, 0.2, 1)',
   DURATION: '0.3s'
 };
 

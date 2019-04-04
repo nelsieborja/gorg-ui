@@ -1,22 +1,26 @@
-import React, { Children, useState } from 'react';
+import React, { Children, useRef } from 'react';
 import { bool } from 'prop-types';
+
+import useActive from './hooks/useActive';
+import useContentHeight from './hooks/useContentHeight';
+import getTitleProps from './helpers/getTitleProps';
+import getContentProps from './helpers/getContentProps';
 
 import Title from './Title';
 import Content from './Content';
 
 const ExpansionPanel = ({ children }) => {
-  const [active, setActive] = useState();
+  const contentEl = useRef(null);
+  const { active, onToggleExpansionPanel } = useActive();
+  const contentHeight = useContentHeight(active, contentEl);
 
-  function onToggleExpansionPanel() {
-    setActive(!active);
-  }
-
-  return Children.map(children, child => (
-    <child.type
-      key={child.type.displayName}
+  return Children.map(children, ({ type: Child, props }) => (
+    <Child
+      key={Child.displayName}
       active={active}
-      onToggleExpansionPanel={onToggleExpansionPanel}
-      {...child.props}
+      {...getTitleProps(Child === Title, onToggleExpansionPanel)}
+      {...getContentProps(Child === Content, contentEl, contentHeight)}
+      {...props}
     />
   ));
 };
