@@ -9,16 +9,16 @@ function getLoaderFixCSS({ color, variant }) {
 
   switch (color) {
     case COLOR_VARIANTS.primary:
-      return `._loader circle:nth-of-type(4) {
-        fill: ${COLORS.MAGENTA_DARK};
+      return `._loader circle:nth-of-type(2) {
+        fill: ${COLORS.PRIMARY_DARK};
       }`;
     case COLOR_VARIANTS.secondary:
       return `._loader circle:nth-of-type(3) {
-        fill: ${COLORS.ROSE_DARK};
+        fill: ${COLORS.SECONDARY_DARK};
       }`;
     default:
       return `._loader circle:nth-of-type(5) {
-        fill: ${COLORS.WHITE};
+        fill: ${COLORS.DEFAULT_DARK};
       }`;
   }
 }

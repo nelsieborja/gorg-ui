@@ -2,7 +2,12 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
 
 body {
-  background-color: #fcfbf9;
-  color: #37334e;
+  background-color: #fff;
+  color: #2d2d2d;
   font: 400 16px/1.3 Poppins, sans-serif;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
 }

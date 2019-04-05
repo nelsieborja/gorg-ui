@@ -7,7 +7,7 @@ import getTickAnimation from '../../Checkbox/helpers/getTickAnimation';
 
 const RadioLabel = styled.label`
   cursor: pointer;
-  font-size: ${FONTS.BASE};
+  font-size: ${FONTS.S.BASE};
 `;
 
 RadioLabel.Tick = styled.i`

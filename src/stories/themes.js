@@ -21,23 +21,27 @@ export const VARIANT_TYPES = {
 
 // COLORS
 export const COLORS = {
-  BASE: '#37334e',
-  BASE_LIGHT: '#554f67',
+  BASE: '#000',
+  BASE_LIGHT: '#2d2d2d',
   WHITE: '#fff',
-  DIRTY_WHITE: '#fcfbf9',
+  DIRTY_WHITE: '#f7f8f9',
 
-  MAGENTA: '#4e2e54',
-  MAGENTA_DARK: '#2e0438',
-  ROSE: '#954f75',
-  ROSE_DARK: '#6d3554',
-  FLAMENCO: '#f8dac3',
-  ROMANCE: '#ece5ca',
-  ROMANCE_DARK: '#e3d5b2'
+  DEFAULT: '#ecf1f3',
+  DEFAULT_DARK: '#d4dfe8',
+  PRIMARY: '#2d2d2d',
+  PRIMARY_DARK: '#000',
+  SECONDARY: '#00baff',
+  SECONDARY_DARK: '#007fd0'
 };
 
 // FONTS
 export const FONTS = {
-  BASE: rem(14)
+  S: {
+    BASE: rem(14)
+  },
+  W: {
+    SEMIBOLD: 500
+  }
 };
 
 // ELEMENT PROPERTIES
@@ -76,21 +80,21 @@ export const TRANSITION = {
 // VALUE MAPPING
 export const COLOR_VARIANTS_MAP = {
   [COLOR_VARIANTS.default]: {
-    normal: COLORS.ROMANCE,
-    dark: COLORS.ROMANCE_DARK,
+    normal: COLORS.DEFAULT,
+    dark: COLORS.DEFAULT_DARK,
     color: COLORS.BASE_LIGHT,
     colorActive: COLORS.BASE
   },
   [COLOR_VARIANTS.primary]: {
-    normal: COLORS.MAGENTA,
-    dark: COLORS.MAGENTA_DARK,
+    normal: COLORS.PRIMARY,
+    dark: COLORS.PRIMARY_DARK,
     color: COLORS.DIRTY_WHITE,
-    colorActive: COLORS.MAGENTA_DARK
+    colorActive: COLORS.PRIMARY_DARK
   },
   [COLOR_VARIANTS.secondary]: {
-    normal: COLORS.ROSE,
-    dark: COLORS.ROSE_DARK,
+    normal: COLORS.SECONDARY,
+    dark: COLORS.SECONDARY_DARK,
     color: COLORS.DIRTY_WHITE,
-    colorActive: COLORS.ROSE_DARK
+    colorActive: COLORS.SECONDARY_DARK
   }
 };

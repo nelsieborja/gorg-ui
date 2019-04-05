@@ -5,7 +5,7 @@ import { FONTS, TRANSITION } from '../../themes';
 const { EASE, DURATION } = TRANSITION;
 
 const Section = styled.section`
-  font-size: ${FONTS.BASE};
+  font-size: ${FONTS.S.BASE};
   height: 0;
   overflow: hidden;
   transition: ${DURATION} ${EASE};

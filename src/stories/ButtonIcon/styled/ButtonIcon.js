@@ -12,7 +12,7 @@ const ButtonIcon = styled.button`
   background-color: transparent;
   border: 1px solid;
   cursor: pointer;
-  font-size: ${FONTS.BASE};
+  font-size: ${FONTS.S.BASE};
   outline: none;
   padding: ${ELEMENT.PADDING.X};
   position: relative;

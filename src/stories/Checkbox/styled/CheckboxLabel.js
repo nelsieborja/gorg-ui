@@ -7,7 +7,7 @@ import { FONTS, TRANSITION, COLOR_VARIANTS_MAP } from '../../themes';
 
 const CheckboxLabel = styled.label`
   cursor: pointer;
-  font-size: ${FONTS.BASE};
+  font-size: ${FONTS.S.BASE};
 `;
 
 CheckboxLabel.Tick = styled.i`
