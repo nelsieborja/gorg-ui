@@ -8,10 +8,11 @@ UI library using React, Storybook and Emotion.
 ## Components
 
 - [x] Button
+- [x] Button Icon
 - [ ] Charts
 - [x] Checkbox
 - [ ] Drawer
-- [ ] Expansion Panel
+- [x] Expansion Panel
 - [x] Radio
 - [x] Switch
 - [ ] Textfield
