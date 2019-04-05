@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { bool, string } from 'prop-types';
 
 import { COLOR_VARIANTS } from '../themes';
@@ -12,11 +12,11 @@ const Switch = ({ children, color, ...rest }) => {
   const checkboxID = getCheckboxID(rest.id);
 
   return (
-    <Fragment>
+    <>
       <CheckboxInput id={checkboxID} type="checkbox" {...rest} />
       <SwitchLabel htmlFor={checkboxID} color={color} gap={!!children} />
       {children}
-    </Fragment>
+    </>
   );
 };
 
