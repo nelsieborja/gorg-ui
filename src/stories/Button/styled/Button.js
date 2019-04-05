@@ -27,7 +27,7 @@ const Button = styled.button`
     opacity: 0.5;
   }
 
-  ._loader {
+  .-loader {
     position: absolute;
     left: ${X};
     top: 50%;

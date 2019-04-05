@@ -12,7 +12,7 @@ const Button = ({ children, onClick, variant, ...rest }) => {
 
   return (
     <Button {...rest} {...getClickHandler(onClick, rest.loading)}>
-      {rest.loading && <Loader className="_loader" />}
+      {rest.loading && <Loader className="-loader" />}
       {children}
     </Button>
   );
