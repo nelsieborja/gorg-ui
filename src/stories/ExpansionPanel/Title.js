@@ -8,8 +8,8 @@ import Header from './styled/Header';
 const Title = ({ active, children, onToggleExpansionPanel }) => (
   <Header>
     <h2>{children}</h2>
-    <ButtonIcon shape="circle" variant="text" onClick={onToggleExpansionPanel}>
-      {active ? <Minus /> : <Plus />}
+    <ButtonIcon variant="text" onClick={onToggleExpansionPanel}>
+      {active ? <Minus className="-minus" /> : <Plus className="-plus" />}
     </ButtonIcon>
   </Header>
 );

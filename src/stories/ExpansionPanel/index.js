@@ -9,9 +9,9 @@ import getContentProps from './helpers/getContentProps';
 import Title from './Title';
 import Content from './Content';
 
-const ExpansionPanel = ({ children }) => {
-  const contentEl = useRef(null);
-  const { active, onToggleExpansionPanel } = useActive();
+const ExpansionPanel = ({ active: initialActive, children }) => {
+  const contentEl = useRef(false);
+  const { active, onToggleExpansionPanel } = useActive(initialActive);
   const contentHeight = useContentHeight(active, contentEl);
 
   return Children.map(children, ({ type: Child, props }) => (

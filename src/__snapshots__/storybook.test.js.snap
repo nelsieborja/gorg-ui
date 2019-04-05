@@ -5,7 +5,7 @@ exports[`Storyshots Button Live Props 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-1xmbnpi"
+    className="css-mc1bqb"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -25,7 +25,7 @@ exports[`Storyshots Button.Color Default 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-1xmbnpi"
+    className="css-mc1bqb"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -34,7 +34,7 @@ exports[`Storyshots Button.Color Default 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-1vv6r6r"
+    className="css-51kdvk"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -43,7 +43,7 @@ exports[`Storyshots Button.Color Default 1`] = `
     OUTLINE
   </button>
   <button
-    className="css-5pi6fq"
+    className="css-1jtpy6j"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -59,7 +59,7 @@ exports[`Storyshots Button.Color Primary 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-12b5l79"
+    className="css-1lq15mw"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -68,7 +68,7 @@ exports[`Storyshots Button.Color Primary 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-9yinmz"
+    className="css-14o5sa6"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -77,7 +77,7 @@ exports[`Storyshots Button.Color Primary 1`] = `
     OUTLINE
   </button>
   <button
-    className="css-xyg6mo"
+    className="css-jcw9dv"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -93,7 +93,7 @@ exports[`Storyshots Button.Color Secondary 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-66jk1w"
+    className="css-boshfe"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -102,7 +102,7 @@ exports[`Storyshots Button.Color Secondary 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-d0k9ch"
+    className="css-1qzj5ml"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -111,7 +111,7 @@ exports[`Storyshots Button.Color Secondary 1`] = `
     OUTLINE
   </button>
   <button
-    className="css-u0zo3x"
+    className="css-15tu6ha"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -127,7 +127,7 @@ exports[`Storyshots Button.Shape Circle 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-1ge5p2x"
+    className="css-17ar7ag"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -136,7 +136,7 @@ exports[`Storyshots Button.Shape Circle 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-mg4ugk"
+    className="css-1ovk79p"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -145,7 +145,7 @@ exports[`Storyshots Button.Shape Circle 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-w23ik4"
+    className="css-gq9y2o"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -161,7 +161,7 @@ exports[`Storyshots Button.Shape Default 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-1xmbnpi"
+    className="css-mc1bqb"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -170,7 +170,7 @@ exports[`Storyshots Button.Shape Default 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-12b5l79"
+    className="css-1lq15mw"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -179,7 +179,7 @@ exports[`Storyshots Button.Shape Default 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-66jk1w"
+    className="css-boshfe"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -195,7 +195,7 @@ exports[`Storyshots Button.Shape Rounded 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-3hzi1f"
+    className="css-eivf48"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -204,7 +204,7 @@ exports[`Storyshots Button.Shape Rounded 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-18g564n"
+    className="css-vnn5kn"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -213,7 +213,7 @@ exports[`Storyshots Button.Shape Rounded 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-1cpp59d"
+    className="css-1jkolc3"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -229,7 +229,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-1xmbnpi"
+    className="css-mc1bqb"
     color="default"
     disabled={true}
     onClick={[Function]}
@@ -238,7 +238,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-12b5l79"
+    className="css-1lq15mw"
     color="primary"
     disabled={true}
     onClick={[Function]}
@@ -247,7 +247,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-66jk1w"
+    className="css-boshfe"
     color="secondary"
     disabled={true}
     onClick={[Function]}
@@ -257,7 +257,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
   </button>
   <br />
   <button
-    className="css-1vv6r6r"
+    className="css-51kdvk"
     color="default"
     disabled={true}
     onClick={[Function]}
@@ -266,7 +266,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-9yinmz"
+    className="css-14o5sa6"
     color="primary"
     disabled={true}
     onClick={[Function]}
@@ -275,7 +275,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-d0k9ch"
+    className="css-1qzj5ml"
     color="secondary"
     disabled={true}
     onClick={[Function]}
@@ -285,7 +285,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
   </button>
   <br />
   <button
-    className="css-5pi6fq"
+    className="css-1jtpy6j"
     color="default"
     disabled={true}
     onClick={[Function]}
@@ -294,7 +294,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-xyg6mo"
+    className="css-jcw9dv"
     color="primary"
     disabled={true}
     onClick={[Function]}
@@ -303,7 +303,7 @@ exports[`Storyshots Button.State Disabled 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-u0zo3x"
+    className="css-15tu6ha"
     color="secondary"
     disabled={true}
     onClick={[Function]}
@@ -320,39 +320,39 @@ exports[`Storyshots Button.State Loading 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-yuc9kh"
+    className="css-1xbd4nz"
     color="default"
     disabled={false}
     shape="default"
   >
     <svg
-      className="_loader"
+      className="-loader"
     >
       loader.svg
     </svg>
     DEFAULT
   </button>
   <button
-    className="css-1lucr0h"
+    className="css-1bxn4hu"
     color="primary"
     disabled={false}
     shape="default"
   >
     <svg
-      className="_loader"
+      className="-loader"
     >
       loader.svg
     </svg>
     PRIMARY
   </button>
   <button
-    className="css-1qrbgt1"
+    className="css-bu6a4x"
     color="secondary"
     disabled={false}
     shape="default"
   >
     <svg
-      className="_loader"
+      className="-loader"
     >
       loader.svg
     </svg>
@@ -360,39 +360,39 @@ exports[`Storyshots Button.State Loading 1`] = `
   </button>
   <br />
   <button
-    className="css-qnyshu"
+    className="css-1ylwk8q"
     color="default"
     disabled={false}
     shape="default"
   >
     <svg
-      className="_loader"
+      className="-loader"
     >
       loader.svg
     </svg>
     DEFAULT
   </button>
   <button
-    className="css-13cyecd"
+    className="css-jurg9a"
     color="primary"
     disabled={false}
     shape="default"
   >
     <svg
-      className="_loader"
+      className="-loader"
     >
       loader.svg
     </svg>
     PRIMARY
   </button>
   <button
-    className="css-rs0bps"
+    className="css-1833d7i"
     color="secondary"
     disabled={false}
     shape="default"
   >
     <svg
-      className="_loader"
+      className="-loader"
     >
       loader.svg
     </svg>
@@ -400,39 +400,39 @@ exports[`Storyshots Button.State Loading 1`] = `
   </button>
   <br />
   <button
-    className="css-1cxxkq0"
+    className="css-5n00wf"
     color="default"
     disabled={false}
     shape="default"
   >
     <svg
-      className="_loader"
+      className="-loader"
     >
       loader.svg
     </svg>
     DEFAULT
   </button>
   <button
-    className="css-nj9cmx"
+    className="css-1rynzxc"
     color="primary"
     disabled={false}
     shape="default"
   >
     <svg
-      className="_loader"
+      className="-loader"
     >
       loader.svg
     </svg>
     PRIMARY
   </button>
   <button
-    className="css-4dy55j"
+    className="css-1qhv4d2"
     color="secondary"
     disabled={false}
     shape="default"
   >
     <svg
-      className="_loader"
+      className="-loader"
     >
       loader.svg
     </svg>
@@ -447,7 +447,7 @@ exports[`Storyshots Button.Variant Default 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-1xmbnpi"
+    className="css-mc1bqb"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -456,7 +456,7 @@ exports[`Storyshots Button.Variant Default 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-12b5l79"
+    className="css-1lq15mw"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -465,7 +465,7 @@ exports[`Storyshots Button.Variant Default 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-66jk1w"
+    className="css-boshfe"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -481,7 +481,7 @@ exports[`Storyshots Button.Variant Outline 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-1vv6r6r"
+    className="css-51kdvk"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -490,7 +490,7 @@ exports[`Storyshots Button.Variant Outline 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-9yinmz"
+    className="css-14o5sa6"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -499,7 +499,7 @@ exports[`Storyshots Button.Variant Outline 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-d0k9ch"
+    className="css-1qzj5ml"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -515,7 +515,7 @@ exports[`Storyshots Button.Variant Text 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-5pi6fq"
+    className="css-1jtpy6j"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -524,7 +524,7 @@ exports[`Storyshots Button.Variant Text 1`] = `
     DEFAULT
   </button>
   <button
-    className="css-xyg6mo"
+    className="css-jcw9dv"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -533,7 +533,7 @@ exports[`Storyshots Button.Variant Text 1`] = `
     PRIMARY
   </button>
   <button
-    className="css-u0zo3x"
+    className="css-15tu6ha"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -1075,33 +1075,143 @@ exports[`Storyshots Expansion Panel Live Props 1`] = `
   className="css-14973vb"
 >
   <header
-    className="css-1ixk5r3"
+    className="css-jgle3q"
   >
     <h2>
       Expansion Title
     </h2>
     <button
-      className="css-1x0umg2"
+      className="css-txa8mp"
       color="default"
       disabled={false}
       onClick={[Function]}
-      shape="circle"
+      shape="default"
     >
-      <svg>
+      <svg
+        className="-minus"
+      >
+        minus.svg
+      </svg>
+    </button>
+  </header>
+  <section
+    className="css-17jzza4"
+    onTransitionEnd={[Function]}
+    style={
+      Object {
+        "height": 0,
+      }
+    }
+  >
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Expansion Panel Multi Expansion Panel 1`] = `
+<div
+  className="css-14973vb"
+>
+  <header
+    className="css-jgle3q"
+  >
+    <h2>
+      Expansion Title
+    </h2>
+    <button
+      className="css-txa8mp"
+      color="default"
+      disabled={false}
+      onClick={[Function]}
+      shape="default"
+    >
+      <svg
+        className="-plus"
+      >
         plus.svg
       </svg>
     </button>
   </header>
   <section
-    className="css-7jhpnj"
+    className="css-17jzza4"
     onTransitionEnd={[Function]}
     style={
       Object {
-        "height": undefined,
+        "height": 0,
       }
     }
   >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+  </section>
+  <header
+    className="css-jgle3q"
+  >
+    <h2>
+      Expansion Title
+    </h2>
+    <button
+      className="css-txa8mp"
+      color="default"
+      disabled={false}
+      onClick={[Function]}
+      shape="default"
+    >
+      <svg
+        className="-minus"
+      >
+        minus.svg
+      </svg>
+    </button>
+  </header>
+  <section
+    className="css-17jzza4"
+    onTransitionEnd={[Function]}
+    style={
+      Object {
+        "height": 0,
+      }
+    }
+  >
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+  </section>
+  <header
+    className="css-jgle3q"
+  >
+    <h2>
+      Expansion Title
+    </h2>
+    <button
+      className="css-txa8mp"
+      color="default"
+      disabled={false}
+      onClick={[Function]}
+      shape="default"
+    >
+      <svg
+        className="-plus"
+      >
+        plus.svg
+      </svg>
+    </button>
+  </header>
+  <section
+    className="css-17jzza4"
+    onTransitionEnd={[Function]}
+    style={
+      Object {
+        "height": 0,
+      }
+    }
+  >
+    <div>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
   </section>
 </div>
 `;
@@ -1196,14 +1306,14 @@ exports[`Storyshots Switch Live Props 1`] = `
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="d6339f70-c33e-438c-b3e0-e6555c8e2ee6"
+    id="6dc9c42d-c8d7-4141-9891-01e598baa5b8"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-1c33lry"
     color="default"
-    htmlFor="d6339f70-c33e-438c-b3e0-e6555c8e2ee6"
+    htmlFor="6dc9c42d-c8d7-4141-9891-01e598baa5b8"
   />
   Change my appearance from 
   <strong>
@@ -1222,42 +1332,42 @@ exports[`Storyshots Switch.State Controlled 1`] = `
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="3e1d0cdc-7351-439a-b930-8710a07acd54"
+    id="a905bd7f-e41e-416b-a0a0-355861bb1b5c"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-1ocxwjk"
     color="default"
-    htmlFor="3e1d0cdc-7351-439a-b930-8710a07acd54"
+    htmlFor="a905bd7f-e41e-416b-a0a0-355861bb1b5c"
   />
   <input
     checked={false}
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="cac4f52e-9597-40d3-8c5f-fca23bafd382"
+    id="55a4570c-b6d9-4714-bdce-a89dbec5427d"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-17qymiv"
     color="primary"
-    htmlFor="cac4f52e-9597-40d3-8c5f-fca23bafd382"
+    htmlFor="55a4570c-b6d9-4714-bdce-a89dbec5427d"
   />
   <input
     checked={false}
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={false}
-    id="e7625363-9e4b-4054-abdf-f8c0957eb464"
+    id="34fc0fd2-d1ce-4b90-bb8f-d440efbcdc6b"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-1dz42om"
     color="secondary"
-    htmlFor="e7625363-9e4b-4054-abdf-f8c0957eb464"
+    htmlFor="34fc0fd2-d1ce-4b90-bb8f-d440efbcdc6b"
   />
 </div>
 `;
@@ -1270,40 +1380,40 @@ exports[`Storyshots Switch.State Disabled 1`] = `
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={true}
-    id="10b93ec1-6f72-4451-bc4b-519f56de8f71"
+    id="76bfcf9a-cb5b-4651-8439-481b11428069"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-1ocxwjk"
     color="default"
-    htmlFor="10b93ec1-6f72-4451-bc4b-519f56de8f71"
+    htmlFor="76bfcf9a-cb5b-4651-8439-481b11428069"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={true}
-    id="f31d1c69-e25f-4b7f-96e1-696890e37a81"
+    id="f41e7bdf-b0b3-4c9c-859e-bfd8164b1af2"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-17qymiv"
     color="primary"
-    htmlFor="f31d1c69-e25f-4b7f-96e1-696890e37a81"
+    htmlFor="f41e7bdf-b0b3-4c9c-859e-bfd8164b1af2"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={false}
     disabled={true}
-    id="2a09a6b3-d5a6-46eb-b543-c2aad67cd413"
+    id="fe68442d-50b3-4961-bb45-97b97687d054"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-1dz42om"
     color="secondary"
-    htmlFor="2a09a6b3-d5a6-46eb-b543-c2aad67cd413"
+    htmlFor="fe68442d-50b3-4961-bb45-97b97687d054"
   />
 </div>
 `;
@@ -1316,40 +1426,40 @@ exports[`Storyshots Switch.State Uncontrolled 1`] = `
     className="css-1rnm75w"
     defaultChecked={true}
     disabled={false}
-    id="39e60055-6952-420b-b3dd-370489bc49e2"
+    id="2b7cc660-c63c-4fc4-968e-9b3d42bc9436"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-1ocxwjk"
     color="default"
-    htmlFor="39e60055-6952-420b-b3dd-370489bc49e2"
+    htmlFor="2b7cc660-c63c-4fc4-968e-9b3d42bc9436"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={true}
     disabled={false}
-    id="8b877c49-5c1a-4408-8253-5fb5af42b2a2"
+    id="e3bdb55e-3797-45a8-bdef-7915230a9170"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-17qymiv"
     color="primary"
-    htmlFor="8b877c49-5c1a-4408-8253-5fb5af42b2a2"
+    htmlFor="e3bdb55e-3797-45a8-bdef-7915230a9170"
   />
   <input
     className="css-1rnm75w"
     defaultChecked={true}
     disabled={false}
-    id="7ea7d407-a330-4dc3-b368-b4fb12ca3d28"
+    id="4cc01faa-5351-46c5-8363-375351e735ea"
     onChange={[Function]}
     type="checkbox"
   />
   <label
     className="css-1dz42om"
     color="secondary"
-    htmlFor="7ea7d407-a330-4dc3-b368-b4fb12ca3d28"
+    htmlFor="4cc01faa-5351-46c5-8363-375351e735ea"
   />
 </div>
 `;

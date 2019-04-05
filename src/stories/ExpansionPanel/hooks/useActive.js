@@ -1,11 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-function useActive() {
-  const [active, setActive] = useState(false);
+/**
+ * Handles `active` state
+ * @param {Boolean} initialActive
+ */
+function useActive(initialActive) {
+  const [active, setActive] = useState(initialActive);
 
   function onToggleExpansionPanel() {
     setActive(!active);
   }
+
+  useEffect(() => {
+    if (active !== initialActive) {
+      setActive(initialActive);
+    }
+  }, [initialActive]);
 
   return {
     active,
