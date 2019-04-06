@@ -20,6 +20,10 @@ UI library using React, Storybook and Emotion.
 
 ---
 
-### Notes
+### Note(s)
 
 Need to wait for [this](https://github.com/facebook/create-react-app/pull/6633) PR to be merged before module import aliasing starts working for CRA with Jest. Alternative solution can be found [here](https://github.com/facebook/create-react-app/issues/5652) but it suggests to use yet another dependency, not a big fan of dependencies.
+
+### Credit(s)
+
+- [Icons](https://www.flaticon.com/packs/ui-interface-25)
