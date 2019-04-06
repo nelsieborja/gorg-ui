@@ -24,10 +24,10 @@ Switch.propTypes = {
 };
 
 Switch.defaultProps = {
-  color: COLOR_VARIANTS.default, // default|primary|secondary
+  color: COLOR_VARIANTS.default, // COLOR_VARIANTS
   defaultChecked: false,
   disabled: false,
-  shape: SHAPE_VARIANTS.default // default|rounded|circle
+  shape: SHAPE_VARIANTS.default // SHAPE_VARIANTS
 };
 
 export default Switch;

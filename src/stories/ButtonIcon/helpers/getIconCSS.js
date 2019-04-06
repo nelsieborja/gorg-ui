@@ -17,8 +17,8 @@ export default getIconCSS;
 
 /**
  * Extracts which color to use for the SVG based on the provided `variant`
- * @param {Enum} color (default|primary|secondary)
- * @param {Enum} variant default|outline|text
+ * @param {Enum} color [COLOR_VARIANTS]
+ * @param {Enum} variant [VARIANT_TYPES]
  */
 function getIconFill(color, variant) {
   switch (variant) {
@@ -40,8 +40,8 @@ function getIconFill(color, variant) {
 /**
  * Extracts which color to use for the SVG when Button is on `active` state
  * based on the provided ``variant
- * @param {Enum} color (default|primary|secondary)
- * @param {Enum} variant default|outline|text
+ * @param {Enum} color [COLOR_VARIANTS]
+ * @param {Enum} variant [VARIANT_TYPES]
  */
 function getIconFillActive(color, variant) {
   switch (variant) {
@@ -58,7 +58,7 @@ function getIconFillActive(color, variant) {
 
 /**
  * Sets the SVG CSS fill attr value
- * @param {Object} { color: Enum(default|primary|secondary), variant: Enum(default|outline|text) }
+ * @param {Object} { color: Enum[COLOR_VARIANTS], variant: Enum[VARIANT_TYPES] }
  */
 export function getIconColorCSS({ color, variant }) {
   return `
@@ -72,7 +72,7 @@ export function getIconColorCSS({ color, variant }) {
 
 /**
  * Sets the SVG CSS fill attr value when button is on `active` state
- * @param {Object} { color: Enum(default|primary|secondary), variant: Enum(default|outline|text) }
+ * @param {Object} { color: Enum[COLOR_VARIANTS], variant: Enum[VARIANT_TYPES] }
  */
 export function getIconColorActiveCSS({ color, variant }) {
   return `

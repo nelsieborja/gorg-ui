@@ -27,11 +27,11 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-  color: COLOR_VARIANTS.default, // default|primary|secondary
+  color: COLOR_VARIANTS.default, // COLOR_VARIANTS
   disabled: false,
   loading: false,
-  shape: SHAPE_VARIANTS.default, // default|rounded|circle
-  variant: VARIANT_TYPES.default // default|text|outline
+  shape: SHAPE_VARIANTS.default, // SHAPE_VARIANTS
+  variant: VARIANT_TYPES.default // VARIANT_TYPES
 };
 
 export default Button;

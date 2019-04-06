@@ -6,7 +6,7 @@ import ButtonIconText from '../styled/ButtonIconText';
 
 /**
  * Determines which Button Styled to use based on the variant type
- * @param {String} variantType [default|text|outline]
+ * @param {String} variantType [VARIANT_TYPES]
  */
 function getButtonStyled(variantType) {
   switch (variantType) {

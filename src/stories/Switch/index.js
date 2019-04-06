@@ -28,7 +28,7 @@ Switch.propTypes = {
 };
 
 Switch.defaultProps = {
-  color: COLOR_VARIANTS.default, // default|primary|secondary
+  color: COLOR_VARIANTS.default, // COLOR_VARIANTS
   defaultChecked: false,
   disabled: false
 };
