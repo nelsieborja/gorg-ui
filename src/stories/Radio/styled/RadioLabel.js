@@ -1,14 +1,12 @@
 import { styled } from '@storybook/theming';
 import { rem } from 'polished';
 
-import { COLOR_VARIANTS_MAP, FONTS, SHAPE_VARIANTS } from '../../themes';
+import { COLOR_VARIANTS_MAP, SHAPE_VARIANTS } from '../../themes';
+import CheckboxLabel from '../../Checkbox/styled/CheckboxLabel';
 import getTickBoxCSS from '../../Checkbox/helpers/getTickBoxCSS';
 import getTickAnimation from '../../Checkbox/helpers/getTickAnimation';
 
-const RadioLabel = styled.label`
-  cursor: pointer;
-  font-size: ${FONTS.S.BASE};
-`;
+const RadioLabel = styled(CheckboxLabel)``;
 
 RadioLabel.Tick = styled.i`
   ${getTickBoxCSS};

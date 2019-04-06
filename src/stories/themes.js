@@ -1,4 +1,4 @@
-import { rem } from 'polished';
+import { rem, rgba } from 'polished';
 
 // CONSTANTS
 export const COLOR_VARIANTS = {
@@ -82,8 +82,8 @@ export const COLOR_VARIANTS_MAP = {
   [COLOR_VARIANTS.default]: {
     normal: COLORS.DEFAULT,
     dark: COLORS.DEFAULT_DARK,
-    color: COLORS.BASE_LIGHT,
-    colorActive: COLORS.BASE
+    color: rgba(COLORS.BASE_LIGHT, 0.7),
+    colorActive: rgba(COLORS.BASE, 0.7)
   },
   [COLOR_VARIANTS.primary]: {
     normal: COLORS.PRIMARY,

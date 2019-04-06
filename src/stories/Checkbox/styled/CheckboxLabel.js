@@ -6,6 +6,9 @@ import getTickBoxCSS from '../helpers/getTickBoxCSS';
 import { FONTS, TRANSITION, COLOR_VARIANTS_MAP } from '../../themes';
 
 const CheckboxLabel = styled.label`
+  display: inline-flex;
+  align-items: center;
+
   cursor: pointer;
   font-size: ${FONTS.S.BASE};
 `;
