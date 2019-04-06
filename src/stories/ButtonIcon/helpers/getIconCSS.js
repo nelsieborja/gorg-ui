@@ -62,8 +62,10 @@ function getIconFillActive(color, variant) {
  */
 export function getIconColorCSS({ color, variant }) {
   return `
-    svg path {
-      fill: ${getIconFill(color, variant)};
+    svg {
+      path, circle {
+        fill: ${getIconFill(color, variant)};
+      }
     };
   `;
 }
@@ -74,8 +76,10 @@ export function getIconColorCSS({ color, variant }) {
  */
 export function getIconColorActiveCSS({ color, variant }) {
   return `
-      svg path {
-      fill: ${getIconFillActive(color, variant)};
+      svg {
+        path, circle {
+        fill: ${getIconFillActive(color, variant)};
+      }
     };
   `;
 }
