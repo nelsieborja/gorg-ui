@@ -8,11 +8,8 @@ function getTickAnimation() {
     0% {
       transform: scale3d(0, 0, 0) rotateZ(45deg);
     }
-    90% {
-      transform: scale3d(1.3, 1.3, 1.3) rotateZ(45deg);
-    }
     100% {
-      transform: scale3d(0, 0, 0) rotateZ(45deg);
+      transform: scale3d(1,1,1) rotateZ(45deg);
     }
   `;
 }

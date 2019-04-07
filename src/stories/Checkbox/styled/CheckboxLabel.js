@@ -1,9 +1,11 @@
 import { styled } from '@storybook/theming';
 import { rem } from 'polished';
 
-import getTickAnimation from '../helpers/getTickAnimation';
+import { FONTS, COLOR_VARIANTS_MAP, TRANSITION } from '../../themes';
 import getTickBoxCSS from '../helpers/getTickBoxCSS';
-import { FONTS, TRANSITION, COLOR_VARIANTS_MAP } from '../../themes';
+import getTickAnimation from '../../Checkbox/helpers/getTickAnimation';
+
+const tickSize = rem(3);
 
 const CheckboxLabel = styled.label`
   display: inline-flex;
@@ -15,7 +17,6 @@ const CheckboxLabel = styled.label`
 
 CheckboxLabel.Tick = styled.i`
   ${getTickBoxCSS};
-  transition: background ${TRANSITION.DURATION};
 
   input:checked + & {
     background: ${({ color }) => COLOR_VARIANTS_MAP[color].normal};
@@ -27,10 +28,9 @@ CheckboxLabel.Tick = styled.i`
       height: ${rem(10)};
       width: ${rem(5)};
 
-      animation: ${getTickAnimation} 0.2s;
+      animation: ${getTickAnimation} ${TRANSITION.DURATION};
       border: solid ${({ color }) => COLOR_VARIANTS_MAP[color].color};
-      border-width: 0 2px 2px 0px;
-      content: '';
+      border-width: 0 ${tickSize} ${tickSize} 0px;
       transform: rotateZ(45deg);
     }
   }

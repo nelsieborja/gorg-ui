@@ -1,10 +1,12 @@
 import { styled } from '@storybook/theming';
 import { rem } from 'polished';
 
-import { COLOR_VARIANTS_MAP, SHAPE_VARIANTS } from '../../themes';
+import { COLOR_VARIANTS_MAP, SHAPE_VARIANTS, TRANSITION } from '../../themes';
 import CheckboxLabel from '../../Checkbox/styled/CheckboxLabel';
 import getTickBoxCSS from '../../Checkbox/helpers/getTickBoxCSS';
 import getTickAnimation from '../../Checkbox/helpers/getTickAnimation';
+
+const tickSize = rem(5);
 
 const RadioLabel = styled(CheckboxLabel)``;
 
@@ -12,14 +14,16 @@ RadioLabel.Tick = styled.i`
   ${getTickBoxCSS};
 
   input:checked + & {
-    &:before {
-      top: ${rem(3)};
-      left: ${rem(3)};
+    background: ${({ color }) => COLOR_VARIANTS_MAP[color].normal};
 
-      animation: ${getTickAnimation} 0.2s;
-      background: ${({ color }) => COLOR_VARIANTS_MAP[color].normal};
+    &:before {
+      top: ${tickSize};
+      left: ${tickSize};
+
+      animation: ${getTickAnimation} ${TRANSITION.DURATION};
+      background: ${({ color }) => COLOR_VARIANTS_MAP[color].color};
       border-radius: 50%;
-      padding: ${rem(7)};
+      padding: ${tickSize};
     }
   }
 `;

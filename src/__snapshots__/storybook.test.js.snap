@@ -866,7 +866,7 @@ exports[`Storyshots Checkbox Live Props 1`] = `
       type="checkbox"
     />
     <i
-      className="css-pd3ieb"
+      className="css-llevat"
       color="default"
       shape="default"
     />
@@ -894,7 +894,7 @@ exports[`Storyshots Checkbox.Color Default 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1c6iy45"
+      className="css-dbp9fz"
       color="default"
       shape="default"
     />
@@ -910,7 +910,7 @@ exports[`Storyshots Checkbox.Color Default 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1nak7jo"
+      className="css-jukznm"
       color="default"
       shape="rounded"
     />
@@ -926,7 +926,7 @@ exports[`Storyshots Checkbox.Color Default 1`] = `
       type="checkbox"
     />
     <i
-      className="css-8g7p8q"
+      className="css-bzxmhr"
       color="default"
       shape="circle"
     />
@@ -949,7 +949,7 @@ exports[`Storyshots Checkbox.Color Primary 1`] = `
       type="checkbox"
     />
     <i
-      className="css-b7zibr"
+      className="css-95t8uc"
       color="primary"
       shape="default"
     />
@@ -965,7 +965,7 @@ exports[`Storyshots Checkbox.Color Primary 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1mb6i4a"
+      className="css-119b5m"
       color="primary"
       shape="rounded"
     />
@@ -981,7 +981,7 @@ exports[`Storyshots Checkbox.Color Primary 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1kz8v33"
+      className="css-1uq615o"
       color="primary"
       shape="circle"
     />
@@ -1004,7 +1004,7 @@ exports[`Storyshots Checkbox.Color Secondary 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1mmgaor"
+      className="css-1kan1d8"
       color="secondary"
       shape="default"
     />
@@ -1020,7 +1020,7 @@ exports[`Storyshots Checkbox.Color Secondary 1`] = `
       type="checkbox"
     />
     <i
-      className="css-bkes9n"
+      className="css-ptvyg0"
       color="secondary"
       shape="rounded"
     />
@@ -1036,7 +1036,7 @@ exports[`Storyshots Checkbox.Color Secondary 1`] = `
       type="checkbox"
     />
     <i
-      className="css-y08ue9"
+      className="css-pos9ms"
       color="secondary"
       shape="circle"
     />
@@ -1059,7 +1059,7 @@ exports[`Storyshots Checkbox.Shape Circle 1`] = `
       type="checkbox"
     />
     <i
-      className="css-8g7p8q"
+      className="css-bzxmhr"
       color="default"
       shape="circle"
     />
@@ -1075,7 +1075,7 @@ exports[`Storyshots Checkbox.Shape Circle 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1kz8v33"
+      className="css-1uq615o"
       color="primary"
       shape="circle"
     />
@@ -1091,7 +1091,7 @@ exports[`Storyshots Checkbox.Shape Circle 1`] = `
       type="checkbox"
     />
     <i
-      className="css-y08ue9"
+      className="css-pos9ms"
       color="secondary"
       shape="circle"
     />
@@ -1114,7 +1114,7 @@ exports[`Storyshots Checkbox.Shape Default 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1c6iy45"
+      className="css-dbp9fz"
       color="default"
       shape="default"
     />
@@ -1130,7 +1130,7 @@ exports[`Storyshots Checkbox.Shape Default 1`] = `
       type="checkbox"
     />
     <i
-      className="css-b7zibr"
+      className="css-95t8uc"
       color="primary"
       shape="default"
     />
@@ -1146,7 +1146,7 @@ exports[`Storyshots Checkbox.Shape Default 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1mmgaor"
+      className="css-1kan1d8"
       color="secondary"
       shape="default"
     />
@@ -1169,7 +1169,7 @@ exports[`Storyshots Checkbox.Shape Rounded 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1nak7jo"
+      className="css-jukznm"
       color="default"
       shape="rounded"
     />
@@ -1185,7 +1185,7 @@ exports[`Storyshots Checkbox.Shape Rounded 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1mb6i4a"
+      className="css-119b5m"
       color="primary"
       shape="rounded"
     />
@@ -1201,7 +1201,7 @@ exports[`Storyshots Checkbox.Shape Rounded 1`] = `
       type="checkbox"
     />
     <i
-      className="css-bkes9n"
+      className="css-ptvyg0"
       color="secondary"
       shape="rounded"
     />
@@ -1225,7 +1225,7 @@ exports[`Storyshots Checkbox.State Controlled 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1c6iy45"
+      className="css-dbp9fz"
       color="default"
       shape="default"
     />
@@ -1242,7 +1242,7 @@ exports[`Storyshots Checkbox.State Controlled 1`] = `
       type="checkbox"
     />
     <i
-      className="css-b7zibr"
+      className="css-95t8uc"
       color="primary"
       shape="default"
     />
@@ -1259,7 +1259,7 @@ exports[`Storyshots Checkbox.State Controlled 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1mmgaor"
+      className="css-1kan1d8"
       color="secondary"
       shape="default"
     />
@@ -1282,7 +1282,7 @@ exports[`Storyshots Checkbox.State Disabled 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1c6iy45"
+      className="css-dbp9fz"
       color="default"
       shape="default"
     />
@@ -1298,7 +1298,7 @@ exports[`Storyshots Checkbox.State Disabled 1`] = `
       type="checkbox"
     />
     <i
-      className="css-b7zibr"
+      className="css-95t8uc"
       color="primary"
       shape="default"
     />
@@ -1314,7 +1314,7 @@ exports[`Storyshots Checkbox.State Disabled 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1mmgaor"
+      className="css-1kan1d8"
       color="secondary"
       shape="default"
     />
@@ -1337,7 +1337,7 @@ exports[`Storyshots Checkbox.State Uncontrolled 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1c6iy45"
+      className="css-dbp9fz"
       color="default"
       shape="default"
     />
@@ -1353,7 +1353,7 @@ exports[`Storyshots Checkbox.State Uncontrolled 1`] = `
       type="checkbox"
     />
     <i
-      className="css-b7zibr"
+      className="css-95t8uc"
       color="primary"
       shape="default"
     />
@@ -1369,7 +1369,7 @@ exports[`Storyshots Checkbox.State Uncontrolled 1`] = `
       type="checkbox"
     />
     <i
-      className="css-1mmgaor"
+      className="css-1kan1d8"
       color="secondary"
       shape="default"
     />
@@ -1537,7 +1537,7 @@ exports[`Storyshots Radio Live Props 1`] = `
       type="radio"
     />
     <i
-      className="css-1mije5k"
+      className="css-zan0s2"
       color="default"
       shape="circle"
     />
@@ -1565,7 +1565,7 @@ exports[`Storyshots Radio.Color Default 1`] = `
       type="radio"
     />
     <i
-      className="css-bksfa4"
+      className="css-zniegk"
       color="default"
       shape="circle"
     />
@@ -1581,7 +1581,7 @@ exports[`Storyshots Radio.Color Default 1`] = `
       type="radio"
     />
     <i
-      className="css-17ap9mr"
+      className="css-y781l7"
       color="primary"
       shape="circle"
     />
@@ -1597,7 +1597,7 @@ exports[`Storyshots Radio.Color Default 1`] = `
       type="radio"
     />
     <i
-      className="css-i9ivch"
+      className="css-kg0osv"
       color="secondary"
       shape="circle"
     />

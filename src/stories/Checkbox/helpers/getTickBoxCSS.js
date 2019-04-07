@@ -1,6 +1,6 @@
 import { rgba } from 'polished';
 
-import { ELEMENT, SHAPE_VARIANTS, SPACINGS, COLOR_VARIANTS_MAP } from '../../themes';
+import { COLOR_VARIANTS_MAP, ELEMENT, SHAPE_VARIANTS } from '../../themes';
 import getGapCSS from '../../Switch/helpers/getGapCSS';
 
 /**
