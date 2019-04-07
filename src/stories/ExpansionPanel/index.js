@@ -10,7 +10,7 @@ import Title from './Title';
 import Content from './Content';
 
 const ExpansionPanel = ({ active: initialActive, children }) => {
-  const contentEl = useRef(false);
+  const contentEl = useRef();
   const { active, onToggleExpansionPanel } = useActive(initialActive);
   const contentHeight = useContentHeight(active, contentEl);
 

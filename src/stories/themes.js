@@ -1,6 +1,12 @@
 import { rem, rgba } from 'polished';
 
 // CONSTANTS
+export const ALIGNMENTS = {
+  left: 'flex-start',
+  center: 'center',
+  right: 'flex-end'
+};
+
 export const COLOR_VARIANTS = {
   default: 'default',
   primary: 'primary',
