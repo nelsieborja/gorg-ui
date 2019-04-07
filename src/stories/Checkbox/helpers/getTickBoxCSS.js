@@ -1,5 +1,7 @@
 import { rgba } from 'polished';
+
 import { ELEMENT, SHAPE_VARIANTS, SPACINGS, COLOR_VARIANTS_MAP } from '../../themes';
+import getGapCSS from '../../Switch/helpers/getGapCSS';
 
 /**
  * Sets CSS for the Checkbox tick (generic)
@@ -14,10 +16,8 @@ function getTickBoxCSS({ color, shape, gap, direction = 'right' }) {
 
     border: 2px solid ${normal};
     ${shape !== SHAPE_VARIANTS.default ? `border-radius: ${ELEMENT.BORDER_RADIUS[shape]}` : ''};
-    display: inline-block;
-    ${gap ? `margin-${direction}: ${SPACINGS.GUTTER}` : ''};
+    ${getGapCSS({ gap, direction })}
     position: relative;
-    vertical-align: middle;
 
     input:not(:disabled) + &:hover {
       box-shadow: 0 0 2px 2px inset ${rgba(normal, 0.3)}

@@ -1,27 +1,26 @@
 import { styled } from '@storybook/theming';
 import { rem, math } from 'polished';
 
-import { COLOR_VARIANTS_MAP, ELEMENT, SPACINGS, TRANSITION } from '../../themes';
+import { COLOR_VARIANTS_MAP, ELEMENT, TRANSITION } from '../../themes';
+import getGapCSS from '../helpers/getGapCSS';
+
+import CheckboxLabel from '../../Checkbox/styled/CheckboxLabel';
 
 const tickGutter = rem(2);
 const tickSize = math(`${ELEMENT.HEIGHT} - (${tickGutter} * 2)`);
 
-function getGapCSS({ gap, direction = 'right' }) {
-  return gap ? `margin-${direction}: ${SPACINGS.GUTTER};` : '';
-}
-const SwitchLabel = styled.label`
+const SwitchLabel = styled(CheckboxLabel)``;
+
+SwitchLabel.Tick = styled.i`
   height: ${ELEMENT.HEIGHT};
   width: ${rem(58)};
 
   border: 1px solid ${({ color }) => COLOR_VARIANTS_MAP[color].normal};
   border-radius: ${ELEMENT.HEIGHT};
   cursor: pointer;
-  display: inline-block;
+  ${getGapCSS}
   position: relative;
   transition: background-color ${TRANSITION.DURATION};
-  vertical-align: middle;
-
-  ${getGapCSS}
 
   &:after {
     position: absolute;
