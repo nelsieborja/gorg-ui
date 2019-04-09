@@ -1,15 +1,17 @@
 import React, { Children, useRef } from 'react';
-import { bool } from 'prop-types';
+import { bool, string } from 'prop-types';
+
+import { COLOR_VARIANTS } from '../themes';
+import getTitleProps from './helpers/getTitleProps';
+import getContentProps from './helpers/getContentProps';
 
 import useActive from './hooks/useActive';
 import useContentHeight from './hooks/useContentHeight';
-import getTitleProps from './helpers/getTitleProps';
-import getContentProps from './helpers/getContentProps';
 
 import Title from './Title';
 import Content from './Content';
 
-const ExpansionPanel = ({ active: initialActive, children }) => {
+const ExpansionPanel = ({ active: initialActive, children, color }) => {
   const contentEl = useRef();
   const { active, onToggleExpansionPanel } = useActive(initialActive);
   const contentHeight = useContentHeight(active, contentEl);
@@ -18,7 +20,7 @@ const ExpansionPanel = ({ active: initialActive, children }) => {
     <Child
       key={Child.displayName}
       active={active}
-      {...getTitleProps(Child === Title, onToggleExpansionPanel)}
+      {...getTitleProps(Child === Title, color, onToggleExpansionPanel)}
       {...getContentProps(Child === Content, contentEl, contentHeight)}
       {...props}
     />
@@ -32,11 +34,13 @@ ExpansionPanel.Content = Content;
 ExpansionPanel.Content.displayName = 'Content';
 
 ExpansionPanel.propTypes = {
-  active: bool
+  active: bool,
+  color: string
 };
 
 ExpansionPanel.defaultProps = {
-  active: false
+  active: false,
+  color: COLOR_VARIANTS.default // COLOR_VARIANTS
 };
 
 export default ExpansionPanel;

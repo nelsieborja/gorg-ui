@@ -1,5 +1,5 @@
 import { styled } from '@storybook/theming';
-import { rem, rgba } from 'polished';
+import { rem } from 'polished';
 
 import { ALIGNMENTS, COLORS, COLOR_VARIANTS_MAP, TRANSITION } from '../../themes';
 
@@ -9,7 +9,7 @@ const Header = styled.header`
   display: flex;
   justify-content: ${({ alignment }) => ALIGNMENTS[alignment]};
 
-  border-bottom: 1px solid ${rgba(COLORS.BASE_LIGHT, 0.08)};
+  border-bottom: 1px solid ${COLORS.BORDER_COLOR};
   position: relative;
 `;
 

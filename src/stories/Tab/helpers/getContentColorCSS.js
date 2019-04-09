@@ -1,7 +1,8 @@
-import { COLORS, COLOR_VARIANTS_MAP } from '../../themes';
+import { SPECIAL_BUTTON_MAP } from '../../themes';
 
 function getContentColorCSS({ active, color }) {
-  const defaultColor = active ? COLOR_VARIANTS_MAP[color].colorActive : COLORS.BASE_LIGHT;
+  const defaultColor = SPECIAL_BUTTON_MAP.normal(active ? color : null);
+
   return `
     color: ${defaultColor};
 
@@ -18,11 +19,11 @@ export default getContentColorCSS;
 export function getContentColorActiveCSS() {
   return `
     &:not(:disabled):active {
-      color: ${COLORS.BASE};
+      color: ${SPECIAL_BUTTON_MAP.active};
 
       svg {
         path, circle {
-          fill: ${COLORS.BASE};
+          fill: ${SPECIAL_BUTTON_MAP.active};
         }
       };
     }

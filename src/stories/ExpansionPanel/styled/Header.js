@@ -1,31 +1,16 @@
 import { styled } from '@storybook/theming';
 
-import { FONTS, COLORS, ELEMENT, TRANSITION } from '../../themes';
-import scale3dCSS, { plusAnimation, minusAnimation } from '../helpers/getAnimationCSS';
+import { FONTS, SPECIAL_BUTTON_MAP } from '../../themes';
 
 const Header = styled.header`
   display: flex;
   align-items: center;
 
-  background: ${COLORS.DEFAULT};
-  padding-left: ${ELEMENT.PADDING.Y};
-
   h2 {
+    color: ${({ active, color }) => SPECIAL_BUTTON_MAP.normal(active ? color : null)};
     flex: 1;
     font-size: ${FONTS.S.BASE};
     font-weight: ${FONTS.W.SEMIBOLD};
-  }
-
-  svg {
-    transform: ${scale3dCSS};
-
-    &.-plus {
-      animation: ${plusAnimation} ${TRANSITION.DURATION};
-    }
-
-    &.-minus {
-      animation: ${minusAnimation} ${TRANSITION.DURATION};
-    }
   }
 `;
 

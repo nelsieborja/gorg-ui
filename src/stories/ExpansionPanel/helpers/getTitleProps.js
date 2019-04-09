@@ -3,8 +3,8 @@
  * @param {Boolean} isTitleComp
  * @param {Object} onToggleExpansionPanel
  */
-function getTitleProps(isTitleComp, onToggleExpansionPanel) {
-  return isTitleComp ? { onToggleExpansionPanel } : {};
+function getTitleProps(isTitleComp, color, onToggleExpansionPanel) {
+  return isTitleComp ? { onToggleExpansionPanel, color } : {};
 }
 
 export default getTitleProps;

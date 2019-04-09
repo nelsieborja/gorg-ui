@@ -2,15 +2,16 @@ import React from 'react';
 
 import { ReactComponent as Plus } from '../../svgs/plus.svg';
 import { ReactComponent as Minus } from '../../svgs/minus.svg';
-import ButtonIcon from '../ButtonIcon';
-import Header from './styled/Header';
 
-const Title = ({ active, children, onToggleExpansionPanel }) => (
-  <Header>
-    <h2>{children}</h2>
-    <ButtonIcon variant="text" onClick={onToggleExpansionPanel}>
+import Header from './styled/Header';
+import { default as ButtonStyled } from './styled/Button';
+
+const Title = ({ active, children, color, onToggleExpansionPanel }) => (
+  <Header active={active} color={color}>
+    <ButtonStyled active={active} color={color} onClick={onToggleExpansionPanel}>
       {active ? <Minus className="-minus" /> : <Plus className="-plus" />}
-    </ButtonIcon>
+    </ButtonStyled>
+    <h2>{children}</h2>
   </Header>
 );
 

@@ -37,7 +37,9 @@ export const COLORS = {
   PRIMARY: '#2d2d2d',
   PRIMARY_DARK: '#000',
   SECONDARY: '#00baff',
-  SECONDARY_DARK: '#007fd0'
+  SECONDARY_DARK: '#007fd0',
+
+  BORDER_COLOR: rgba('#2d2d2d', 0.08)
 };
 
 // FONTS
@@ -103,4 +105,10 @@ export const COLOR_VARIANTS_MAP = {
     color: COLORS.DIRTY_WHITE,
     colorActive: COLORS.SECONDARY_DARK
   }
+};
+
+// TAB/EXPANSION PANEL
+export const SPECIAL_BUTTON_MAP = {
+  normal: color => (COLOR_VARIANTS_MAP[color] || {}).colorActive || COLORS.BASE_LIGHT,
+  active: COLORS.BASE
 };

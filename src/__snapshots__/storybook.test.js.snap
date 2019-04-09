@@ -1382,17 +1382,12 @@ exports[`Storyshots Expansion Panel Live Props 1`] = `
   className="css-14973vb"
 >
   <header
-    className="css-jgle3q"
+    className="css-10e4378"
   >
-    <h2>
-      Expansion Title
-    </h2>
     <button
-      className="css-1ja97ye"
+      className="css-1brpd6t"
       color="default"
-      disabled={false}
       onClick={[Function]}
-      shape="default"
     >
       <svg
         className="-minus"
@@ -1400,9 +1395,12 @@ exports[`Storyshots Expansion Panel Live Props 1`] = `
         minus.svg
       </svg>
     </button>
+    <h2>
+      Expansion Title
+    </h2>
   </header>
   <section
-    className="css-17jzza4"
+    className="css-99rzea"
     onTransitionEnd={[Function]}
     style={
       Object {
@@ -1422,17 +1420,12 @@ exports[`Storyshots Expansion Panel Multi Expansion Panel 1`] = `
   className="css-14973vb"
 >
   <header
-    className="css-jgle3q"
+    className="css-10e4378"
   >
-    <h2>
-      Expansion Title
-    </h2>
     <button
-      className="css-1ja97ye"
+      className="css-1brpd6t"
       color="default"
-      disabled={false}
       onClick={[Function]}
-      shape="default"
     >
       <svg
         className="-plus"
@@ -1440,9 +1433,12 @@ exports[`Storyshots Expansion Panel Multi Expansion Panel 1`] = `
         plus.svg
       </svg>
     </button>
+    <h2>
+      Expansion Title
+    </h2>
   </header>
   <section
-    className="css-17jzza4"
+    className="css-99rzea"
     onTransitionEnd={[Function]}
     style={
       Object {
@@ -1455,17 +1451,12 @@ exports[`Storyshots Expansion Panel Multi Expansion Panel 1`] = `
     </div>
   </section>
   <header
-    className="css-jgle3q"
+    className="css-10e4378"
   >
-    <h2>
-      Expansion Title
-    </h2>
     <button
-      className="css-1ja97ye"
+      className="css-1brpd6t"
       color="default"
-      disabled={false}
       onClick={[Function]}
-      shape="default"
     >
       <svg
         className="-minus"
@@ -1473,9 +1464,12 @@ exports[`Storyshots Expansion Panel Multi Expansion Panel 1`] = `
         minus.svg
       </svg>
     </button>
+    <h2>
+      Expansion Title
+    </h2>
   </header>
   <section
-    className="css-17jzza4"
+    className="css-99rzea"
     onTransitionEnd={[Function]}
     style={
       Object {
@@ -1488,17 +1482,12 @@ exports[`Storyshots Expansion Panel Multi Expansion Panel 1`] = `
     </div>
   </section>
   <header
-    className="css-jgle3q"
+    className="css-10e4378"
   >
-    <h2>
-      Expansion Title
-    </h2>
     <button
-      className="css-1ja97ye"
+      className="css-1brpd6t"
       color="default"
-      disabled={false}
       onClick={[Function]}
-      shape="default"
     >
       <svg
         className="-plus"
@@ -1506,9 +1495,12 @@ exports[`Storyshots Expansion Panel Multi Expansion Panel 1`] = `
         plus.svg
       </svg>
     </button>
+    <h2>
+      Expansion Title
+    </h2>
   </header>
   <section
-    className="css-17jzza4"
+    className="css-99rzea"
     onTransitionEnd={[Function]}
     style={
       Object {
@@ -1796,11 +1788,11 @@ exports[`Storyshots Tab Live Props 1`] = `
   className="css-14973vb"
 >
   <header
-    className="css-15omh7b"
+    className="css-fi31uf"
     color="default"
   >
     <button
-      className="css-r2sf9u"
+      className="css-1e88twt"
       color="default"
       onClick={[Function]}
     >
@@ -1810,7 +1802,7 @@ exports[`Storyshots Tab Live Props 1`] = `
       With Icon
     </button>
     <button
-      className="css-14ttto"
+      className="css-1brpd6t"
       color="default"
       onClick={[Function]}
     >

@@ -13,7 +13,7 @@ export const plusAnimation = keyframes`
     transform: ${animationFrom};
   }
   to {
-    transform: ${scale3dCSS} rotate3d(0, 0, 1, 180deg);
+    transform: ${scale3dCSS} rotate3d(0, 0, 1, -90deg);
   }
 `;
 
@@ -25,6 +25,6 @@ export const minusAnimation = keyframes`
     transform: ${animationFrom};
   }
   to {
-    transform: ${scale3dCSS} rotate3d(0, 0, 1, -180deg);
+    transform: ${scale3dCSS} rotate3d(0, 0, 1, 180deg);
   }
 `;
