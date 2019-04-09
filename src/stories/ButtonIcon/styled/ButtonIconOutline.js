@@ -1,7 +1,7 @@
 import { styled } from '@storybook/theming';
 import { rgba } from 'polished';
 
-import { COLOR_VARIANTS_MAP, VARIANT_TYPES } from '../../themes';
+import { COLOR_VARIANTS_MAP } from '../../themes';
 import { getIconColorCSS, getIconColorActiveCSS } from '../helpers/getIconCSS';
 
 import ButtonIcon from './ButtonIcon';
@@ -20,9 +20,5 @@ const ButtonIconOutline = styled(ButtonIcon)`
     ${getIconColorActiveCSS}
   }
 `;
-
-ButtonIconOutline.defaultProps = {
-  variant: VARIANT_TYPES.outline
-};
 
 export default ButtonIconOutline;
