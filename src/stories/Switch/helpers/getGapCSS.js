@@ -1,11 +1,11 @@
 import { SPACINGS } from '../../themes';
 
 /**
- * Adds `margin` based on the provided `direction` only if necessary
- * @param {Object} { gap: Boolean, direction: Enum[left|right|top|bottom] }
+ * Adds `margin` based on the provided `gapPosition` only if necessary
+ * @param {Object} { gap: Boolean, gapPosition: Enum[left|right] }
  */
-function getGapCSS({ gap, direction = 'right' }) {
-  return gap ? `margin-${direction}: ${SPACINGS.GUTTER};` : '';
+function getGapCSS({ gap, gapPosition = 'right' }) {
+  return gap ? `margin-${gapPosition}: ${SPACINGS.GUTTER};` : '';
 }
 
- export default getGapCSS;
+export default getGapCSS;

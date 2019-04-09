@@ -1,14 +1,18 @@
 import { COLOR_VARIANTS, ELEMENT, COLOR_VARIANTS_MAP, VARIANT_TYPES } from '../../themes';
+import getGapCSS from '../../Switch/helpers/getGapCSS';
 
 /**
  * Sets height/width of the SVGs within a Button component
+ * @param {Object} props { gap: Boolean, gapPosition: Enum [left|right] }
  */
-function getIconCSS() {
+function getIconCSS(props) {
   const { HEIGHT, WIDTH } = ELEMENT.ICON.DIMENSION;
   return `
     svg {
       height: ${HEIGHT};
       width: ${WIDTH};
+
+      ${getGapCSS(props)};
     }
   `;
 }

@@ -7,7 +7,7 @@ import getGapCSS from '../../Switch/helpers/getGapCSS';
  * Sets CSS for the Checkbox tick (generic)
  * @param {Object} { color: Enum[COLOR_VARIANTS], shape: Enum[SHAPE_VARIANTS], gap: Boolean, direction}
  */
-function getTickBoxCSS({ color, shape, gap, direction = 'right' }) {
+function getTickBoxCSS({ color, shape, gap, gapPosition }) {
   const { normal } = COLOR_VARIANTS_MAP[color];
 
   return `
@@ -16,7 +16,7 @@ function getTickBoxCSS({ color, shape, gap, direction = 'right' }) {
 
     border: 2px solid ${normal};
     ${shape !== SHAPE_VARIANTS.default ? `border-radius: ${ELEMENT.BORDER_RADIUS[shape]}` : ''};
-    ${getGapCSS({ gap, direction })}
+    ${getGapCSS({ gap, gapPosition })}
     position: relative;
 
     input:not(:disabled) + &:hover {
