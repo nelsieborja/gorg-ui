@@ -1,7 +1,7 @@
 import { styled } from '@storybook/theming';
 import { rgba } from 'polished';
 
-import { COLOR_VARIANTS_MAP } from '../../themes';
+import { COLOR_VARIANTS_MAP, VARIANT_TYPES } from '../../themes';
 import { getIconColorCSS, getIconColorActiveCSS } from '../helpers/getIconCSS';
 
 import Button from './ButtonIcon';
@@ -19,5 +19,9 @@ const ButtonText = styled(Button)`
     background: ${({ color }) => rgba(COLOR_VARIANTS_MAP[color].normal, 0.4)};
   }
 `;
+
+ButtonText.defaultProps = {
+  variant: VARIANT_TYPES.text
+};
 
 export default ButtonText;

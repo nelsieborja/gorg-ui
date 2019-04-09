@@ -1,3 +1,4 @@
+// https://facebook.github.io/create-react-app/docs/adding-images-fonts-and-files
 import React, { Fragment } from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
