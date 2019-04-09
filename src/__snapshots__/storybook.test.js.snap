@@ -5,7 +5,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
   className="css-1tba8mc"
 >
   <button
-    className="css-14kjfrk"
+    className="css-1ffqdtb"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -16,7 +16,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-kaa8vz"
+    className="css-znc00l"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -27,7 +27,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-2wssdb"
+    className="css-l61vml"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -38,7 +38,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-60h0gg"
+    className="css-19gzs40"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -49,7 +49,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-1w00dg9"
+    className="css-1hfry2c"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -60,7 +60,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-cw7lnu"
+    className="css-n73p1u"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -71,7 +71,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-wlwewr"
+    className="css-e2mnof"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -82,7 +82,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-oz45h3"
+    className="css-1mbeozy"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -93,107 +93,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-ghjcwx"
-    color="secondary"
-    disabled={false}
-    onClick={[Function]}
-    shape="circle"
-  >
-    <svg>
-      dashboard.svg
-    </svg>
-  </button>
-  <br />
-  <button
-    className="css-1ygfzzs"
-    color="default"
-    disabled={false}
-    onClick={[Function]}
-    shape="default"
-  >
-    <svg>
-      home.svg
-    </svg>
-  </button>
-  <button
-    className="css-1qdtxd2"
-    color="primary"
-    disabled={false}
-    onClick={[Function]}
-    shape="default"
-  >
-    <svg>
-      home.svg
-    </svg>
-  </button>
-  <button
-    className="css-obby7m"
-    color="secondary"
-    disabled={false}
-    onClick={[Function]}
-    shape="default"
-  >
-    <svg>
-      home.svg
-    </svg>
-  </button>
-  <button
-    className="css-1lmhzau"
-    color="default"
-    disabled={false}
-    onClick={[Function]}
-    shape="rounded"
-  >
-    <svg>
-      calendar.svg
-    </svg>
-  </button>
-  <button
-    className="css-vgo6y8"
-    color="primary"
-    disabled={false}
-    onClick={[Function]}
-    shape="rounded"
-  >
-    <svg>
-      calendar.svg
-    </svg>
-  </button>
-  <button
-    className="css-1u8a8d"
-    color="secondary"
-    disabled={false}
-    onClick={[Function]}
-    shape="rounded"
-  >
-    <svg>
-      calendar.svg
-    </svg>
-  </button>
-  <button
-    className="css-17dfk9z"
-    color="default"
-    disabled={false}
-    onClick={[Function]}
-    shape="circle"
-  >
-    <svg>
-      dashboard.svg
-    </svg>
-  </button>
-  <button
-    className="css-lk4c1x"
-    color="primary"
-    disabled={false}
-    onClick={[Function]}
-    shape="circle"
-  >
-    <svg>
-      dashboard.svg
-    </svg>
-  </button>
-  <button
-    className="css-1xq41s1"
+    className="css-1rocw9k"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -205,7 +105,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
   </button>
   <br />
   <button
-    className="css-4bmhyk"
+    className="css-1sqxww0"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -216,7 +116,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-dvt8xl"
+    className="css-1bzedvy"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -227,7 +127,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-1jqqcfp"
+    className="css-1wy5nod"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -238,7 +138,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-1srt9u5"
+    className="css-11q4y9c"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -249,7 +149,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-2px5rd"
+    className="css-ss0t62"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -260,7 +160,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-17vstv7"
+    className="css-112nepb"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -271,7 +171,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-12uu3er"
+    className="css-1j3lglj"
     color="default"
     disabled={false}
     onClick={[Function]}
@@ -282,7 +182,7 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-j5r8ec"
+    className="css-1ohmz7c"
     color="primary"
     disabled={false}
     onClick={[Function]}
@@ -293,7 +193,107 @@ exports[`Storyshots Button Icon Live Props 1`] = `
     </svg>
   </button>
   <button
-    className="css-h077nx"
+    className="css-1vv6g1n"
+    color="secondary"
+    disabled={false}
+    onClick={[Function]}
+    shape="circle"
+  >
+    <svg>
+      dashboard.svg
+    </svg>
+  </button>
+  <br />
+  <button
+    className="css-1ja97ye"
+    color="default"
+    disabled={false}
+    onClick={[Function]}
+    shape="default"
+  >
+    <svg>
+      home.svg
+    </svg>
+  </button>
+  <button
+    className="css-sn7hol"
+    color="primary"
+    disabled={false}
+    onClick={[Function]}
+    shape="default"
+  >
+    <svg>
+      home.svg
+    </svg>
+  </button>
+  <button
+    className="css-1vo18n0"
+    color="secondary"
+    disabled={false}
+    onClick={[Function]}
+    shape="default"
+  >
+    <svg>
+      home.svg
+    </svg>
+  </button>
+  <button
+    className="css-1ktain8"
+    color="default"
+    disabled={false}
+    onClick={[Function]}
+    shape="rounded"
+  >
+    <svg>
+      calendar.svg
+    </svg>
+  </button>
+  <button
+    className="css-kfy3nq"
+    color="primary"
+    disabled={false}
+    onClick={[Function]}
+    shape="rounded"
+  >
+    <svg>
+      calendar.svg
+    </svg>
+  </button>
+  <button
+    className="css-fqv7m5"
+    color="secondary"
+    disabled={false}
+    onClick={[Function]}
+    shape="rounded"
+  >
+    <svg>
+      calendar.svg
+    </svg>
+  </button>
+  <button
+    className="css-pjsyrg"
+    color="default"
+    disabled={false}
+    onClick={[Function]}
+    shape="circle"
+  >
+    <svg>
+      dashboard.svg
+    </svg>
+  </button>
+  <button
+    className="css-oske7n"
+    color="primary"
+    disabled={false}
+    onClick={[Function]}
+    shape="circle"
+  >
+    <svg>
+      dashboard.svg
+    </svg>
+  </button>
+  <button
+    className="css-1j57xwm"
     color="secondary"
     disabled={false}
     onClick={[Function]}
@@ -1388,7 +1388,7 @@ exports[`Storyshots Expansion Panel Live Props 1`] = `
       Expansion Title
     </h2>
     <button
-      className="css-4bmhyk"
+      className="css-1ja97ye"
       color="default"
       disabled={false}
       onClick={[Function]}
@@ -1428,7 +1428,7 @@ exports[`Storyshots Expansion Panel Multi Expansion Panel 1`] = `
       Expansion Title
     </h2>
     <button
-      className="css-4bmhyk"
+      className="css-1ja97ye"
       color="default"
       disabled={false}
       onClick={[Function]}
@@ -1461,7 +1461,7 @@ exports[`Storyshots Expansion Panel Multi Expansion Panel 1`] = `
       Expansion Title
     </h2>
     <button
-      className="css-4bmhyk"
+      className="css-1ja97ye"
       color="default"
       disabled={false}
       onClick={[Function]}
@@ -1494,7 +1494,7 @@ exports[`Storyshots Expansion Panel Multi Expansion Panel 1`] = `
       Expansion Title
     </h2>
     <button
-      className="css-4bmhyk"
+      className="css-1ja97ye"
       color="default"
       disabled={false}
       onClick={[Function]}
@@ -1796,33 +1796,41 @@ exports[`Storyshots Tab Live Props 1`] = `
   className="css-14973vb"
 >
   <header
-    className="css-pwjyph"
+    className="css-15omh7b"
     color="default"
   >
     <button
-      className="css-12sdlpc"
+      className="css-r2sf9u"
       color="default"
       onClick={[Function]}
     >
-      Tab 1
+      <svg>
+        home.svg
+      </svg>
+      With Icon
     </button>
     <button
-      className="css-12sdlpc"
+      className="css-14ttto"
       color="default"
       onClick={[Function]}
     >
-      Tab 2
+      Plain Tab
     </button>
     <i
-      className="css-10hc75f"
+      className="css-zeehaj"
       color="default"
       style={Object {}}
     />
   </header>
   <section
-    className="css-p0z7cv"
+    className="css-1iofi9g"
     color="default"
-    label="Tab 1"
+    label={
+      <React.Fragment>
+        <ForwardRef />
+        With Icon
+      </React.Fragment>
+    }
   >
     Change my appearance from 
     <strong>

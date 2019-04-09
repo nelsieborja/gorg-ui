@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
-import { bool, func, string, number } from 'prop-types';
+import { bool, func, string, number, object, oneOfType } from 'prop-types';
 
-import ButtonText from '../Button/styled/ButtonText';
+import getButtonGapProps from './helpers/getButtonGapProps';
+
+import { default as ButtonStyled } from './styled/Button';
 
 const Button = ({ active, alignment, color, index, label, onTaButtonClick }) => {
   const buttonEl = useRef();
@@ -12,14 +14,20 @@ const Button = ({ active, alignment, color, index, label, onTaButtonClick }) => 
     active && onTaButtonClick(buttonEl.current, index);
   }, [active, alignment]);
 
-  function onClick({ target }) {
-    onTaButtonClick(target, index);
+  function onClick({ currentTarget }) {
+    onTaButtonClick(currentTarget, index);
   }
 
   return (
-    <ButtonText color={color} onClick={onClick} ref={buttonEl}>
+    <ButtonStyled
+      active={active}
+      color={color}
+      onClick={onClick}
+      ref={buttonEl}
+      {...getButtonGapProps(label)}
+    >
       {label}
-    </ButtonText>
+    </ButtonStyled>
   );
 };
 
@@ -28,7 +36,7 @@ Button.propTypes = {
   alignment: string.isRequired,
   color: string.isRequired,
   index: number.isRequired,
-  label: string.isRequired,
+  label: oneOfType([string, object]).isRequired,
   onTaButtonClick: func.isRequired
 };
 
