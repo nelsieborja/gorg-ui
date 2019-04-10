@@ -36,7 +36,7 @@ Button.propTypes = {
   alignment: string.isRequired,
   color: string.isRequired,
   index: number.isRequired,
-  label: oneOfType([string, object]).isRequired,
+  label: oneOfType([object, string]).isRequired,
   onTaButtonClick: func.isRequired
 };
 
