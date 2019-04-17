@@ -18,6 +18,7 @@ UI library using React, Storybook and Emotion.
 - [ ] Datepicker
 - [ ] Drawer
 - [x] Expansion Panel
+- [x] Menu
 - [x] Radio
 - [ ] Select
 - [x] Switch
@@ -36,9 +37,13 @@ UI library using React, Storybook and Emotion.
 
 ### Note(s)
 
-Further development of this project has now been privatized. Preview of the project is available [here](https://gorg-ui.netlify.com/?path=/story/button-icon--live-props).
+Further development of this project has now been privatized. In case you are curious about the progress of the project, feel free to check out the demo uploaded in this [link](https://gorg-ui-v2.netlify.com/?path=/story/button-icon--icons-only).
+
+
+### Issue(s)
 
 Need to wait for [this](https://github.com/facebook/create-react-app/pull/6633) PR to be merged before module import aliasing starts working for CRA with Jest. Alternative solution can be found [here](https://github.com/facebook/create-react-app/issues/5652) but it suggests to use yet another dependency, not a big fan of dependencies.
+
 
 ### Credit(s)
 
