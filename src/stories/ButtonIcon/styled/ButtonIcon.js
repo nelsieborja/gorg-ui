@@ -14,9 +14,9 @@ const ButtonIcon = styled.button`
   cursor: pointer;
   font-size: ${FONTS.S.BASE};
   outline: none;
-  padding: ${ELEMENT.PADDING.X};
+  padding: ${ELEMENT.PADDING.Y};
   position: relative;
-  transition: ${TRANSITION.DURATION};
+  transition: ${TRANSITION.DURATION}, color 0s;
 
   ${getShapeCSS};
 

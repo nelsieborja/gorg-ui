@@ -1,13 +1,14 @@
 import React from 'react';
 import { bool, string } from 'prop-types';
 
+import getButtonGapProps from './helpers/getButtonGapProps';
 import getButtonStyled from './helpers/getButtonStyled';
 import Button from '../Button';
 
-const ButtonIcon = props => {
-  let ButtonIcon = getButtonStyled(props.variant);
+const ButtonIcon = ({ forwardRef, ...rest }) => {
+  let ButtonIcon = getButtonStyled(rest.variant);
 
-  return <ButtonIcon {...props} />;
+  return <ButtonIcon ref={forwardRef} {...rest} {...getButtonGapProps(rest.children)} />;
 };
 
 ButtonIcon.propTypes = {

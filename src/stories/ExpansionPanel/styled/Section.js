@@ -15,7 +15,7 @@ const Section = styled.section`
   transition: ${DURATION} ${EASE};
 
   div {
-    padding: ${X} 0 ${Y};
+    padding: ${Y} 0 ${X};
   }
 `;
 

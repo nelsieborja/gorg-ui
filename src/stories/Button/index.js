@@ -7,11 +7,11 @@ import { COLOR_VARIANTS, SHAPE_VARIANTS, VARIANT_TYPES } from '../themes';
 import getButtonStyled from './helpers/getButtonStyled';
 import getClickHandler from './helpers/getClickHandler';
 
-const Button = ({ children, onClick, variant, ...rest }) => {
+const Button = ({ children, forwardRef, onClick, variant, ...rest }) => {
   let Button = getButtonStyled(variant);
 
   return (
-    <Button {...rest} {...getClickHandler(onClick, rest.loading)}>
+    <Button ref={forwardRef} {...rest} {...getClickHandler(onClick, rest.loading)}>
       {rest.loading && <Loader className="-loader" />}
       {children}
     </Button>

@@ -1,5 +1,5 @@
 import { COLOR_VARIANTS, ELEMENT, COLOR_VARIANTS_MAP, VARIANT_TYPES } from '../../themes';
-import getGapCSS from '../../Switch/helpers/getGapCSS';
+import getGapCSS from './getGapCSS';
 
 /**
  * Sets height/width of the SVGs within a Button component
@@ -12,6 +12,7 @@ function getIconCSS(props) {
       height: ${HEIGHT};
       width: ${WIDTH};
 
+      flex-shrink: 0;
       ${getGapCSS(props)};
     }
   `;

@@ -1,31 +1,21 @@
 import { SPECIAL_BUTTON_MAP } from '../../themes';
 
+/**
+ *
+ * @param {Object} { active: Boolean, color: Enum[COLOR_VARIANTS] }
+ */
 function getContentColorCSS({ active, color }) {
-  const defaultColor = SPECIAL_BUTTON_MAP.normal(active ? color : null);
+  const normalColor = SPECIAL_BUTTON_MAP.normal(active ? color : null);
 
   return `
-    color: ${defaultColor};
+    color: ${normalColor};
 
     svg {
       path, circle {
-        fill: ${defaultColor};
+        fill: ${normalColor};
       }
     };
   `;
 }
 
 export default getContentColorCSS;
-
-export function getContentColorActiveCSS() {
-  return `
-    &:not(:disabled):active {
-      color: ${SPECIAL_BUTTON_MAP.active};
-
-      svg {
-        path, circle {
-          fill: ${SPECIAL_BUTTON_MAP.active};
-        }
-      };
-    }
-  `;
-}

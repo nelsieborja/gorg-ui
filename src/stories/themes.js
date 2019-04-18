@@ -58,10 +58,11 @@ export const ELEMENT = {
     [SHAPE_VARIANTS.rounded]: rem(3),
     [SHAPE_VARIANTS.circle]: rem(30)
   },
+  CHILDREN_GAP: rem(8),
   HEIGHT: rem(40),
   PADDING: {
-    X: rem(12),
-    Y: rem(20)
+    Y: rem(12),
+    X: rem(20)
   },
   TICK_SIZE: rem(20),
   ICON: {
@@ -91,24 +92,29 @@ export const COLOR_VARIANTS_MAP = {
     normal: COLORS.DEFAULT,
     dark: COLORS.DEFAULT_DARK,
     color: rgba(COLORS.BASE_LIGHT, 0.7),
-    colorActive: rgba(COLORS.BASE, 0.7)
+    colorActive: rgba(COLORS.BASE, 0.7),
+    hover: rgba(COLORS.DEFAULT, 0.4),
+    active: rgba(COLORS.DEFAULT, 0.8)
   },
   [COLOR_VARIANTS.primary]: {
     normal: COLORS.PRIMARY,
     dark: COLORS.PRIMARY_DARK,
     color: COLORS.DIRTY_WHITE,
-    colorActive: COLORS.PRIMARY_DARK
+    colorActive: COLORS.PRIMARY_DARK,
+    hover: rgba(COLORS.PRIMARY, 0.1),
+    active: rgba(COLORS.PRIMARY, 0.2)
   },
   [COLOR_VARIANTS.secondary]: {
     normal: COLORS.SECONDARY,
     dark: COLORS.SECONDARY_DARK,
     color: COLORS.DIRTY_WHITE,
-    colorActive: COLORS.SECONDARY_DARK
+    colorActive: COLORS.SECONDARY_DARK,
+    hover: rgba(COLORS.SECONDARY, 0.1),
+    active: rgba(COLORS.SECONDARY, 0.2)
   }
 };
 
 // TAB/EXPANSION PANEL
 export const SPECIAL_BUTTON_MAP = {
-  normal: color => (COLOR_VARIANTS_MAP[color] || {}).colorActive || COLORS.BASE_LIGHT,
-  active: COLORS.BASE
+  normal: color => (COLOR_VARIANTS_MAP[color] || {}).colorActive || COLORS.BASE_LIGHT
 };

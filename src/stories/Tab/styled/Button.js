@@ -1,18 +1,16 @@
 import { styled } from '@storybook/theming';
 
-import { ELEMENT } from '../../themes';
-import getContentColorCSS, { getContentColorActiveCSS } from '../helpers/getContentColorCSS';
+import { ELEMENT, VARIANT_TYPES } from '../../themes';
+import getContentColorCSS from '../helpers/getContentColorCSS';
 
 import ButtonIconText from '../../ButtonIcon/styled/ButtonIconText';
 
 const Button = styled(ButtonIconText)`
   background-color: transparent !important;
-  ${getContentColorCSS}
-  margin: 0 ${ELEMENT.PADDING.X};
+  margin: 0 ${ELEMENT.PADDING.Y};
   padding-left: 0;
   padding-right: 0;
-
-  ${getContentColorActiveCSS}
+  ${getContentColorCSS}
 
   &:first-of-type {
     margin-left: 0;
@@ -22,5 +20,9 @@ const Button = styled(ButtonIconText)`
     margin-right: 0;
   }
 `;
+
+Button.defaultProps = {
+  variant: VARIANT_TYPES.text
+}
 
 export default Button;

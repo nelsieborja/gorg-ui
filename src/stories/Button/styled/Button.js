@@ -15,7 +15,7 @@ const Button = styled.button`
   cursor: pointer;
   font-size: ${FONTS.S.BASE};
   outline: none;
-  padding: ${X} ${Y};
+  padding: ${Y} ${X};
   position: relative;
   transition: ${TRANSITION.DURATION};
 
@@ -29,7 +29,7 @@ const Button = styled.button`
 
   .-loader {
     position: absolute;
-    left: ${X};
+    left: ${Y};
     top: 50%;
     transform: translateY(-50%);
 

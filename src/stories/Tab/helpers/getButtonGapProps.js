@@ -1,14 +1,14 @@
+import { default as getButtonIconGapProps } from '../../ButtonIcon/helpers/getButtonGapProps';
 /**
  * Generates `gap` props only if necessary
  * @param {String|Object} label
  */
 function getButtonGapProps(label) {
-  if (!label.props || !label.props.children) return {};
+  const { props } = label;
 
-  return {
-    gap: true,
-    gapPosition: label.props.children[0].type ? 'right' : 'left'
-  };
+  if (!props || !props.children) return {};
+
+  return getButtonIconGapProps(props.children);
 }
 
 export default getButtonGapProps;

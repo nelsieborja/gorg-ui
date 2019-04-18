@@ -1,22 +1,21 @@
 import { styled } from '@storybook/theming';
-import { rgba } from 'polished';
 
-import { COLOR_VARIANTS_MAP } from '../../themes';
 import { getIconColorCSS, getIconColorActiveCSS } from '../helpers/getIconCSS';
+import getTextCSS, { getTextHoverCSS, getTextActiveCSS } from '../../Button/helpers/getTextCSS';
 
 import Button from './ButtonIcon';
 
 const ButtonText = styled(Button)`
-  border-color: transparent;
+  ${getTextCSS}
   ${getIconColorCSS}
 
   &:not(:disabled):hover {
-    background-color: ${({ color }) => rgba(COLOR_VARIANTS_MAP[color].normal, 0.2)};
+    ${getTextHoverCSS}
   }
 
   &:not(:disabled):active {
+    ${getTextActiveCSS}
     ${getIconColorActiveCSS}
-    background: ${({ color }) => rgba(COLOR_VARIANTS_MAP[color].normal, 0.4)};
   }
 `;
 

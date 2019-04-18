@@ -13,7 +13,7 @@ function getLoadingCSS({ disabled, loading }) {
     !disabled &&
     loading &&
     `
-    padding-left: ${math(`(${Y} * 2) + ${X}`)};
+    padding-left: ${math(`(${X} * 2) + ${Y}`)};
     .-loader {
       display: block;
     }
