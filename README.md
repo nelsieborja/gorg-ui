@@ -20,7 +20,7 @@ UI library using React, Storybook and Emotion.
 - [x] Expansion Panel
 - [x] Menu
 - [x] Radio
-- [ ] Select
+- [x] Select
 - [x] Switch
 - [x] Tab
 - [x] Textfield
