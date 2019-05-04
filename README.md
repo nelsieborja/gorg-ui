@@ -14,7 +14,7 @@ UI library using React, Storybook and Emotion.
 - [ ] Card
 - [ ] Charts
 - [x] Checkbox
-- [ ] Dialog
+- [x] Dialog
 - [ ] Datepicker
 - [ ] Drawer
 - [x] Expansion Panel
