@@ -22,11 +22,11 @@ CheckboxLabel.Tick = styled.i`
     background: ${({ color }) => COLOR_VARIANTS_MAP[color].normal};
 
     &:before {
-      top: ${rem(2)};
+      top: ${rem(1)};
       left: ${rem(6)};
 
-      height: ${rem(10)};
-      width: ${rem(5)};
+      height: ${rem(14)};
+      width: ${rem(8)};
 
       animation: ${getTickAnimation} ${TRANSITION.DURATION};
       border: solid ${({ color }) => COLOR_VARIANTS_MAP[color].color};

@@ -7,7 +7,7 @@ import getGapCSS from '../helpers/getGapCSS';
 import CheckboxLabel from '../../Checkbox/styled/CheckboxLabel';
 
 const tickGutter = rem(2);
-const tickSize = math(`${ELEMENT.HEIGHT} - (${tickGutter} * 2)`);
+const tickSize = math(`${ELEMENT.HEIGHT} - (${tickGutter} * 3)`);
 
 const SwitchLabel = styled(CheckboxLabel)``;
 

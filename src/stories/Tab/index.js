@@ -25,14 +25,14 @@ Tab.Content.displayName = 'Content';
 
 Tab.propTypes = {
   alignment: string,
-  value: number,
-  color: string
+  color: string,
+  value: number
 };
 
 Tab.defaultProps = {
   alignment: 'left', // ALIGNMENTS
-  value: 0,
-  color: COLOR_VARIANTS.default // COLOR_VARIANTS
+  color: COLOR_VARIANTS.default, // COLOR_VARIANTS
+  value: 0
 };
 
 export default Tab;

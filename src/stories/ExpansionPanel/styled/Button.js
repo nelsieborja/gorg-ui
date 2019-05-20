@@ -1,7 +1,7 @@
 import { styled } from '@storybook/theming';
 
 import scale3dCSS, { plusAnimation, minusAnimation } from '../helpers/getAnimationCSS';
-import { SPECIAL_BUTTON_MAP, TRANSITION } from '../../themes';
+import { SPECIAL_TEXT_COLOR, TRANSITION } from '../../themes';
 
 import ButtonIconText from '../../ButtonIcon/styled/ButtonIconText';
 
@@ -13,7 +13,7 @@ const Button = styled(ButtonIconText)`
 
     path,
     circle {
-      fill: ${({ active, color }) => SPECIAL_BUTTON_MAP.normal(active ? color : null)};
+      fill: ${({ active, color }) => SPECIAL_TEXT_COLOR.normal(active ? color : null)};
     }
 
     &.-plus {
@@ -29,7 +29,7 @@ const Button = styled(ButtonIconText)`
     svg {
       path,
       circle {
-        fill: ${SPECIAL_BUTTON_MAP.active};
+        fill: ${SPECIAL_TEXT_COLOR.active};
       }
     }
   }

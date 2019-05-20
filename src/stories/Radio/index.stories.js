@@ -28,7 +28,7 @@ storiesOf('Radio', module)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
   .add('Live Props', () => (
     <Radio color={select('color', COLOR_VARIANTS, COLOR_VARIANTS.default)} onChange={onChange}>
-      Change my appearance from <strong>"Knobs"</strong> tab
+      Change my appearance from "Knobs" tab
     </Radio>
   ));
 

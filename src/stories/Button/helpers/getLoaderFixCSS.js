@@ -1,10 +1,14 @@
 import { COLOR_VARIANTS, VARIANT_TYPES, COLORS } from '../../themes';
+import isObject from '../../../helpers/isObject';
 
 /**
  * Generates corresponding Loader CSS fix for a given `color` and `variant`
  * @param {Object} { color: Enum[COLOR_VARIANTS], variant: Enum[VARIANT_TYPES] }
  */
-function getLoaderFixCSS({ color, variant }) {
+function getLoaderFixCSS(props) {
+  if (!isObject(props)) return;
+
+  const { color, variant } = props;
   if (variant === VARIANT_TYPES.default) return;
 
   switch (color) {
