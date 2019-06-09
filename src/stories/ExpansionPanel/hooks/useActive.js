@@ -15,7 +15,7 @@ function useActive(initialActive) {
     if (active !== initialActive) {
       setActive(initialActive);
     }
-  }, [initialActive]);
+  }, [initialActive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return {
     active,

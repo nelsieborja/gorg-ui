@@ -12,11 +12,11 @@ function useContentHeight(active, contentEl) {
     if (active) setHeight('auto');
   }
 
-  function getContentHeight() {
-    return contentEl.current.scrollHeight;
-  }
-
   useEffect(() => {
+    function getContentHeight() {
+      return contentEl.current.scrollHeight;
+    }
+
     // Dont do anything if we've got a null element
     if (!contentEl.current) return;
 
@@ -30,7 +30,7 @@ function useContentHeight(active, contentEl) {
     }
 
     return () => clearTimeout(timeout);
-  }, [active]);
+  }, [active]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return {
     style: { height },

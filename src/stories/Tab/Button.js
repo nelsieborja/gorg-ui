@@ -12,7 +12,7 @@ const Button = ({ active, alignment, color, index, label, onTaButtonClick }) => 
     if (!buttonEl.current) return;
 
     active && onTaButtonClick(buttonEl.current, index);
-  }, [active, alignment]);
+  }, [active, alignment]); // eslint-disable-line react-hooks/exhaustive-deps
 
   function onClick({ currentTarget }) {
     onTaButtonClick(currentTarget, index);
