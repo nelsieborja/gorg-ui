@@ -21,6 +21,7 @@ const Button = ({ children, forwardRef, onClick, variant, ...rest }) => {
 Button.propTypes = {
   color: string,
   disabled: bool,
+  fullWidth: bool,
   loading: bool,
   shape: string,
   variant: string
@@ -29,6 +30,7 @@ Button.propTypes = {
 Button.defaultProps = {
   color: COLOR_VARIANTS.default, // COLOR_VARIANTS
   disabled: false,
+  fullWidth: false,
   loading: false,
   shape: SHAPE_VARIANTS.default, // SHAPE_VARIANTS
   variant: VARIANT_TYPES.default // VARIANT_TYPES

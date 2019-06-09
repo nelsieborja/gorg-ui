@@ -1,6 +1,7 @@
 import { styled } from '@storybook/theming';
 import { rem } from 'polished';
 
+import getWidthCSS from '../helpers/getWidthCSS';
 import getShapeCSS from '../helpers/getShapeCSS';
 import getLoaderFixCSS from '../helpers/getLoaderFixCSS';
 import getLoadingCSS from '../helpers/getLoadingCSS';
@@ -19,6 +20,7 @@ const Button = styled.button`
   position: relative;
   transition: ${TRANSITION.DURATION};
 
+  ${getWidthCSS};
   ${getShapeCSS};
   ${getLoaderFixCSS};
 

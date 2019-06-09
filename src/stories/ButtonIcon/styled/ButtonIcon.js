@@ -1,12 +1,13 @@
 import { styled } from '@storybook/theming';
 
+import getWidthCSS from '../../Button/helpers/getWidthCSS';
 import getShapeCSS from '../../Button/helpers/getShapeCSS';
 import getIconCSS from '../helpers/getIconCSS';
 
 import { FONTS, ELEMENT, TRANSITION } from '../../themes';
 
 const ButtonIcon = styled.button`
-  display: inline-flex;
+  display: ${({ fullWidth }) => (!fullWidth ? 'inline-' : '')}flex;
   align-items: center;
 
   background-color: transparent;
@@ -18,6 +19,7 @@ const ButtonIcon = styled.button`
   position: relative;
   transition: ${TRANSITION.DURATION}, color 0s;
 
+  ${getWidthCSS};
   ${getShapeCSS};
 
   &:disabled {

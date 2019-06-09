@@ -72,6 +72,7 @@ storiesOf('Button', module)
     <Button
       color={select('color', COLOR_VARIANTS, COLOR_VARIANTS.default)}
       disabled={boolean('disabled', false)}
+      fullWidth={boolean('fullWidth', false)}
       loading={boolean('loading', false)}
       onClick={onClick}
       shape={select('shape', SHAPE_VARIANTS, SHAPE_VARIANTS.default)}
@@ -95,10 +96,10 @@ storiesOf('Button.Shape', module)
   .add('Rounded', () => buildShapeStories(SHAPE_VARIANTS.rounded))
   .add('Circle', () => buildShapeStories(SHAPE_VARIANTS.circle));
 
-storiesOf('Button.State', module)
+storiesOf('Button.+More Props', module)
   .addDecorator(withKnobs)
   .addDecorator(story => <CustomContainer>{story()}</CustomContainer>)
-  .add('Loading', () =>
+  .add('loading', () =>
     variantTypeKeys.map(key => (
       <Fragment key={`loading-${key}`}>
         {buildShapeStories(SHAPE_VARIANTS.default, {
@@ -110,13 +111,24 @@ storiesOf('Button.State', module)
       </Fragment>
     ))
   )
-  .add('Disabled', () =>
+  .add('disabled', () =>
     variantTypeKeys.map(key => (
       <Fragment key={`disabled-${key}`}>
         {buildShapeStories(SHAPE_VARIANTS.default, {
           variant: VARIANT_TYPES[key],
           disabled: boolean('disabled', true),
           loading: boolean('loading', false)
+        })}
+        <br />
+      </Fragment>
+    ))
+  )
+  .add('fullWidth', () =>
+    variantTypeKeys.map(key => (
+      <Fragment key={`disabled-${key}`}>
+        {buildShapeStories(SHAPE_VARIANTS.default, {
+          variant: VARIANT_TYPES[key],
+          fullWidth: boolean('fullWidth', true)
         })}
         <br />
       </Fragment>
