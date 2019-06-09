@@ -1,5 +1,4 @@
 import React from 'react';
-import { bool, string } from 'prop-types';
 
 import getButtonGapProps from './helpers/getButtonGapProps';
 import getButtonStyled from './helpers/getButtonStyled';
@@ -12,15 +11,11 @@ const ButtonIcon = ({ forwardRef, ...rest }) => {
 };
 
 ButtonIcon.propTypes = {
-  ...Button.propTypes,
-  gap: bool,
-  gapPosition: string
+  ...Button.propTypes
 };
 
 ButtonIcon.defaultProps = {
-  ...Button.defaultProps,
-  gap: false,
-  gapPosition: 'right' // right|left
+  ...Button.defaultProps
 };
 
 export default ButtonIcon;
