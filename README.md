@@ -35,14 +35,18 @@ UI library using React, Storybook and Emotion.
 
 ---
 
-### Note(s)
+### Update
+
+- [WIP] Added documentation via [@storybook/addon-info](https://github.com/storybookjs/storybook/tree/master/addons/info)
+
+### Note
 
 Further development of this project has now been privatized. In case you are curious about the progress of the project, feel free to check out the demo uploaded in this [link](https://gorg-ui-v2.netlify.com/?path=/story/button-icon--icons-only).
 
-### Issue(s)
+### Issue
 
 Need to wait for [this](https://github.com/facebook/create-react-app/pull/6633) PR to be merged before module import aliasing starts working for CRA with Jest. Alternative solution can be found [here](https://github.com/facebook/create-react-app/issues/5652) but it suggests to use yet another dependency, not a big fan of dependencies.
 
-### Credit(s)
+### Credit
 
 - [Icons](https://www.flaticon.com/packs/ui-interface-25)
