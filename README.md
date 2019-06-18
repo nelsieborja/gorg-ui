@@ -37,7 +37,8 @@ UI library using React, Storybook and Emotion.
 
 ### Update
 
-- [WIP] Added documentation via [@storybook/addon-info](https://github.com/storybookjs/storybook/tree/master/addons/info)
+- [WIP] Added documentation via [@storybook/addon-info](https://github.com/storybookjs/storybook/tree/master/addons/info) but will be changed soon to [@storybook/addon-docs](https://www.npmjs.com/package/@storybook/addon-docs)
+- All components are written as Functional Component - thanks to _React Hooks_! 💙🎉
 
 ### Note
 
