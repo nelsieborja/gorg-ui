@@ -5,7 +5,7 @@ UI library using React, Storybook and Emotion.
 - Build higher-quality and more polish UI, at the same time modular and reusable
 - Publish it as an NPM package so can easily be shared across projects.
 
-## Components
+## Components 🦋
 
 ### UI
 
@@ -13,18 +13,21 @@ UI library using React, Storybook and Emotion.
 - [x] Button Icon
 - [ ] Card
 - [ ] Charts
-- [x] Checkbox
 - [x] Dialog
 - [ ] Datepicker
 - [x] Drawer
 - [x] Expansion Panel
 - [x] Menu
-- [x] Radio
-- [x] Select
 - [x] Switch
 - [x] Tab
-- [x] Textfield
 - [ ] ...
+
+### Form
+
+- [x] Checkbox
+- [x] Radio
+- [x] Textfield
+- [x] Select
 
 ### Layout+
 
