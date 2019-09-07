@@ -31,7 +31,7 @@ UI library using React, Storybook and Emotion.
 
 ### Layout+
 
-- [ ] Grid
+- [x] Grid System in favour [Reflexbox](//rebassjs.org/reflexbox/)
 - [ ] Form Validation
 - [ ] Slider
 - [ ] ...
