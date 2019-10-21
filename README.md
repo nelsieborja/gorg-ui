@@ -31,17 +31,19 @@ UI library using React, Storybook and Emotion.
 
 ### Layout+
 
-- [x] Grid System in favour [Reflexbox](//rebassjs.org/reflexbox/)
-- [ ] Form Validation
+- [x] Grid System (best alternative: [styled-system](https://styled-system.com/responsive-styles)'s Responsive Styles, [Reflexbox](//rebassjs.org/reflexbox/) but quite huge in size)
+- [x] Form Validation (best alternative: [React Hook Form](https://react-hook-form.com/))
 - [ ] Slider
 - [ ] ...
 
 ---
 
-### Update
+### TODO
 
-- [WIP] Added documentation via [@storybook/addon-info](https://github.com/storybookjs/storybook/tree/master/addons/info) but will be changed soon to [@storybook/addon-docs](https://www.npmjs.com/package/@storybook/addon-docs)
-- All components are written as Functional Component - thanks to _React Hooks_! 💙🎉
+- Migration to Typescript
+- Theming intergration with [styled-system](https://styled-system.com/responsive-styles)
+
+- Enhance documentation with [@storybook/addon-docs](https://www.npmjs.com/package/@storybook/addon-docs)
 
 ### Note
 
