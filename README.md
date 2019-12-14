@@ -31,9 +31,9 @@ UI library using React, Storybook and Emotion.
 
 ### Layout+
 
-- [x] Grid System (best alternative: [styled-system](https://styled-system.com/responsive-styles)'s Responsive Styles, [Reflexbox](//rebassjs.org/reflexbox/) but quite huge in size)
+- [x] Grid System (best alternative: [styled-system](https://styled-system.com/responsive-styles)'s Responsive Styles)
 - [x] Form Validation (best alternative: [React Hook Form](https://react-hook-form.com/))
-- [ ] Slider
+- [x] Slider via [CSS Scroll Snap](https://gorg-ui-v2.netlify.com/?path=/story/slider--via-css-scroll-snap)
 - [ ] ...
 
 ---
@@ -53,6 +53,8 @@ Further development of this project has now been privatized. In case you are cur
 
 Need to wait for [this](https://github.com/facebook/create-react-app/pull/6633) PR to be merged before module import aliasing starts working for CRA with Jest. Alternative solution can be found [here](https://github.com/facebook/create-react-app/issues/5652) but it suggests to use yet another dependency, not a big fan of dependencies.
 
-### Credit
+### Credits
 
 - [Icons](https://www.flaticon.com/packs/ui-interface-25)
+- [Publish to npm](https://www.learnstorybook.com/design-systems-for-developers/react/en/distribute/)
+- [Test Locally](https://storybook.js.org/docs/basics/exporting-storybook/)
